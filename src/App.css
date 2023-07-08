@@ -1,38 +1,396 @@
-.App {
-  text-align: center;
+html, body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Agdasima', sans-serif;
+  font-size: 125%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main{
   min-height: 100vh;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, .navbar-brand{
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.navbar{
+  background: rgb(21,61,167) !important ;
+  min-height: 5vh;
+  width: 100vw;
+}
+
+nav a{
+  color: white !important;
+}
+
+.nav-link{
+  font-size: 90%;
+}
+
+.fa-bars{
+  color: white !important;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+  color: gold !important
+}
+
+.dropdown-item:hover{
+  color: gold !important;
+  background: rgb(21,61,167) !important;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-item{
+  color: rgb(21,61,167) !important;
+}
+
+.btn{
+  background: gold;
+  color: black;
+}
+
+.btn:hover{
+  background: rgb(196, 166, 0);
+}
+
+/* --------------------HOMEPAGE---------------------------- */
+
+.hero-container {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  mask-image: linear-gradient(to top, transparent 0%, black 5%);
+}
+
+.banner {
+  opacity: 0.2;
+  object-fit: fill;
+}
+
+.hero-image{
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  top: 5vh;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+}
+
+.hero-box {
+  text-align: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  height: fit-content;
+  margin: auto;
+}
+
+.hero-title {
+  font-size: 3vw;
+  color: black;
+  background: rgba(0, 0, 0, 0);
+}
+
+#nav-icons{
+  min-height: 75vh;
+}
+
+.nav-icons{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgb(21,61,167);
+}
+
+.nav-icon-div{
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-icon{
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 200% !important;
+  width: 100px;
+  height: 100px;
+  color: white !important;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-icon:hover{
+  background: white;
+  color: rgb(21,61,167) !important;
+  border: 2px solid white;
+}
+
+#students-of-the-month{
+  min-height: 60vh;
+}
+
+.featured-student{
+  width: 200px;
+  height: 200px;
+  background: rgb(21,61,167);
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+#join{
+  min-height: 60vh;
+  background: white;
+}
+
+.join-link{
+  color: rgb(21,61,167);
+}
+
+.join-link:hover{
+  color: gold;
+}
+
+#sponsors{
+  position: relative;
+  min-height: 75vh;
+  background: rgb(21,61,167);
+  color: white;
+  padding-top: 5vh;
+}
+
+.sponsors-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: sponsors1 10s infinite;
+}
+
+@keyframes sponsors1 {
+  0% {
+      opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  5% {
+      opacity: 1;
+  }
+
+  45% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 0;
   }
 }
+
+.sponsors-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: sponsors2 10s infinite;
+}
+
+@keyframes sponsors2 {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  55% {
+      opacity: 1;
+  }
+
+  95% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+
+/* -------------------ENSEMBLE PAGES---------------------------- */
+
+.ensemble-hero-container{
+  position: relative;
+  height: 40vh;
+  background: black;
+  overflow: hidden;
+  mask-image: linear-gradient(to top, transparent 0%, black 5%);
+}
+
+.ensemble-banner{
+  opacity: 0.6;
+}
+
+.ensemble-hero-title {
+  font-size: 6vw;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+}
+
+.ensemble-hero-box {
+  text-align: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  margin: auto;
+}
+
+.ensemble-info{
+  margin-top: 5vh !important;
+}
+
+.ensemble-img{
+  width: 100%;
+}
+
+.carousel {
+  height: fit-content;
+  border-radius: 10%;
+}
+
+.carousel-inner{
+  border-radius: 10%;
+}
+
+.ensemble-awards{
+  min-height: 60vh;
+  color: white;
+  background: rgb(21,61,167);
+}
+
+.gold-rating{
+  color: gold;
+}
+
+/* ------------------FEES PAGE------------------------- */
+.other-hero-container{
+  position: relative;
+  height: 40vh;
+  background: white;
+  color: rgb(21,61,167);
+  overflow: hidden;
+  mask-image: linear-gradient(to top, transparent 0%, black 5%);
+}
+
+.other-banner{
+  opacity: 0.6;
+}
+
+.other-hero-title {
+  font-size: 6vw;
+  color: rgb(21,61,167);
+  background: rgba(0, 0, 0, 0);
+}
+
+.other-hero-box {
+  text-align: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  margin: auto;
+}
+
+.fees-info{
+  background: rgb(21,61,167);
+  min-height: 60vh;
+  color: white;
+}
+
+.musicoffice-link{
+  color: gold;
+}
+
+.musicoffice-link:hover{
+  color: rgb(196, 166, 0);
+}
+
+/* ------------------STAFF PAGE------------------------ */
+
+.headshot-staff{
+  width: 100% !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 0 rgba(21, 61, 167, 0.779), 0 6px 30px 0 rgba(21, 61, 167, 0.779);
+}
+
+.headshot-staff2{
+  width: 100% !important;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0px 0px 0 rgba(255, 255, 255, 0.779), 0 0px 30px 0 rgba(255, 255, 255, 0.779);
+}
+
+.staff1{
+  background: white;
+  color: black
+}
+
+.staff2{
+  background: rgb(21,61,167);
+  color: white;
+}
+
+.boosters{
+  min-height: 50vh;
+}
+
+
+/* --------------------------FOOTER---------------------------- */
+
+.footer{
+  width: 100vw;
+  height: 40vh;
+  margin: 0;
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+
+.fa-brands{
+  font-size: 200% !important;
+  color: white !important;
+}
+
+.fa-brands:hover{
+  color: gold !important;
+}
+
+
+

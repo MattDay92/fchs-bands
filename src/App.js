@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Home from './view/Home'
+import MarchingBand from './view/MarchingBand'
+import Staff from './view/Staff'
+import Fees from './view/Fees'
+import ConcertBand from './view/ConcertBand'
+import ColorGuard from './view/ColorGuard'
+import WindEnsemble from './view/WindEnsemble'
+import SymphonicBand from './view/SymphonicBand'
+import JazzEnsemble from './view/JazzEnsemble'
+import IndoorPercussion from './view/IndoorPercussion'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path={'/'} element={<Home />} />
+          <Route path={'/marchingband'} element={<MarchingBand />} />
+          <Route path={'/staff'} element={<Staff />} />
+          <Route path={'/fees'} element={<Fees />} />
+          <Route path={'/colorguard'} element={<ColorGuard />} />
+          <Route path={'/concertband'} element={<ConcertBand />} />
+          <Route path={'/windensemble'} element={<WindEnsemble />} />
+          <Route path={'/symphonicband'} element={<SymphonicBand />} />
+          <Route path={'/jazzensemble'} element={<JazzEnsemble />} />
+          <Route path={'/indoorpercussion'} element={<IndoorPercussion />} />
+
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
