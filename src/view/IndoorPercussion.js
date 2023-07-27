@@ -1,14 +1,15 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import DrumLine from '../components/images/Drumline.jpeg'
-import Saxophones from '../components/images/Saxophones.jpeg'
-import Trumpets from '../components/images/Trumpets.jpeg'
+import Percussion from '../components/images/Percussion.png'
+import Percussion1 from '../components/images/FCIP-WGI.jpg'
+import Percussion2 from '../components/images/Snare.jpg'
+import Percussion3 from '../components/images/Snares.png'
+import Percussion4 from '../components/images/BassDrum.png'
 
 export default function IndoorPercussion() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={MarchingBandBanner} />
+                <img className='ensemble-banner-done' src={Percussion} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title'>Percussion</h1>
                 </div>
@@ -28,13 +29,16 @@ export default function IndoorPercussion() {
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={DrumLine} className="d-block w-100" alt="..." />
+                                    <img src={Percussion1} className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Saxophones} className="d-block w-100" alt="..." />
+                                    <img src={Percussion2} className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Trumpets} className="d-block w-100" alt="..." />
+                                    <img src={Percussion3} className="d-block w-100" alt="..." />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Percussion4} className="d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

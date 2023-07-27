@@ -2,6 +2,7 @@ import React from 'react'
 import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
 import Tim from '../components/images/TimHeadshot.jpg'
 import Jason from '../components/images/JasonHeadshot.jpg'
+import JasonBio from '../components/JasonBio'
 
 export default function Staff() {
     return (
@@ -32,6 +33,7 @@ export default function Staff() {
                     <h4>Band Director</h4>
                     <p>Email: hammondwoodj@franklinschools.org</p>
                     <p>Phone:  (317) 346-8144  -  Office</p>
+                    <JasonBio />
                 </div>
             </div>
             <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>

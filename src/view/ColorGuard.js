@@ -1,8 +1,7 @@
 import React from 'react'
 import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import DrumLine from '../components/images/Drumline.jpeg'
-import Saxophones from '../components/images/Saxophones.jpeg'
-import Trumpets from '../components/images/Trumpets.jpeg'
+import Guard1 from '../components/images/FCHS-Guard-1.jpeg'
+
 
 export default function ColorGuard() {
     return (
@@ -28,14 +27,9 @@ export default function ColorGuard() {
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={DrumLine} className="d-block w-100" alt="..." />
+                                    <img src={Guard1} className="d-block w-100" alt="..." />
                                 </div>
-                                <div className="carousel-item">
-                                    <img src={Saxophones} className="d-block w-100" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Trumpets} className="d-block w-100" alt="..." />
-                                </div>
+                                
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>

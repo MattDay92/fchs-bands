@@ -24,7 +24,7 @@ export default function Home() {
             </div>
             <div id='nav-icons' className='row nav-icons'>
                 <div className='nav-icon-div col-4'>
-                    <a className='nav-icon'><i className="fa-regular fa-calendar-days"></i></a>
+                    <Link to={'/calendar'} className='nav-icon'><i className="fa-regular fa-calendar-days"></i></Link>
                     <h5 className='my-2'>Calendar</h5>
                 </div>
                 <div className='nav-icon-div col-4'>
@@ -51,6 +51,10 @@ export default function Home() {
                     <a className='nav-icon' href='http://localhost:3000/2023-2024-Sponsorship-Form.pdf' download><i class="fa-solid fa-drum"></i></a>
                     <h5 className='my-2'>Sponsorship Info</h5>
                 </div>
+                <div className='nav-icon-div col'>
+                    <Link to={'/getinvolved'} className='nav-icon'><i class="fa-solid fa-drum"></i></Link>
+                    <h5 className='my-2'>Parents - Get Involved!</h5>
+                </div>
             </div>
             {/* <div id='students-of-the-month' className='students-of-the-month col-10 m-auto text-center'>
                 <h1 className='my-5'>Congratulations to Our Students of the Month!</h1>
@@ -74,11 +78,11 @@ export default function Home() {
                 <div className='sponsors-1 d-flex align-items-center'>
                     <div className='m-auto col-10'>
                         <h2 className='my-5'>Maestro - $1500+</h2>
-                        <div className='d-flex justify-content-between'>
-                            <div className='my-auto'><img src={Anytime} /></div>
-                            <div className='my-auto'><img src={Pax} /></div>
-                            <div className='my-auto'><img src={Locke} /></div>
-                            <div className='my-auto'><img src={Freddys} /></div>
+                        <div className='d-flex justify-content-center'>
+                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Anytime} /></div>
+                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Pax} /></div>
+                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Locke} /></div>
+                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Freddys} /></div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +90,7 @@ export default function Home() {
                     <div className='m-auto col-10'>
                         <h2 className='my-5'>Drum Major - $500+</h2>
                         <div className='d-flex justify-content-center'>
-                            <div className='my-auto'><img src={Cunningham} /></div>
+                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Cunningham} /></div>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ export default function WindEnsemble() {
                         enim voluptate incididunt tempor sit do est non Lorem.
                     </p>
                 </div>
-                <div className='col-5 mb-5 d-flex align-items-center'>
+                {/* <div className='col-5 mb-5 d-flex align-items-center'>
                     <div className='carousel d-flex justify-content-center'>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
@@ -47,7 +47,7 @@ export default function WindEnsemble() {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <p className='col-12'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
                     Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
                     Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim

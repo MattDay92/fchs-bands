@@ -1,14 +1,13 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import DrumLine from '../components/images/Drumline.jpeg'
-import Saxophones from '../components/images/Saxophones.jpeg'
-import Trumpets from '../components/images/Trumpets.jpeg'
+import MarchingBandBanner from '../components/images/FCHS-Marching-Full.jpeg'
+import Marching1 from '../components/images/Percussion.jpg'
+import Marching2 from '../components/images/FCHS-Marching-Full-2.jpeg'
 
 export default function MarchingBand() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={MarchingBandBanner} />
+                <img className='ensemble-banner-done' src={MarchingBandBanner} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title'>Blue Regiment Marching Band</h1>
                 </div>
@@ -28,14 +27,12 @@ export default function MarchingBand() {
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={DrumLine} className="d-block w-100" alt="..." />
+                                    <img src={Marching1} className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Saxophones} className="d-block w-100" alt="..." />
+                                    <img src={Marching2} className="d-block w-100" alt="..." />
                                 </div>
-                                <div className="carousel-item">
-                                    <img src={Trumpets} className="d-block w-100" alt="..." />
-                                </div>
+                                
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>

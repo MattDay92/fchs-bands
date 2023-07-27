@@ -1,14 +1,17 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+  overflow-x: hidden;
   color: black;
-  box-sizing: border-box;
   font-family: 'Agdasima', sans-serif;
   font-size: 125%;
 }
 
+
 .main{
   min-height: 100vh;
+  min-width: 100vw !important;
 }
 
 a{
@@ -18,6 +21,7 @@ a{
 h1, h2, h3, h4, .navbar-brand{
   font-family: 'Bebas Neue', sans-serif;
 }
+
 
 .navbar{
   background: rgb(21,61,167) !important ;
@@ -46,9 +50,11 @@ nav a{
   background: rgb(21,61,167) !important;
 }
 
-.dropdown:hover .dropdown-menu{
-  display: block;
-  margin-top: 0;
+@media (min-width: 992px) {
+  .dropdown:hover .nav-dropdown{
+    display: block;
+    margin-top: 0;
+  } 
 }
 
 .dropdown-item{
@@ -70,21 +76,22 @@ nav a{
   position: relative;
   height: 60vh;
   overflow: hidden;
-  mask-image: linear-gradient(to top, transparent 0%, black 5%);
 }
 
 .banner {
   opacity: 0.2;
-  object-fit: fill;
+  object-fit: cover;
+  padding: 0;
 }
 
 .hero-image{
   position: absolute;
   background: rgba(0, 0, 0, 0);
   top: 5vh;
+  width: 90%;
   bottom: 0;
+  padding: 0;
   left: 10%;
-  right: 0;
 }
 
 .hero-box {
@@ -94,9 +101,11 @@ nav a{
   top: 0;
   bottom: 0;
   left: 20%;
+  width: 80%;
   right: 0;
   height: fit-content;
   margin: auto;
+  padding: 0;
 }
 
 .hero-title {
@@ -119,6 +128,7 @@ nav a{
 .nav-icon-div{
   text-align: center;
   color: white;
+  
 }
 
 .nav-icon{
@@ -142,18 +152,6 @@ nav a{
   border: 2px solid white;
 }
 
-#students-of-the-month{
-  min-height: 60vh;
-}
-
-.featured-student{
-  width: 200px;
-  height: 200px;
-  background: rgb(21,61,167);
-  border: 2px solid black;
-  border-radius: 50%;
-}
-
 #join{
   min-height: 60vh;
   background: white;
@@ -173,6 +171,10 @@ nav a{
   background: rgb(21,61,167);
   color: white;
   padding-top: 5vh;
+}
+
+.sponsor-img{
+  width: 100%;
 }
 
 .sponsors-1 {
@@ -238,6 +240,62 @@ nav a{
 }
 
 
+
+@media (max-width: 1024px) {
+  .hero-image {
+      height: 30vh;
+  }
+
+  .hero-title {
+      position: relative !important;
+      top: -25vh;
+  }
+
+  p {
+      font-size: medium;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .showfest {
+      margin-top: 2vh !important;
+  }
+
+  .showfest-img {
+      width: 80%;
+      margin-bottom: 5vh;
+  }
+
+  .showfest-info {
+      width: 80%;
+  }
+
+  h3 {
+      font-size: 1em;
+  }
+
+  h4,
+  h5 {
+      font-size: .75em;
+  }
+
+  .featured {
+      width: 90%;
+  }
+
+  .bio {
+      width: 100%;
+  }
+
+  .payment-form {
+      width: 100vw !important;
+      margin: auto !important;
+  }
+
+}
+
+
 /* -------------------ENSEMBLE PAGES---------------------------- */
 
 .ensemble-hero-container{
@@ -249,7 +307,13 @@ nav a{
 }
 
 .ensemble-banner{
-  opacity: 0.6;
+  opacity: 0;
+}
+
+.ensemble-banner-done{
+  opacity: 0.8;
+  object-fit: cover;
+  filter: blur(3px)
 }
 
 .ensemble-hero-title {
@@ -295,6 +359,49 @@ nav a{
 
 .gold-rating{
   color: gold;
+}
+
+/* -----------------CALENDAR--------------------------- */
+
+iframe {
+  z-index: 10;
+  width: 80vw !important;
+  height: 80vh !important;
+  animation: calendar 2s;
+  margin-top: 10vh !important;
+  margin-bottom: 2vh;
+  background-color: black;
+  padding: 0 !important;
+  animation: calendar 2s
+}
+
+@keyframes calendar {
+  0% {
+      opacity: 0;
+  }
+
+  60% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+/* --------------------GET INVOLVED------------------- */
+
+.getinvolved-gold{
+  color: gold;
+}
+
+.getinvolved-blue{
+  color: rgb(21,61,167);
+}
+
+.getinvolved-section2{
+  background: rgb(21,61,167);
+  color: white;
 }
 
 /* ------------------FEES PAGE------------------------- */
@@ -372,6 +479,42 @@ nav a{
   min-height: 50vh;
 }
 
+.offcanvas {
+  height: 70vh;
+}
+
+.offcanvas-last {
+  padding-bottom: 20px !important;
+}
+
+.offcanvas-header, .offcanvas-body{
+  color: black;
+}
+
+/* -------------------------LINKS------------------------------ */
+
+
+.links-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: rgb(21,61,167);
+  color: white;
+  min-height: 80vh;
+  text-align: center; 
+}
+
+.links-link{
+  text-decoration: none;
+  color: white;
+}
+
+.links-link:hover{
+  color: gold;
+}
+
 
 /* --------------------------FOOTER---------------------------- */
 
@@ -383,6 +526,15 @@ nav a{
   color: white;
 }
 
+.footer-link{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color: gold;
+}
+
 .fa-brands{
   font-size: 200% !important;
   color: white !important;
@@ -390,6 +542,19 @@ nav a{
 
 .fa-brands:hover{
   color: gold !important;
+}
+
+
+/* --------------------------ADMIN------------------------- */
+
+.admin{
+  text-align: center;
+}
+
+.itinerary-upload{
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 

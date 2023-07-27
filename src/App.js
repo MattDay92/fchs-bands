@@ -12,6 +12,10 @@ import WindEnsemble from './view/WindEnsemble'
 import SymphonicBand from './view/SymphonicBand'
 import JazzEnsemble from './view/JazzEnsemble'
 import IndoorPercussion from './view/IndoorPercussion'
+import Calendar from './view/Calendar'
+import GetInvolved from './view/GetInvolved'
+import Links from './view/Links'
+import Admin from './view/Admin'
 
 export default function App() {
   return (
@@ -29,7 +33,10 @@ export default function App() {
           <Route path={'/symphonicband'} element={<SymphonicBand />} />
           <Route path={'/jazzensemble'} element={<JazzEnsemble />} />
           <Route path={'/indoorpercussion'} element={<IndoorPercussion />} />
-
+          <Route path={'/calendar'} element={<Calendar />} />
+          <Route path={'/getinvolved'} element={<GetInvolved />} />
+          <Route path={'/links'} element={<Links />} />
+          <Route path={'/admin'} element={<Admin />} />
         </Routes>
         <Footer />
       </BrowserRouter>
