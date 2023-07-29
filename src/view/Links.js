@@ -10,7 +10,7 @@ export default function Links() {
                 </div>
             </div>
             <div className='links-info'>
-                <div>
+                <div className='link-column-1'>
                     <div className='mb-5'>
                         <h3>Paige's Music</h3>
                         <a href='https://www.paigesmusic.com' className='links-link' target='_blank'><h5>Paige's Music (Instruments)</h5></a>
@@ -23,7 +23,7 @@ export default function Links() {
                         <a href='https://www.musicracer.com' className='links-link' target='_blank'><h5>Music Racer (Online Drills)</h5></a>
                     </div>
                 </div>
-                <div>
+                <div className='link-column-2'>
                     <h3>Music/Arts Organizations</h3>
                     <a href='https://www.issma.net' className='links-link' target='_blank'><h5>Indiana State School Music Association (ISSMA)</h5></a>
                     <a href='https://www.indianabandmasters.org' className='links-link' target='_blank'><h5>Indiana Bandmasters Association (IBA)</h5></a>

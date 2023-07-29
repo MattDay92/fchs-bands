@@ -15,7 +15,7 @@ export default function Fees() {
                 <h5 className='mb-5'>The Franklin Community High School Band Boosters are now able to accept online 
                     fee payments. Simply fill out the form below. If you have any questions, 
                     please contact our booster treasurer at treasurer@franklinbands.info.</h5>
-                <div className='mb-5 d-flex justify-content-around'>
+                <div className='mb-5 buttons'>
                     <a className='btn' href='http://localhost:3000/2022-2023-General-Fee-Letter.pdf' download>General Fee Information</a>
                     <a className='btn' href='http://localhost:3000/\2023-Marching-Fee-Letter.pdf' download>Marching Fee Information</a>
                 </div>

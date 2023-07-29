@@ -84,32 +84,45 @@ nav a{
   padding: 0;
 }
 
-.hero-image{
-  position: absolute;
-  background: rgba(0, 0, 0, 0);
-  top: 5vh;
-  width: 90%;
-  bottom: 0;
-  padding: 0;
-  left: 10%;
-}
-
 .hero-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: absolute;
   background: rgba(0, 0, 0, 0);
   top: 0;
   bottom: 0;
-  left: 20%;
-  width: 80%;
+  left: 40vw;
+  width: 30vw;
   right: 0;
-  height: fit-content;
+  height: 100%;
   margin: auto;
   padding: 0;
 }
 
+.hero-image-div{
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  top: 5vh;
+  width: 30vw;
+  bottom: 0;
+  padding: 0;
+  left: 10%;
+}
+
+.hero-image{
+  width: 100%;
+}
+
+.hero-logo{
+  width: 80%;
+}
+
 .hero-title {
   font-size: 3vw;
+  width: 150%;
   color: black;
   background: rgba(0, 0, 0, 0);
 }
@@ -128,7 +141,6 @@ nav a{
 .nav-icon-div{
   text-align: center;
   color: white;
-  
 }
 
 .nav-icon{
@@ -175,6 +187,16 @@ nav a{
 
 .sponsor-img{
   width: 100%;
+}
+
+.sponsor-div{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.all-sponsors{
+  display: flex;
+  justify-content: center;
 }
 
 .sponsors-1 {
@@ -241,15 +263,19 @@ nav a{
 
 
 
-@media (max-width: 1024px) {
-  .hero-image {
-      height: 30vh;
+@media (max-width: 768px) {
+  .hero-image-div{
+    left: 5%;
   }
 
-  .hero-title {
-      position: relative !important;
-      top: -25vh;
+  .hero-image {
+      width: 40vw !important;
   }
+
+  .hero-box {
+      width: 40vw;
+  }
+
 
   p {
       font-size: medium;
@@ -258,17 +284,43 @@ nav a{
 }
 
 @media (max-width: 425px) {
-  .showfest {
-      margin-top: 2vh !important;
+  .home-hero, #nav-icons, #join, #sponsors{
+    min-height: 100vh;
   }
 
-  .showfest-img {
-      width: 80%;
-      margin-bottom: 5vh;
+  .hero-image-div{
+    display: none;
   }
 
-  .showfest-info {
-      width: 80%;
+  .hero-box {
+    left: 0;
+    width: 100vw;
+  }
+
+  .hero-title {
+    font-size: 8vw;
+    width: 100%;
+    color: black;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .nav-icons{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  
+  .nav-icon-div{
+    text-align: center;
+    color: white;
+  }
+  
+  .nav-icon{
+    width: 80px;
+    height: 80px;
+  }
+
+  .sponsor-heading{
+    padding-top: 10vh !important;
   }
 
   h3 {
@@ -280,18 +332,6 @@ nav a{
       font-size: .75em;
   }
 
-  .featured {
-      width: 90%;
-  }
-
-  .bio {
-      width: 100%;
-  }
-
-  .payment-form {
-      width: 100vw !important;
-      margin: auto !important;
-  }
 
 }
 
@@ -322,6 +362,17 @@ nav a{
   background: rgba(0, 0, 0, 0);
 }
 
+.ensemble-column-1{
+  width: 50%;
+}
+
+.ensemble-column-2{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
 .ensemble-hero-box {
   text-align: center;
   position: absolute;
@@ -335,6 +386,9 @@ nav a{
 }
 
 .ensemble-info{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
   margin-top: 5vh !important;
 }
 
@@ -359,6 +413,26 @@ nav a{
 
 .gold-rating{
   color: gold;
+}
+
+@media (max-width: 1024px) {
+  .ensemble-column-1{
+    width: 100%;
+  }
+  
+  .ensemble-column-2{
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .ensemble-hero-title{
+    font-size: 8vw;
+  }
+
+  .ensemble-column-2{
+    width: 100%;
+  }
 }
 
 /* -----------------CALENDAR--------------------------- */
@@ -450,7 +524,43 @@ iframe {
   color: rgb(196, 166, 0);
 }
 
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 425px) {
+  .other-hero-title{
+    font-size: 10vw;
+  }
+
+  .fees-info{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .buttons{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn{
+    margin-top: 2vh;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* ------------------STAFF PAGE------------------------ */
+
+.headshot-div{
+  width: 20vw;
+}
+
+.staff-info{
+  width: 50vw;
+}
 
 .headshot-staff{
   width: 100% !important;
@@ -477,6 +587,8 @@ iframe {
 
 .boosters{
   min-height: 50vh;
+  background: rgb(21,61,167);
+  color: white;
 }
 
 .offcanvas {
@@ -489,6 +601,16 @@ iframe {
 
 .offcanvas-header, .offcanvas-body{
   color: black;
+}
+
+@media (max-width: 425px) {
+  .headshot-div{
+    width: 40vw;
+  }
+
+  .bio-btn{
+    width: 40vw;
+  }
 }
 
 /* -------------------------LINKS------------------------------ */
@@ -513,6 +635,21 @@ iframe {
 
 .links-link:hover{
   color: gold;
+}
+
+@media (max-width: 768px) {
+  .links-info{
+    display: block;
+  }
+
+  .link-column-1{
+    width: 100vw;
+    margin-bottom: 10vh;
+  }
+
+  .link-column-2{
+    width: 100vw;
+  }
 }
 
 

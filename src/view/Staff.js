@@ -14,10 +14,10 @@ export default function Staff() {
                 </div>
             </div>
             <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>
-                <div className='col-2'>
+                <div className='headshot-div'>
                     <img className='headshot-staff' src={Tim} />
                 </div>
-                <div className='col-6 text-center'>
+                <div className='staff-info text-center'>
                     <h2>Tim Kosch</h2>
                     <h4>Director of Bands</h4>
                     <p>Email: koscht@franklinschools.org</p>
@@ -25,10 +25,10 @@ export default function Staff() {
                 </div>
             </div>
             <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
-                <div className='col-2'>
+                <div className='headshot-div'>
                     <img className='headshot-staff2' src={Jason} />
                 </div>
-                <div className='col-6 text-center'>
+                <div className='staff-info text-center'>
                     <h2>Jason Hammond-Wood</h2>
                     <h4>Band Director</h4>
                     <p>Email: hammondwoodj@franklinschools.org</p>
@@ -37,20 +37,10 @@ export default function Staff() {
                 </div>
             </div>
             <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>
-                <div className='col-2'>
-                    <img className='headshot-staff' src={Tim} />
+            <div className='headshot-div'>
+                    <img className='headshot-staff' src={Jason} />
                 </div>
-                <div className='col-6 text-center'>
-                    <h2>Insert Name</h2>
-                    <h4>Percussion Director</h4>
-                    <p>Email: Insert Email</p>
-                </div>
-            </div>
-            <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
-                <div className='col-2'>
-                    <img className='headshot-staff2' src={Jason} />
-                </div>
-                <div className='col-6 text-center'>
+                <div className='staff-info text-center'>
                     <h2>Hannah Para</h2>
                     <h4>Color Guard Director</h4>
                     <p>Email: parah@franklinschools.org</p>

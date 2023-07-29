@@ -9,7 +9,7 @@ export default function JasonBio() {
 
     return (
         <div className='container'>
-            <button className="btn my-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button className="btn bio-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 Read Bio
             </button>
 

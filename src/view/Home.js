@@ -12,17 +12,17 @@ import Pax from '../components/images/PAX.webp'
 export default function Home() {
     return (
         <>
-            <div id='hero' className='row hero-container'>
+            <div id='hero' className='row home-hero hero-container'>
                 <img className='banner' src={Background} />
                 <div className='hero-box'>
-                    <img className='col-3' src={Logo} />
+                    <img className='hero-logo' src={Logo} />
                     <h1 className='hero-title'>Franklin Community High School Bands</h1>
                 </div>
-                <div className='hero-image'>
-                    <img className='col-3' src={DrumMajor} />
+                <div className='hero-image-div'>
+                    <img className='hero-image' src={DrumMajor} />
                 </div>
             </div>
-            <div id='nav-icons' className='row nav-icons'>
+            <div id='nav-icons' className='row nav-icons px-5'>
                 <div className='nav-icon-div col-4'>
                     <Link to={'/calendar'} className='nav-icon'><i className="fa-regular fa-calendar-days"></i></Link>
                     <h5 className='my-2'>Calendar</h5>
@@ -74,11 +74,11 @@ export default function Home() {
                 </div>
             </div>
             <div id='sponsors' className='sponsors m-auto text-center'>
-                <h1 className='pt-3'>Thank You to Our 2023-2024 Sponsors!</h1>
+                <h1 className='sponsor-heading pt-3'>Thank You to Our 2023-2024 Sponsors!</h1>
                 <div className='sponsors-1 d-flex align-items-center'>
                     <div className='m-auto col-10'>
                         <h2 className='my-5'>Maestro - $1500+</h2>
-                        <div className='d-flex justify-content-center'>
+                        <div className='all-sponsors'>
                             <div className='my-auto sponsor-div'><img className='sponsor-img' src={Anytime} /></div>
                             <div className='my-auto sponsor-div'><img className='sponsor-img' src={Pax} /></div>
                             <div className='my-auto sponsor-div'><img className='sponsor-img' src={Locke} /></div>
@@ -89,7 +89,7 @@ export default function Home() {
                 <div className='sponsors-2 d-flex align-items-center'>
                     <div className='m-auto col-10'>
                         <h2 className='my-5'>Drum Major - $500+</h2>
-                        <div className='d-flex justify-content-center'>
+                        <div className='all-sponsors'>
                             <div className='my-auto sponsor-div'><img className='sponsor-img' src={Cunningham} /></div>
                         </div>
                     </div>

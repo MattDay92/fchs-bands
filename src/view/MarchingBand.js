@@ -12,8 +12,8 @@ export default function MarchingBand() {
                     <h1 className='ensemble-hero-title'>Blue Regiment Marching Band</h1>
                 </div>
             </div>
-            <div className='row ensemble-info col-10 m-auto d-flex justify-content-between'>
-                <div className='col-5'>
+            <div className='row ensemble-info col-10'>
+                <div className='ensemble-column-1'>
                     <h4 className='mb-5 text-center'>The 2022 BLUE REGIMENT Marching Band season was the most successful in Franklin's history placing
                         6th at the ISSMA Scholastic Finals - just missing a TOP 5 placement!</h4>
                     <p>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
@@ -22,7 +22,7 @@ export default function MarchingBand() {
                         enim voluptate incididunt tempor sit do est non Lorem.
                     </p>
                 </div>
-                <div className='col-5 mb-5 d-flex align-items-center'>
+                <div className='ensemble-column-2 mb-5'>
                     <div className='carousel d-flex justify-content-center'>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
