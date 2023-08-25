@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
+import MarchingBandBanner from '../components/images/MarchingBand.webp'
 
 export default function GetInvolved() {
     return (

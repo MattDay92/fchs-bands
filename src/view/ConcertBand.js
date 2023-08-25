@@ -1,40 +1,42 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import DrumLine from '../components/images/Drumline.jpeg'
-import Saxophones from '../components/images/Saxophones.jpeg'
-import Trumpets from '../components/images/Trumpets.jpeg'
+import Header from '../components/images/2018SpringConcertConcertandSymphonicBand.webp'
 
 export default function ConcertBand() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={MarchingBandBanner} />
+                <img className='ensemble-banner' src={Header} />
                 <div className='ensemble-hero-box'>
-                    <h1 className='ensemble-hero-title'>Concert Band</h1>
+                    <h1 className='ensemble-hero-title-black'>Concert Band</h1>
                 </div>
             </div>
             <div className='row ensemble-info col-10'>
-                <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The 2022 BLUE REGIMENT Marching Band season was the most successful in Franklin's history placing
-                        6th at the ISSMA Scholastic Finals - just missing a TOP 5 placement!</h4>
-                    <p>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                        Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                        Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                        enim voluptate incididunt tempor sit do est non Lorem.
+                <div className='col-12'>
+                    <h4 className='ensemble-info-paragraph'>The Franklin Community High School Concert Band is a non-auditioned, curricular beginning ensemble for
+                        incoming freshman woodwind and brass students who have participated in band during middle school.  Students study a variety of concert music
+                        and have several performances throughout the year.  This ensemble will prepare students for participation in both symphonic band and wind ensemble.  </h4>
+                    <p className='ensemble-info-paragraph'>Performing with the Concert Band is a non-auditioned, beginning percussion
+                        ensemble for freshmen percussionists who have participated in band during middle school.  These students study a variety of
+                        concert band and percussion music over the course of the school year.  </p>
+
+                    <p className='mb-5 ensemble-info-paragraph'>The Concert Band performs annually at the Fall Concert in September, the Holiday Concert in December,
+                        the ISSMA Organizational Festival in April, and the Spring Concert in early May.  The Concert Band is under the
+                        direction of Tim Kosch.
                     </p>
                 </div>
+
                 {/* <div className='ensemble-column-2 mb-5'>
                     <div className='carousel d-flex justify-content-center'>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={DrumLine} className="d-block w-100" alt="..." />
+                                    <img src={Carousel1} className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Saxophones} className="d-block w-100" alt="..." />
+                                    <img src={Carousel2} className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Trumpets} className="d-block w-100" alt="..." />
+                                    <img src={Carousel3} className="d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -48,16 +50,7 @@ export default function ConcertBand() {
                         </div>
                     </div>
                 </div> */}
-                <p className='col-12'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
-                <p className='col-12 mb-5'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
+                {/* <p className='col-12'></p> */}
 
             </div>
             <div className='ensemble-awards d-flex align-items-center justify-content-center'>
@@ -67,7 +60,7 @@ export default function ConcertBand() {
                         <p>2023, 2022, 2021<span className='gold-rating'>*</span>, 2019, 2018, 2017</p>
                         <h5 className='mt-5'><span className='gold-rating'>*Gold Rating with Distinction</span></h5>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

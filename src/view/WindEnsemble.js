@@ -1,27 +1,27 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import DrumLine from '../components/images/Drumline.jpeg'
-import Saxophones from '../components/images/Saxophones.jpeg'
-import Trumpets from '../components/images/Trumpets.jpeg'
+import Header from '../components/images/WindEnsembleHolidayPerformance.webp'
+
 
 export default function WindEnsemble() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={MarchingBandBanner} />
+                <img className='ensemble-banner' src={Header} />
                 <div className='ensemble-hero-box'>
-                    <h1 className='ensemble-hero-title'>Wind Ensemble</h1>
+                    <h1 className='ensemble-hero-title-black'>Wind Ensemble</h1>
                 </div>
             </div>
             <div className='row ensemble-info col-10'>
-                <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The 2022 BLUE REGIMENT Marching Band season was the most successful in Franklin's history placing
-                        6th at the ISSMA Scholastic Finals - just missing a TOP 5 placement!</h4>
-                    <p>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                        Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                        Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                        enim voluptate incididunt tempor sit do est non Lorem.
-                    </p>
+                <div className='col-12'>
+                    <h4 className='ensemble-info-paragraph'>The Franklin Community High School Wind Ensemble is an auditioned, curricular ensemble for 
+                    advanced woodwind and brass students.  Students study a variety of advanced literature with several performances 
+                    throughout the year.</h4>
+                    <p className='ensemble-info-paragraph'>Performing with the Wind Ensemble is an auditioned ensemble for advanced percussionists.  This class studies a variety of advanced concert band 
+                    and percussion literature.  The Wind Ensemble performs annually at the Fall Concert in September, the Holiday Concert in December, 
+                    the ISSMA Organizational Festival in April, and the Spring Concert in early May.  The Wind Ensemble is under the 
+                    direction of Tim Kosch.
+     
+                </p>
                 </div>
                 {/* <div className='ensemble-column-2 mb-5'>
                     <div className='carousel d-flex justify-content-center'>
@@ -48,16 +48,6 @@ export default function WindEnsemble() {
                         </div>
                     </div>
                 </div> */}
-                <p className='col-12'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
-                <p className='col-12 mb-5'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
 
             </div>
             <div className='ensemble-awards d-flex align-items-center justify-content-center'>

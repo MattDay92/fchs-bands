@@ -1,32 +1,36 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import Tim from '../components/images/TimHeadshot.jpg'
-import Jason from '../components/images/JasonHeadshot.jpg'
+import Banner from '../components/images/FCHS-Band-Banner.webp'
+import Tim from '../components/images/TimHeadshot.webp'
+import Jason from '../components/images/JasonHeadshot.webp'
+import Hannah from '../components/images/Hannah.webp'
 import JasonBio from '../components/JasonBio'
+import TimBio from '../components/TimBio'
+import ColorGuardBio from '../components/ColorGuardBio'
 
 export default function Staff() {
     return (
         <div className='main'>
-            <div className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={MarchingBandBanner} />
+            <div className='row staff-hero-container'>
+                <img className='banner' src={Banner} />
                 <div className='ensemble-hero-box'>
-                    <h1 className='ensemble-hero-title'>Contact</h1>
+                    <h1 className='staff-hero-title'>Contact</h1>
                 </div>
             </div>
-            <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>
+            <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
                 <div className='headshot-div'>
-                    <img className='headshot-staff' src={Tim} />
+                    <img className='headshot-staff2' src={Tim} />
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Tim Kosch</h2>
                     <h4>Director of Bands</h4>
                     <p>Email: koscht@franklinschools.org</p>
                     <p>Phone:  (317) 346-8107  -  Office</p>
+                    <TimBio />
                 </div>
             </div>
-            <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
+            <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>
                 <div className='headshot-div'>
-                    <img className='headshot-staff2' src={Jason} />
+                    <img className='headshot-staff' src={Jason} />
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Jason Hammond-Wood</h2>
@@ -36,14 +40,15 @@ export default function Staff() {
                     <JasonBio />
                 </div>
             </div>
-            <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>
+            <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
             <div className='headshot-div'>
-                    <img className='headshot-staff' src={Jason} />
+                    <img className='headshot-staff2' src={Hannah} />
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Hannah Para</h2>
                     <h4>Color Guard Director</h4>
                     <p>Email: parah@franklinschools.org</p>
+                    <ColorGuardBio />
                 </div>
             </div>
             <div className='boosters py-5 d-flex justify-content-around align-items-center'>

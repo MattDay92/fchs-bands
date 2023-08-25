@@ -12,7 +12,7 @@ export default function MBWindsCalendar() {
                     Subscribe
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href='webcal://https://calendar.google.com/calendar/ical/franklinschools.org_t2ou07ror9aicf74o1t1er7kec%40group.calendar.google.com/public/basic.ics' target='_blank' className='dropdown-item'>Add to Desktop Calendar</a></li>
+                    <li><a href='webcal://calendar.google.com/calendar/ical/franklinschools.org_t2ou07ror9aicf74o1t1er7kec%40group.calendar.google.com/public/basic.ics' target='_blank' className='dropdown-item'>Add to Desktop Calendar</a></li>
                     <li><a class="dropdown-item" href="https://calendar.google.com/calendar/embed?src=franklinschools.org_t2ou07ror9aicf74o1t1er7kec%40group.calendar.google.com&ctz=America%2FNew_York" target='_blank'>Add to Google Calendar</a></li>
                 </ul>
             </div>

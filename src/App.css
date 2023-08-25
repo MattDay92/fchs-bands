@@ -164,6 +164,17 @@ nav a{
   border: 2px solid white;
 }
 
+.carousel-home{
+  height: 75vh;
+  background: black;
+  
+}
+
+.carousel-home-img{
+  margin: auto;
+  height: 75vh;
+}
+
 #join{
   min-height: 60vh;
   background: white;
@@ -197,6 +208,11 @@ nav a{
 .all-sponsors{
   display: flex;
   justify-content: center;
+}
+
+.sponsor-category{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .sponsors-1 {
@@ -261,9 +277,12 @@ nav a{
   }
 }
 
+@media (max-width: 1024px) {
+  .nav-icons{
+    align-items: normal;
+    padding-top: 10vh;
+  }
 
-
-@media (max-width: 768px) {
   .hero-image-div{
     left: 5%;
   }
@@ -271,14 +290,33 @@ nav a{
   .hero-image {
       width: 40vw !important;
   }
+}
+
+
+
+@media (max-width: 768px) {
+
 
   .hero-box {
       width: 40vw;
   }
 
+  .nav-icon{
+    font-size: 150% !important;
+  }
+
 
   p {
       font-size: medium;
+  }
+
+  .carousel-home{
+    overflow: hidden;
+  }
+
+  .carousel-home-img{
+    object-fit: cover;
+    width: 100%;
   }
 
 }
@@ -303,24 +341,36 @@ nav a{
     color: black;
     background: rgba(0, 0, 0, 0);
   }
-
-  .nav-icons{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-  }
-  
-  .nav-icon-div{
-    text-align: center;
-    color: white;
-  }
   
   .nav-icon{
     width: 80px;
     height: 80px;
   }
 
+  .carousel-home{
+    height: 100vh;
+  }
+
+  .carousel-home-img{
+    height: 100vh;
+  }
+
+  .all-sponsors{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .sponsor-div{
+    width: 40vw;
+
+  }
+
   .sponsor-heading{
     padding-top: 10vh !important;
+  }
+
+  .sponsor-category{
+    margin-top: 10vh;
   }
 
   h3 {
@@ -335,19 +385,27 @@ nav a{
 
 }
 
+@media (max-width: 375px) {
+  .nav-icon{
+    width: 70px;
+    height: 70px;
+  }
+}
+
 
 /* -------------------ENSEMBLE PAGES---------------------------- */
 
 .ensemble-hero-container{
   position: relative;
   height: 40vh;
-  background: black;
+  background: white;
   overflow: hidden;
   mask-image: linear-gradient(to top, transparent 0%, black 5%);
 }
 
 .ensemble-banner{
-  opacity: 0;
+  object-fit: cover;
+  opacity: .2;
 }
 
 .ensemble-banner-done{
@@ -359,6 +417,12 @@ nav a{
 .ensemble-hero-title {
   font-size: 6vw;
   color: white;
+  background: rgba(0, 0, 0, 0);
+}
+
+.ensemble-hero-title-black{
+  font-size: 6vw;
+  color: rgb(21,61,167);
   background: rgba(0, 0, 0, 0);
 }
 
@@ -392,17 +456,41 @@ nav a{
   margin-top: 5vh !important;
 }
 
+.ensemble-info-paragraph{
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
 .ensemble-img{
   width: 100%;
 }
 
-.carousel {
-  height: fit-content;
-  border-radius: 10%;
+.ensemble-btns{
+  display: flex;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  justify-content: space-around;
 }
 
-.carousel-inner{
-  border-radius: 10%;
+.ensemble-sponsor-div{
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 20vw;
+}
+
+.ensemble-sponsors{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.ensemble-WGI-banner-div{
+  width: 40vw;
+}
+
+.carousel-ensemble {
+  height: 70vh;
 }
 
 .ensemble-awards{
@@ -430,8 +518,17 @@ nav a{
     font-size: 8vw;
   }
 
+  .ensemble-hero-title-black{
+    font-size: 8vw;
+  }
+
   .ensemble-column-2{
     width: 100%;
+  }
+
+  .ensemble-btns{
+    display: block;
+    text-align: center;
   }
 }
 
@@ -512,8 +609,14 @@ iframe {
 
 .fees-info{
   background: rgb(21,61,167);
-  min-height: 60vh;
+  min-height: 80vh;
   color: white;
+}
+
+.btn-fees{
+  font-size: 2.5rem;
+  background: gold;
+  color: black;
 }
 
 .musicoffice-link{
@@ -553,6 +656,19 @@ iframe {
 }
 
 /* ------------------STAFF PAGE------------------------ */
+.staff-hero-container{
+  position: relative;
+  height: 40vh;
+  color: rgb(21,61,167) !important;
+  overflow: hidden;
+  mask-image: linear-gradient(to top, transparent 0%, black 5%);
+}
+
+.staff-hero-title {
+  font-size: 6vw;
+  color: rgb(21,61,167);
+  background: rgba(0, 0, 0, 0);
+}
 
 .headshot-div{
   width: 20vw;
@@ -587,8 +703,8 @@ iframe {
 
 .boosters{
   min-height: 50vh;
-  background: rgb(21,61,167);
-  color: white;
+  background: white;
+  color: rgb(21,61,167);
 }
 
 .offcanvas {
@@ -679,6 +795,18 @@ iframe {
 
 .fa-brands:hover{
   color: gold !important;
+}
+
+@media (max-width: 425px) {
+  
+  .footer-col-1, .footer-col-2{
+    font-size: 80%;
+    margin: auto;
+  }
+
+  .footer-col-1 h1{
+    font-size: 120%;
+  }
 }
 
 

@@ -9,11 +9,11 @@ export default function JasonBio() {
 
     return (
         <div className='container'>
-            <button className="btn bio-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button className="btn bio-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJason" aria-controls="offcanvasExample">
                 Read Bio
             </button>
 
-            <div className="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div className="offcanvas offcanvas-top" tabindex="-1" id="offcanvasJason" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header d-flex justify-content-center">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Jason Hammond-Wood</h5>
                 </div>

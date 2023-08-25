@@ -1,40 +1,54 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from './images/Logo.png'
 
 export default function Nav() {
     return (
         <div className='nav'>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <Link class="navbar-brand" to={'/'}>
+            <nav className="navbar navbar-expand-lg bg-light">
+                <div className="container-fluid">
+                    <Link className="navbar-brand" to={'/'}>
                         FCHS Bands
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                        <i className="fas fa-bars"></i>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
-                        {/* <a className='nav-item'><Link to={'/joinus'} class="nav-link active" aria-current="page" >Join Us!</Link></a> */}
-                        <a className='nav-item'><Link to={'/fees'} class="nav-link active">Fees/Payments</Link></a>
-                        <a className='nav-item'><Link to={'/calendar'} class="nav-link">Calendar</Link></a>
-                        {/* <a className='nav-item'><Link class="nav-link">Itineraries</Link></a> */}
-                        <a class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+                        {/* <a className='nav-item'><Link to={'/joinus'} className="nav-link active" aria-current="page" >Join Us!</Link></a> */}
+                        <a className='nav-item'><Link to={'/fees'} className="nav-link active">Fees/Payments</Link></a>
+                        <a className='nav-item'><Link to={'/calendar'} className="nav-link">Calendar</Link></a>
+                        {/* <a className='nav-item'><Link className="nav-link">Itineraries</Link></a> */}
+                        <a className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Ensembles
                             </a>
-                            <div class="dropdown-menu nav-dropdown py-0">
-                                <Link to={'/concertband'} class="dropdown-item">Concert Band</Link>
-                                <Link to={'/symphonicband'} class="dropdown-item">Symphonic Band</Link>
-                                <Link to={'/windensemble'} class="dropdown-item">Wind Ensemble</Link>
-                                <Link to={'/jazzensemble'} class="dropdown-item">Jazz Ensemble</Link>
-                                <Link to={'/colorguard'} class="dropdown-item">Color Guard</Link>
-                                <Link to={'/marchingband'} class="dropdown-item">Marching Band</Link>
-                                <Link to={'/indoorpercussion'} class="dropdown-item">Indoor Percussion</Link>
+                            <div className="dropdown-menu nav-dropdown py-0">
+                                <Link to={'/concertband'} className="dropdown-item">Concert Band</Link>
+                                <Link to={'/symphonicband'} className="dropdown-item">Symphonic Band</Link>
+                                <Link to={'/windensemble'} className="dropdown-item">Wind Ensemble</Link>
+                                <Link to={'/jazzensemble'} className="dropdown-item">Jazz Ensemble</Link>
+                                <Link to={'/colorguard'} className="dropdown-item">Color Guard</Link>
+                                <Link to={'/marchingband'} className="dropdown-item">Marching Band</Link>
+                                <Link to={'/indoorpercussion'} className="dropdown-item">Indoor Percussion</Link>
+                                <a className="dropdown-item disabled">Middle School</a>
                             </div>
                         </a>
-                        <a className='nav-item'><Link class="nav-link">Info/Forms</Link></a>
-                        <a className='nav-item'><Link to={'/links'} class="nav-link">Links</Link></a>
-                        <a className='nav-item'><Link to={'/staff'} class="nav-link">Contact</Link></a>
+                        <a className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Info/Forms
+                            </a>
+                            <div className="dropdown-menu nav-dropdown py-0">
+                                <a className='dropdown-item' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Fall-Overview.pdf' download>2023 Marching Season Information</a>
+                                <a className='dropdown-item' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Important-Dates.pdf' download>MB/CG Important Dates</a>
+                                <a className='dropdown-item' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Budget-Info.pdf' download>MB/CG Budget Information</a>
+                                <a className='dropdown-item' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Financial-Commitment-Form.pdf' download>MB/CG Financial Commitment Form</a>
+                                <a className='dropdown-item' target='_blank' href='http://fchs-bands.web.app/2023-Member-Fee-Letter-and-Coupons.pdf' download>MB/CG Member Fee Letter</a>
+                                <a className='dropdown-item' target='_blank' href='http://fchs-bands.web.app/2023-Forms-Acknowledgement.pdf' download>MB/CG Acknoledgment Form</a>
+                                <a className='dropdown-item' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Health-Permission-Information-Form.pdf' download>MB/CG Health and Permission Forms</a>
+
+                            </div>
+                        </a>
+                        <a className='nav-item'><Link to={'/links'} className="nav-link">Links</Link></a>
+                        <a className='nav-item'><Link to={'/staff'} className="nav-link">Contact</Link></a>
                     </div>
                 </div>
             </nav>

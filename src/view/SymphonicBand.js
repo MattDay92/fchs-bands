@@ -1,27 +1,28 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import DrumLine from '../components/images/Drumline.jpeg'
-import Saxophones from '../components/images/Saxophones.jpeg'
-import Trumpets from '../components/images/Trumpets.jpeg'
+import Header from '../components/images/2018SpringConcertConcertandSymphonicBand.webp'
+
 
 export default function SymphonicBand() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={MarchingBandBanner} />
+                <img className='ensemble-banner' src={Header} />
                 <div className='ensemble-hero-box'>
-                    <h1 className='ensemble-hero-title'>Symphonic Band</h1>
+                    <h1 className='ensemble-hero-title-black'>Symphonic Band</h1>
                 </div>
             </div>
             <div className='row ensemble-info col-10'>
-                <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The 2022 BLUE REGIMENT Marching Band season was the most successful in Franklin's history placing
-                        6th at the ISSMA Scholastic Finals - just missing a TOP 5 placement!</h4>
-                    <p>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                        Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                        Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                        enim voluptate incididunt tempor sit do est non Lorem.
-                    </p>
+                <div className='col-12'>
+                    <h4 className='ensemble-info-paragraph'>The Franklin Community High School Symphonic Band is a non-auditioned, curricular ensemble 
+                    for woodwind and brass students who have some experience in high school band.  Students study a variety of 
+                    intermediate level music with several performances throughout the year.  This ensemble prepares students for participation 
+                    in wind ensemble.  </h4>
+                    <p className='ensemble-info-paragraph'>Performing with the Symphonic Band is a non-auditioned, percussion 
+                    ensemble for who have some experience in high school band.  These students study a variety of intermediate level, concert band and percussion music. </p>
+                    <p className='mb-5 ensemble-info-paragraph'>The Symphonic Band performs annually at the Fall Concert in September, the Holiday Concert in December, 
+                    the ISSMA Organizational Festival in April, and the Spring Concert in early May.  The Symphonic Band is under the 
+                    direction of Tim Kosch.  
+                </p>
                 </div>
                 {/* <div className='ensemble-column-1 mb-5'>
                     <div className='carousel d-flex justify-content-center'>
@@ -48,16 +49,8 @@ export default function SymphonicBand() {
                         </div>
                     </div>
                 </div> */}
-                <p className='col-12'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
-                <p className='col-12 mb-5'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
+                {/* <p className='col-12'></p> */}
+                
 
             </div>
             <div className='ensemble-awards d-flex align-items-center justify-content-center'>

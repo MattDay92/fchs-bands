@@ -1,7 +1,7 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/FCHS-Marching-Full.jpeg'
-import Marching1 from '../components/images/Percussion.jpg'
-import Marching2 from '../components/images/FCHS-Marching-Full-2.jpeg'
+import MarchingBandBanner from '../components/images/FCHS-Marching-Full.webp'
+import Marching1 from '../components/images/Trumpets.webp'
+import Marching2 from '../components/images/FCHS-Marching-Full-2.webp'
 
 export default function MarchingBand() {
     return (
@@ -14,16 +14,16 @@ export default function MarchingBand() {
             </div>
             <div className='row ensemble-info col-10'>
                 <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The 2022 BLUE REGIMENT Marching Band season was the most successful in Franklin's history placing
-                        6th at the ISSMA Scholastic Finals - just missing a TOP 5 placement!</h4>
-                    <p>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                        Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                        Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                        enim voluptate incididunt tempor sit do est non Lorem.
+                    <h4 className='mb-5 text-center'>The Franklin Community High School BLUE REGIMENT Marching Band is a seven-time 
+                    ISSMA Scholastic Class A Finalist - placing 6th in 2022 - their highest placement yet. </h4>
+                    <p>The Blue Regiment has seen improved competitive success over the past few years with its well-developed show designs. 
+                        The Blue Regiment competes in both the Indiana State School Music Association (ISSMA) and Bands of America (BOA) 
+                        competitions during the fall season as well as performing for all home Grizzly Cubs' football games and the annual 
+                        Franklin Fall Festival and Holiday Lighting parades.
                     </p>
                 </div>
                 <div className='ensemble-column-2 mb-5'>
-                    <div className='carousel d-flex justify-content-center'>
+                    <div className='carousel carousel-ensemble d-flex justify-content-center'>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
@@ -45,16 +45,12 @@ export default function MarchingBand() {
                         </div>
                     </div>
                 </div>
-                <p className='col-12'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
-                <p className='col-12 mb-5'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
+                <div className='ensemble-btns'>
+                    <a className='btn' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Fall-Overview.pdf' download>2023 Season Information</a>
+                    <a className='btn' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Important-Dates.pdf' download>Important Dates</a>
+                    <a className='btn' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Budget-Info.pdf' download>Budget Information</a>
+                </div>
+                
 
             </div>
             <div className='ensemble-awards d-flex align-items-center justify-content-center'>

@@ -1,26 +1,24 @@
 import React from 'react'
-import MarchingBandBanner from '../components/images/MarchingBand.jpeg'
-import DrumLine from '../components/images/Drumline.jpeg'
-import Saxophones from '../components/images/Saxophones.jpeg'
-import Trumpets from '../components/images/Trumpets.jpeg'
+import Header from '../components/images/2018SpringConcertJazzEnsemble.webp'
 
 export default function JazzEnsemble() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={MarchingBandBanner} />
+                <img className='ensemble-banner' src={Header} />
                 <div className='ensemble-hero-box'>
-                    <h1 className='ensemble-hero-title'>Jazz Ensemble</h1>
+                    <h1 className='ensemble-hero-title-black'>Jazz Ensemble</h1>
                 </div>
             </div>
             <div className='row ensemble-info col-10'>
-                <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The 2022 BLUE REGIMENT Marching Band season was the most successful in Franklin's history placing
-                        6th at the ISSMA Scholastic Finals - just missing a TOP 5 placement!</h4>
-                    <p>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                        Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                        Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                        enim voluptate incididunt tempor sit do est non Lorem.
+                <div className='col-12'>
+                    <h4 className='ensemble-info-paragraph'>The Franklin Community High School Jazz Ensemble is an auditioned, curricular
+                        ensemble that studies a variety of jazz music, ranging from traditional swing to fusion.  This band has several performances
+                        throughout the year.  Students in this ensemble have a high level of facility on their instrument as this music requires
+                        more technique and independence.  </h4>
+                    <p className='mb-5 ensemble-info-paragraph'>The Jazz Ensemble performs annually at the Fall Concert in September, the Holiday Concert in December,
+                        the ISSMA Jazz Festival in April, and the Spring Concert in early May.  The Jazz Ensemble is under the
+                        direction of Tim Kosch.
                     </p>
                 </div>
                 {/* <div className='ensemble-column-1 mb-5'>
@@ -48,18 +46,19 @@ export default function JazzEnsemble() {
                         </div>
                     </div>
                 </div> */}
-                <p className='col-12'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
-                <p className='col-12 mb-5'>Adipisicing sit id labore velit. Ipsum qui esse ipsum dolore nisi dolor eu. Sit ex velit sit velit
-                    Lorem labore aute non. Cupidatat veniam fugiat cupidatat veniam ullamco veniam exercitation.
-                    Commodo do aliqua magna labore consectetur reprehenderit. Esse commodo consectetur sint enim
-                    enim voluptate incididunt tempor sit do est non Lorem.
-                </p>
 
+            
             </div>
+            <div className='ensemble-awards d-flex align-items-center justify-content-center'>
+                    <div className='col-10 m-auto'>
+                        <div className='text-center'>
+                            <h3>ISSMA Jazz Festival - <span className='gold-rating'>Gold Rating</span></h3>
+                            <p>2023, 2022, 2021, 2020<span className='gold-rating'>*</span>, 2019, 2018, 2017, 2016, 2014, 2013, 2012, 2011, 2010, 2009, 2008</p>
+                            <h5 className='mt-5'><span className='gold-rating'>*Gold Rating with Distinction</span></h5>
+                        </div>
+
+                    </div>
+                </div>
         </div>
     )
 }

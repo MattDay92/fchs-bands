@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../components/images/Logo.png'
-import DrumMajor from '../components/images/DrumMajor.png'
-import Background from '../components/images/Band-Background.png'
+import Logo from '../components/images/Logo.webp'
+import DrumMajor from '../components/images/DrumMajor.webp'
+import Background from '../components/images/FCHS-Band-Banner.webp'
 import Freddys from '../components/images/Freddys-Logo.webp'
 import Anytime from '../components/images/Anytime-Fitness-logo.webp'
 import Cunningham from '../components/images/Cunningham-Restaurant-Group.webp'
 import Locke from '../components/images/Locke-Business-Ad.webp'
 import Pax from '../components/images/PAX.webp'
+import Carousel1 from '../components/images/Marching-Home-Carousel.webp'
+import Carousel2 from '../components/images/FCHS-Marching-Full-2-Home-Carousel.webp'
+import Carousel3 from '../components/images/FCIP-WGI-Home-Carousel.webp'
 
 export default function Home() {
     return (
@@ -28,7 +31,7 @@ export default function Home() {
                     <h5 className='my-2'>Calendar</h5>
                 </div>
                 <div className='nav-icon-div col-4'>
-                    <a className='nav-icon'><i className="fa-regular fa-flag"></i></a>
+                    <Link to={'/marchingband'} className='nav-icon'><i className="fa-regular fa-flag"></i></Link>
                     <h5 className='my-2'>Marching Band Info</h5>
                 </div>
                 <div className='nav-icon-div col-4'>
@@ -48,7 +51,7 @@ export default function Home() {
                     <h5 className='my-2'>Event Volunteer Sign-Up</h5>
                 </div>
                 <div className='nav-icon-div col'>
-                    <a className='nav-icon' href='http://localhost:3000/2023-2024-Sponsorship-Form.pdf' download><i class="fa-solid fa-drum"></i></a>
+                    <a className='nav-icon' target='_blank' href='http://fchs-bands.web.app/2023-2024-Sponsorship-Form.pdf' download><i class="fa-solid fa-dollar-sign"></i></a>
                     <h5 className='my-2'>Sponsorship Info</h5>
                 </div>
                 <div className='nav-icon-div col'>
@@ -56,14 +59,34 @@ export default function Home() {
                     <h5 className='my-2'>Parents - Get Involved!</h5>
                 </div>
             </div>
-            {/* <div id='students-of-the-month' className='students-of-the-month col-10 m-auto text-center'>
-                <h1 className='my-5'>Congratulations to Our Students of the Month!</h1>
-                <div className='row d-flex justify-content-around align-items-center' >
-                    <div className='featured-student'></div>
-                    <div className='featured-student'></div>
-                    <div className='featured-student'></div>
+            <div id='home-photos' className='home-photos'>
+                <div id="carouselExampleIndicators" class="carousel carousel-home slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src={Carousel1} class="carousel-home-img d-block" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src={Carousel2} class="carousel-home-img d-block" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src={Carousel3} class="carousel-home-img d-block" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div> */}
+            </div>
             <div id='join' className='join text-center d-flex align-items-center'>
                 <div className='col-10 m-auto'>
                     <h1>Are you interested in joining the high school concert bands, jazz band,
@@ -77,20 +100,20 @@ export default function Home() {
                 <h1 className='sponsor-heading pt-3'>Thank You to Our 2023-2024 Sponsors!</h1>
                 <div className='sponsors-1 d-flex align-items-center'>
                     <div className='m-auto col-10'>
-                        <h2 className='my-5'>Maestro - $1500+</h2>
+                        <h2 className='sponsor-category'>Maestro - $1500+</h2>
                         <div className='all-sponsors'>
-                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Anytime} /></div>
-                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Pax} /></div>
-                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Locke} /></div>
-                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Freddys} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Anytime} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Pax} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Locke} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Freddys} /></div>
                         </div>
                     </div>
                 </div>
                 <div className='sponsors-2 d-flex align-items-center'>
                     <div className='m-auto col-10'>
-                        <h2 className='my-5'>Drum Major - $500+</h2>
+                        <h2 className='sponsor-category'>Drum Major - $500+</h2>
                         <div className='all-sponsors'>
-                            <div className='my-auto sponsor-div'><img className='sponsor-img' src={Cunningham} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Cunningham} /></div>
                         </div>
                     </div>
                 </div>
