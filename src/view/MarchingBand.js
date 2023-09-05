@@ -7,7 +7,7 @@ export default function MarchingBand() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner-done' src={MarchingBandBanner} />
+                <img className='ensemble-banner-done' alt='FCHS Blue Regiment Marching Band' src={MarchingBandBanner} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title'>Blue Regiment Marching Band</h1>
                 </div>
@@ -27,10 +27,10 @@ export default function MarchingBand() {
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={Marching1} className="d-block w-100" alt="..." />
+                                    <img src={Marching1} className="d-block w-100" alt="FCHS Marching Trumpets" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Marching2} className="d-block w-100" alt="..." />
+                                    <img src={Marching2} className="d-block w-100" alt="FCHS Marching Band" />
                                 </div>
                                 
                             </div>

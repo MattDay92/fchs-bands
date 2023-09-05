@@ -6,7 +6,7 @@ export default function WindEnsemble() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={Header} />
+                <img className='ensemble-banner' alt='FCHS Wind Ensemble' src={Header} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title-black'>Wind Ensemble</h1>
                 </div>

@@ -16,7 +16,7 @@ export default function IndoorPercussion() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner-done' src={Percussion} />
+                <img className='ensemble-banner-done' alt='FCHS Percussion Truck' src={Percussion} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title'>Percussion</h1>
                 </div>
@@ -35,16 +35,16 @@ export default function IndoorPercussion() {
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={Percussion1} className="d-block w-100" alt="..." />
+                                    <img src={Percussion1} alt='FCHS Percussion' className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Percussion2} className="d-block w-100" alt="..." />
+                                    <img src={Percussion2} alt='FCHS Percussion Snare Drummer' className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Percussion3} className="d-block w-100" alt="..." />
+                                    <img src={Percussion3} alt='FCHS Percussion Snare Drums' className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Percussion4} className="d-block w-100" alt="..." />
+                                    <img src={Percussion4} alt='FCHS Percussion Bass Drums' className="d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -60,8 +60,8 @@ export default function IndoorPercussion() {
                 </div>
             </div>
             <div className='ensemble-sponsors'>
-                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' src={Finalist1} /></div>
-                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' src={Finalist2} /></div>
+                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist1} /></div>
+                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist2} /></div>
             </div>
             <div className='ensemble-sponsors col-10 text-center'>
                 <h4 className='my-5'>Franklin Community Percussion proudly uses Innovative Percussion sticks and mallets, Pearl Drums, Adams Percussion, Remo Drumheads, and Ziljdian Cymbal products.</h4>

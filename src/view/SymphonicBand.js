@@ -6,7 +6,7 @@ export default function SymphonicBand() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={Header} />
+                <img className='ensemble-banner' alt='FCHS Symphonic Band' src={Header} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title-black'>Symphonic Band</h1>
                 </div>

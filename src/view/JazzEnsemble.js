@@ -5,7 +5,7 @@ export default function JazzEnsemble() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner' src={Header} />
+                <img className='ensemble-banner' alt='FCHS Jazz Ensemble' src={Header} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title-black'>Jazz Ensemble</h1>
                 </div>

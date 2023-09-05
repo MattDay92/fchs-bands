@@ -9,7 +9,7 @@ export default function ColorGuard() {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
-                <img className='ensemble-banner-done' src={MarchingBandBanner} />
+                <img className='ensemble-banner-done' alt='FCHS Marching Band and Color Guard on the field' src={MarchingBandBanner} />
                 <div className='ensemble-hero-box'>
                     <h1 className='ensemble-hero-title'>Color Guard</h1>
                 </div>
@@ -27,16 +27,16 @@ export default function ColorGuard() {
                         <div id="carouselGuard" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={Guard1} className="carousel-ensemble-img d-block w-100" alt="..." />
+                                    <img src={Guard1} alt='FCHS Color Guard' className="carousel-ensemble-img d-block w-100" alt="..." />
                                 </div>
 
                                 <div className="carousel-item">
-                                    <img src={Guard2} className="carousel-ensemble-img d-block w-100" alt="..." />
+                                    <img src={Guard2} alt='FCHS Color Guard' className="carousel-ensemble-img d-block w-100" alt="..." />
                                 </div>
 
 
                                 <div className="carousel-item">
-                                    <img src={Guard3} className="carousel-ensemble-img d-block w-100" alt="..." />
+                                    <img src={Guard3} alt='FCHS Color Guard' className="carousel-ensemble-img d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselGuard" data-bs-slide="prev">

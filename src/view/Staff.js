@@ -11,14 +11,14 @@ export default function Staff() {
     return (
         <div className='main'>
             <div className='row staff-hero-container'>
-                <img className='banner' src={Banner} />
+                <img className='banner' alt='FCHS Bands Background Image' src={Banner} />
                 <div className='ensemble-hero-box'>
                     <h1 className='staff-hero-title'>Contact</h1>
                 </div>
             </div>
             <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
                 <div className='headshot-div'>
-                    <img className='headshot-staff2' src={Tim} />
+                    <img className='headshot-staff2' alt='Tim Kosch - Director of Bands' src={Tim} />
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Tim Kosch</h2>
@@ -30,7 +30,7 @@ export default function Staff() {
             </div>
             <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>
                 <div className='headshot-div'>
-                    <img className='headshot-staff' src={Jason} />
+                    <img className='headshot-staff' alt='Jason Hammond-Wood - Band Director' src={Jason} />
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Jason Hammond-Wood</h2>
@@ -42,7 +42,7 @@ export default function Staff() {
             </div>
             <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
             <div className='headshot-div'>
-                    <img className='headshot-staff2' src={Hannah} />
+                    <img className='headshot-staff2' alt='Hannah Para - Color Guard Director' src={Hannah} />
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Hannah Para</h2>
