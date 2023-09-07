@@ -560,6 +560,59 @@ iframe {
   }
 }
 
+/* --------------------STORE------------------------- */
+
+.store-info{
+  display: flex;
+  align-items: center;
+  min-height: 30vh;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  color: rgb(21,61,167);
+}
+
+.store-1{
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  min-height: fit-content;
+  background: rgb(21,61,167);
+  color: white;
+}
+
+.store-2{
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  min-height: fit-content;
+  background: white;
+  color: rgb(21,61,167);
+}
+
+.store-img-container{
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.store-img-div{
+  width: 20vw;
+  max-height: 60vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  overflow: scroll;
+}
+
+.store-img{
+  width: 100%;
+}
+
 /* --------------------GET INVOLVED------------------- */
 
 .getinvolved-gold{
