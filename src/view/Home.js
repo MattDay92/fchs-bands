@@ -11,6 +11,7 @@ import Pax from '../components/images/PAX.webp'
 import Carousel1 from '../components/images/Marching-Home-Carousel.webp'
 import Carousel2 from '../components/images/FCHS-Marching-Full-2-Home-Carousel.webp'
 import Carousel3 from '../components/images/FCIP-WGI-Home-Carousel.webp'
+import FeaturedIMG from '../components/images/Yardsign.jpg'
 
 export default function Home() {
     return (
@@ -47,7 +48,7 @@ export default function Home() {
                     <h5 className='my-2'>Volunteer Background Check</h5>
                 </div>
                 <div className='nav-icon-div col'>
-                    <a className='nav-icon'><i class="fa-solid fa-microphone"></i></a>
+                    <a className='nav-icon' href='https://www.signupgenius.com/go/4090F4CABA92DA7F85-competition4' target='_blank'><i class="fa-solid fa-microphone"></i></a>
                     <h5 className='my-2'>Event Volunteer Sign-Up</h5>
                 </div>
                 <div className='nav-icon-div col'>
@@ -57,6 +58,20 @@ export default function Home() {
                 <div className='nav-icon-div col'>
                     <Link to={'/getinvolved'} className='nav-icon'><i class="fa-solid fa-drum"></i></Link>
                     <h5 className='my-2'>Parents - Get Involved!</h5>
+                </div>
+            </div>
+            <div id='featured' className='featured text-center d-flex align-items-center'>
+                <div className='featured-content'>
+                        <div className='featured-col-left'>
+                            <img className='w-100' src={FeaturedIMG} />
+                            <a className='btn my-3' href='https://forms.gle/weSPdWLwiqxag9gp9' target='_blank'>Order Now!</a>
+                        </div>
+                        <div className='featured-col-right'>
+                            <p>Are you ready to take your school spirit to the next level?  We've got just the thing!  Introducing our eye-catching yard signs - a fantastic way to showcase your support for the Franklin Community Schools Band program.
+                                Imagine the streets of Franklin adorned with these vibrant yard signs, featuring your choice of a treble clef or a color guard figure. Let's come together as a community and turn our town into a sea of band pride!
+                                Every purchase contributes to a noble cause. The proceeds from each band yard sign purchase will directly support the acquisition of new band instruments for our talented musicians. </p>
+                            <h4>Don't miss this chance to show your support, rally your neighbors, and make a lasting impact on our beloved band program. </h4>
+                        </div>
                 </div>
             </div>
             <div id='home-photos' className='home-photos'>

@@ -8,7 +8,7 @@ export default function GetInvolved() {
             <div id='hero' className='row ensemble-hero-container'>
                 <img className='ensemble-banner' src={MarchingBandBanner} />
                 <div className='ensemble-hero-box'>
-                    <h1 className='ensemble-hero-title'>Volunteer Opportunities</h1>
+                    <h1 className='ensemble-hero-title-black'>Volunteer Opportunities</h1>
                 </div>
             </div>
             <div className='col-10 m-auto my-5'>

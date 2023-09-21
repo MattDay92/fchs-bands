@@ -8,11 +8,11 @@ export default function HeartShapedBoxInfo() {
 
     return (
         <div className='container'>
-            <button className="btn bio-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJason" aria-controls="offcanvasExample">
+            <button className="btn bio-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHSB" aria-controls="offcanvasExample">
                 More Info
             </button>
 
-            <div className="offcanvas offcanvas-top" tabindex="-1" id="offcanvasJason" aria-labelledby="offcanvasExampleLabel">
+            <div className="offcanvas offcanvas-top" tabindex="-1" id="offcanvasHSB" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header d-flex justify-content-center">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Heart Shaped Box</h5>
                 </div>

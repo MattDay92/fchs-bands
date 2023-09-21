@@ -175,9 +175,27 @@ nav a{
   height: 75vh;
 }
 
-#join{
+#join, #featured{
   min-height: 60vh;
   background: white;
+}
+
+.featured-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.featured-col-left{
+  width: 20vw;
+}
+
+.featured-col-right{
+  width: 50vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .join-link{
@@ -305,6 +323,15 @@ nav a{
     font-size: 150% !important;
   }
 
+  .featured-col-left{
+    width: 30vw;
+    margin-right: 5vw;
+  }
+
+  .featured-col-right{
+    width: 50vw;
+    margin-left: 5vw;
+  }
 
   p {
       font-size: medium;
@@ -345,6 +372,22 @@ nav a{
   .nav-icon{
     width: 80px;
     height: 80px;
+  }
+
+  .featured-content{
+    display: block;
+  }
+
+  .featured-col-left{
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  .featured-col-right{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5vh;
   }
 
   .carousel-home{
@@ -607,6 +650,17 @@ iframe {
   margin-top: 2vh;
   margin-bottom: 2vh;
   overflow: scroll;
+}
+
+.store-img-div-grow{
+  position: fixed;
+  width: 100vw;
+  max-height: 100vh;
+  overflow: scroll;
+  margin: auto;
+  z-index: 100;
+  top: 0;
+  border: 5vw solid rgba(0, 0, 0, 0.7);
 }
 
 .store-img{

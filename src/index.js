@@ -4,6 +4,8 @@ import App from './App';
 import './App.css'
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getStorage, ref } from "firebase/storage";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyCcl8cyPYl_kuWJwb_jckqfXwbrqnCRSPQ",
@@ -17,6 +19,8 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+export const storage = getStorage(app)
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

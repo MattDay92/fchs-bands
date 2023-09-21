@@ -17,8 +17,30 @@ import GetInvolved from './view/GetInvolved'
 import Links from './view/Links'
 import Admin from './view/Admin'
 import Store from './view/Store'
+import { getStorage, ref, uploadBytes, uploadBytesResumable } from 'firebase/storage'
 
 export default function App() {
+  const storage = getStorage()
+
+  const filesRef = ref(storage, 'files/test.pdf')
+
+  const metadata = {
+    contentType: 'application/pdf'
+  };
+
+  const uploadFile = (event) => {
+    event.preventDefault()
+    const file = new FileReader()
+
+
+    // uploadBytes(filesRef, file, metadata).then((snapshot) => {
+    //   console.log('Uploaded file!')
+    // })
+  }
+
+
+
+
   return (
     <>
       <BrowserRouter>
@@ -37,7 +59,7 @@ export default function App() {
           <Route path={'/calendar'} element={<Calendar />} />
           <Route path={'/getinvolved'} element={<GetInvolved />} />
           <Route path={'/links'} element={<Links />} />
-          <Route path={'/admin'} element={<Admin />} />
+          <Route path={'/admin'} element={<Admin uploadFile={uploadFile} />} />
           <Route path={'/buyourstuff'} element={<Store />} />
         </Routes>
         <Footer />
