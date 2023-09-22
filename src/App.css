@@ -924,6 +924,7 @@ iframe {
 @media (max-width: 425px) {
   
   .footer-col-1, .footer-col-2{
+    width: 40vw;
     font-size: 80%;
     margin: auto;
   }

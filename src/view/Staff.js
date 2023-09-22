@@ -58,22 +58,31 @@ export default function Staff() {
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>President</h3>
                             <p>Ms. Pam Dillow</p>
+                            <p>president@franklinbands.org</p>
                         </div>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>President-Elect</h3>
                             <p>Mrs. Brandi Koeppe</p>
+                            <p>presidentelect@franklinbands.org</p>
+
                         </div>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>Past President</h3>
                             <p>Mrs. Brenna Joyce</p>
+                            <p>pastpresident@franklinbands.org</p>
+
                         </div>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>Secretary</h3>
                             <p>Mrs. Yolanda Burgener</p>
+                            <p>secretary@franklinbands.org</p>
+
                         </div>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>Treasurer</h3>
                             <p>Mrs. Kerri Hoffman</p>
+                            <p>treasurer@franklinbands.org</p>
+
                         </div>
 
                     </div>
