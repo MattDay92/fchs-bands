@@ -415,8 +415,9 @@ nav a{
   .sponsor-category{
     margin-top: 10vh;
   }
+  
 
-  h3 {
+  h2, h3 {
       font-size: 1em;
   }
 
@@ -558,11 +559,11 @@ nav a{
 
 @media (max-width: 425px) {
   .ensemble-hero-title{
-    font-size: 8vw;
+    font-size: 12vw;
   }
 
   .ensemble-hero-title-black{
-    font-size: 8vw;
+    font-size: 12vw;
   }
 
   .ensemble-column-2{
@@ -607,10 +608,11 @@ iframe {
 
 .store-info{
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: auto;
   min-height: 30vh;
   width: 80vw;
-  margin: auto;
   text-align: center;
   color: rgb(21,61,167);
 }
@@ -654,17 +656,32 @@ iframe {
 
 .store-img-div-grow{
   position: fixed;
+  display: flex;
   width: 100vw;
-  max-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
   overflow: scroll;
   margin: auto;
   z-index: 100;
   top: 0;
-  border: 5vw solid rgba(0, 0, 0, 0.7);
+  border: 5vw solid rgba(0, 0, 0, 0);
 }
 
 .store-img{
   width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .store-img-div{
+    width: 35vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .store-img-div{
+    width: 80vw;
+  }
 }
 
 /* --------------------GET INVOLVED------------------- */

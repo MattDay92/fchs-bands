@@ -32,8 +32,16 @@ import Salem4 from '../components/images/store/Salem4.png'
 import Salem5 from '../components/images/store/Salem5.JPEG'
 import Salem6 from '../components/images/store/Salem6.jpeg'
 import SalemWitchTrialsInfo from '../components/SalemWitchTrialsInfo'
-
-
+import SeatAtTheTable1 from '../components/images/store/SeatAtTheTable1.png'
+import SeatAtTheTable2 from '../components/images/store/SeatAtTheTable2.png'
+import SeatAtTheTable4 from '../components/images/store/SeatAtTheTable4.png'
+import Serpentine1 from '../components/images/store/Serpentine1.JPG'
+import Serpentine2 from '../components/images/store/Serpentine2.jpeg'
+import Serpentine3 from '../components/images/store/Serpentine3.jpeg'
+import Serpentine4 from '../components/images/store/Serpentine4.JPG'
+import NightIsLong1 from '../components/images/store/NightisLong1.JPG'
+import NightIsLong2 from '../components/images/store/NightisLong2.JPG'
+import WoodMetal1 from '../components/images/store/WoodMetal.JPG'
 
 
 
@@ -152,9 +160,39 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-28' src={Salem4} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-29' src={Salem5} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-30' src={Salem6} /></div>
-
                 </div>
                 <SalemWitchTrialsInfo />
+            </div>
+            <div className='store-1'>
+                <h2>Seat at the Table</h2>
+                <div className='store-img-container'>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-31' src={SeatAtTheTable1} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-32' src={SeatAtTheTable2} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-34' src={SeatAtTheTable4} /></div>
+
+                </div>
+            </div>
+            <div className='store-2'>
+                <h2>Serpentine</h2>
+                <div className='store-img-container'>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-35' src={Serpentine1} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-36' src={Serpentine2} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-37' src={Serpentine3} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-38' src={Serpentine4} /></div>
+                </div>
+            </div>
+            <div className='store-1'>
+                <h2>When the Night is Long</h2>
+                <div className='store-img-container'>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-39' src={NightIsLong1} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-40' src={NightIsLong2} /></div>
+                </div>
+            </div>
+            <div className='store-2'>
+                <h2>Wood & Metal</h2>
+                <div className='store-img-container'>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-41' src={WoodMetal1} /></div>
+                </div>
             </div>
         </div>
     )
