@@ -1,42 +1,86 @@
-import React, {useEffect, useState} from 'react'
-import { storage } from '../index'
-import { getStorage, ref, uploadBytes, uploadBytesResumable } from 'firebase/storage'
+import React, { useEffect, useState } from 'react'
+import { storage, filesRef } from '../index'
+import { getStorage, ref, uploadBytes, uploadBytesResumable, uploadString, getDownloadURL } from 'firebase/storage'
 
 
-export default function Admin({ uploadFile }) {
-    const [fileUpload, setFileUpload] = useState(null)
+export default function Admin({ storage }) {
+    const [fileUpload, setFileUpload] = useState('')
+    const [fileUploadName, setFileUploadName] = useState('')
+    const [fileDownload, setFileDownload] = useState('')
 
     const handleFileChange = (event) => {
         const selectedFile = event.target.files[0]
-        setFileUpload(selectedFile)
+
+        let reader = new FileReader();
+
+        reader.readAsDataURL(selectedFile)
+
+        reader.onload = () => {
+            console.log(reader.result);
+            setFileUpload(reader.result)
+            setFileUploadName(selectedFile.name)
+        }
+
+        reader.onerror = () => {
+            console.log(reader.error)
+        }
     }
 
     const handleUpload = () => {
-        if (fileUpload){
-            const storage = getStorage()
+        // const filesRef = ref(storage, `files/${fileUploadName}`)
+        const filesRef = ref(storage, `files/test`)
 
-            const filesRef = ref(storage, 'files/test.pdf')
-
-            const metadata = {
-                contentType: 'application/pdf'
-            };
-
-            filesRef.put(fileUpload).then(() => {
-                console.log('File Uploaded!');
+        if (fileUpload) {
+            uploadString(filesRef, fileUpload, 'data_url').then((snapshot) => {
+                console.log('Uploaded a file!');
             });
         }
     }
+
+    useEffect(() => {
+        handleUpload()
+    }, [fileUpload])
+
+
+    const downloadFile = () => {
+        const gsReference = ref(storage, 'gs://fchs-bands.appspot.com/files/test')
+
+        getDownloadURL(gsReference)
+            .then((url) => {
+                const xhr = new XMLHttpRequest();
+                xhr.onload = (event) => {
+                    const link = xhr.responseURL
+                    setFileDownload(link)
+                    const img = document.getElementById('testIMG')
+                    img.setAttribute('src', link)
+                };
+                xhr.open('GET', url);
+                xhr.send()
+            })
+            .catch((error) => {
+                console.log('ERROR Downloading File')
+            })
+    }
+
+    useEffect(() => {
+        downloadFile()
+    }, [])
 
     return (
         <div className='main admin'>
             <h1>This is the Admin Page</h1>
             <div className='itinerary-upload'>
-                <form onSubmit={uploadFile}>
+                <form>
                     <h3>Itineraries</h3>
                     <input type='file' onChange={handleFileChange} />
                     <button onClick={handleUpload}>Upload</button>
                 </form>
             </div>
+            <div>
+                <btn onClick={downloadFile} className='btn'>DOWNLOAD</btn>
+            </div>
+
+            <img src={fileDownload} id='testIMG'/>
         </div>
     )
 }

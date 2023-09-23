@@ -19,13 +19,13 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-export const storage = getStorage(app)
+const storage = getStorage(app)
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App storage={storage} />
   </React.StrictMode>
 );
 
