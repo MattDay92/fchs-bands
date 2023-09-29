@@ -23,7 +23,7 @@ export default function App({storage}) {
   return (
     <>
       <BrowserRouter>
-        <Nav />
+        <Nav storage={storage} />
         <Routes>
           <Route path={'/'} element={<Home />} />
           <Route path={'/marchingband'} element={<MarchingBand />} />
@@ -38,8 +38,8 @@ export default function App({storage}) {
           <Route path={'/calendar'} element={<Calendar />} />
           <Route path={'/getinvolved'} element={<GetInvolved />} />
           <Route path={'/links'} element={<Links />} />
-          <Route path={'/admin'} element={<Admin storage={storage} />} />
-          <Route path={'/buyourstuff'} element={<Store />} />
+          <Route path={'/admin12345'} element={<Admin storage={storage} />} />
+          <Route path={'/equipmentsales'} element={<Store />} />
         </Routes>
         <Footer />
       </BrowserRouter>

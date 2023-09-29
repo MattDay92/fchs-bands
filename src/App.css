@@ -941,10 +941,38 @@ iframe {
   text-align: center;
 }
 
-.itinerary-upload{
+.admin-hero-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100%;
   margin: auto;
+  padding: 0;
+}
+
+.admin-hero-title{
+  font-size: 5vw;
+}
+
+.upload{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.admin-col{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 5vh;
 }
 
 

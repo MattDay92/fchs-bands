@@ -42,6 +42,9 @@ import Serpentine4 from '../components/images/store/Serpentine4.JPG'
 import NightIsLong1 from '../components/images/store/NightisLong1.JPG'
 import NightIsLong2 from '../components/images/store/NightisLong2.JPG'
 import WoodMetal1 from '../components/images/store/WoodMetal.JPG'
+import SeatAtTheTableInfo from '../components/SeatAtTheTableInfo'
+import NewsiesInfo from '../components/NewsiesInfo'
+import MulticoloredUniformInfo from '../components/MultiColoredUniformInfo'
 
 
 
@@ -91,21 +94,15 @@ export default function Store() {
             <div className='store-info'>
                 <h2>Interested in purchasing any of our used materials?  Email hammondwoodj@franklinschools.org for more information!</h2>
             </div>
+            
             <div className='store-1'>
-                <h2>Bloom Tarp</h2>
-                <div className='store-img-container'>
-                    <div onClick={getID} className='store-img-div'><img id='store-img-1' className='store-img' src={Bloom1} /></div>
-                    <div onClick={getID} className='store-img-div'><img id='store-img-2' className='store-img' src={Bloom2} /></div>
-                </div>
-            </div>
-            <div className='store-2'>
                 <h2>Deja Vu Costume</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-3' src={DejaVu1} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-4' src={DejaVu2} /></div>
                 </div>
             </div>
-            <div className='store-1'>
+            <div className='store-2'>
                 <h2>Heart-Shaped Box</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-5' src={HSB1} /></div>
@@ -117,7 +114,7 @@ export default function Store() {
                 </div>
                 <HeartShapedBoxInfo />
             </div>
-            <div className='store-2'>
+            <div className='store-1'>
                 <h2>James Bond</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-11' src={Bond2} /></div>
@@ -127,15 +124,16 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-15' src={Bond1} /></div>
                 </div>
             </div>
-            <div className='store-1'>
+            <div className='store-2'>
                 <h2>Multi-Colored Uniforms</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-16' src={MultiColored1} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-17' src={MultiColored2} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-18' src={MultiColored3} /></div> 
                 </div>
+                <MulticoloredUniformInfo />
             </div>
-            <div className='store-2'>
+            <div className='store-1'>
                 <h2>New York, New York</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-19' src={NYNY1} /></div>
@@ -144,14 +142,15 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-22' src={NYNY4} /></div>
                 </div>
             </div>
-            <div className='store-1'>
+            <div className='store-2'>
                 <h2>Newsies Style Uniforms</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-23' src={Newsies1} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-24' src={Newsies2} /></div>
                 </div>
+                <NewsiesInfo />
             </div>
-            <div className='store-2'>
+            <div className='store-1'>
                 <h2>Salem Witch Trials</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-25' src={Salem1} /></div>
@@ -163,7 +162,7 @@ export default function Store() {
                 </div>
                 <SalemWitchTrialsInfo />
             </div>
-            <div className='store-1'>
+            <div className='store-2'>
                 <h2>Seat at the Table</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-31' src={SeatAtTheTable1} /></div>
@@ -171,8 +170,9 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-34' src={SeatAtTheTable4} /></div>
 
                 </div>
+                <SeatAtTheTableInfo />
             </div>
-            <div className='store-2'>
+            <div className='store-1'>
                 <h2>Serpentine</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-35' src={Serpentine1} /></div>
@@ -181,14 +181,14 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-38' src={Serpentine4} /></div>
                 </div>
             </div>
-            <div className='store-1'>
+            <div className='store-2'>
                 <h2>When the Night is Long</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-39' src={NightIsLong1} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-40' src={NightIsLong2} /></div>
                 </div>
             </div>
-            <div className='store-2'>
+            <div className='store-1'>
                 <h2>Wood & Metal</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-41' src={WoodMetal1} /></div>
