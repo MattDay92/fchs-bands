@@ -46,9 +46,9 @@ export default function MarchingBand() {
                     </div>
                 </div>
                 <div className='ensemble-btns'>
-                    <a className='btn' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Fall-Overview.pdf' download>2023 Season Information</a>
-                    <a className='btn' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Important-Dates.pdf' download>Important Dates</a>
-                    <a className='btn' target='_blank' href='http://fchs-bands.web.app/2023-Marching-Budget-Info.pdf' download>Budget Information</a>
+                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8' download>2023 Season Information</a>
+                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f' download>Important Dates</a>
+                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862' download>Budget Information</a>
                 </div>
                 
 

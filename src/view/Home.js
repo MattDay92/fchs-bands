@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../components/images/Logo.webp'
 import DrumMajor from '../components/images/DrumMajor.webp'
@@ -12,8 +12,11 @@ import Carousel1 from '../components/images/Marching-Home-Carousel.webp'
 import Carousel2 from '../components/images/FCHS-Marching-Full-2-Home-Carousel.webp'
 import Carousel3 from '../components/images/FCIP-WGI-Home-Carousel.webp'
 import FeaturedIMG from '../components/images/Yardsign.jpg'
+import { getDatabase, onValue, ref } from 'firebase/database'
 
-export default function Home() {
+export default function Home({signUpLink, getSignUpLink}) {
+    
+
     return (
         <>
             <div id='hero' className='row home-hero hero-container'>
@@ -48,11 +51,11 @@ export default function Home() {
                     <h5 className='my-2'>Volunteer Background Check</h5>
                 </div>
                 <div className='nav-icon-div col'>
-                    <a className='nav-icon' href='https://www.signupgenius.com/go/4090F4CABA92DA7F85-competition4' target='_blank'><i class="fa-solid fa-microphone"></i></a>
+                    <a className='nav-icon' href={signUpLink} target='_blank'><i class="fa-solid fa-microphone"></i></a>
                     <h5 className='my-2'>Event Volunteer Sign-Up</h5>
                 </div>
                 <div className='nav-icon-div col'>
-                    <a className='nav-icon' target='_blank' href='http://fchs-bands.web.app/2023-2024-Sponsorship-Form.pdf' download><i class="fa-solid fa-dollar-sign"></i></a>
+                    <a className='nav-icon' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FSponsorship?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda' download><i class="fa-solid fa-dollar-sign"></i></a>
                     <h5 className='my-2'>Sponsorship Info</h5>
                 </div>
                 <div className='nav-icon-div col'>
@@ -60,7 +63,7 @@ export default function Home() {
                     <h5 className='my-2'>Parents - Get Involved!</h5>
                 </div>
             </div>
-            <div id='featured' className='featured text-center d-flex align-items-center'>
+            {/* <div id='featured' className='featured text-center d-flex align-items-center'>
                 <div className='featured-content'>
                         <div className='featured-col-left'>
                             <img className='w-100' src={FeaturedIMG} />
@@ -73,7 +76,15 @@ export default function Home() {
                             <h4>Don't miss this chance to show your support, rally your neighbors, and make a lasting impact on our beloved band program. </h4>
                         </div>
                 </div>
-            </div>
+            </div> */}
+            {/* <div id='students-of-the-month' className='students-of-the-month'>
+                <h2 className='home-section-heading my-5'>Congratulations to Our Students of the Month!</h2>
+                <div className='row student-imgs' >
+                    <div className='featured-student'><img className='featured-student-img' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FStudentOfTheMonth1?alt=media&token=28d8003d-c0b8-4433-9533-6671006c119d&_gl=1*o6p08p*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjE3OTAzNC45LjEuMTY5NjE3OTgxOS41NS4wLjA.'/></div>
+                    <div className='featured-student'><img className='featured-student-img' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FStudentOfTheMonth2?alt=media&token=68e8a44e-5310-42af-88be-44f43fee4198&_gl=1*aoykim*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjE3OTAzNC45LjEuMTY5NjE3OTgzMy40MS4wLjA.' /></div>
+                    <div className='featured-student'><img className='featured-student-img' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FStudentOfTheMonth3?alt=media&token=08a71b0d-2a60-4882-8dc5-f1e8fbdaa6c3&_gl=1*1nupt4b*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjE3OTAzNC45LjEuMTY5NjE3OTg0NC4zMC4wLjA.' /></div>
+                </div>
+            </div> */}
             <div id='home-photos' className='home-photos'>
                 <div id="carouselExampleIndicators" class="carousel carousel-home slide" data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -104,18 +115,18 @@ export default function Home() {
             </div>
             <div id='join' className='join text-center d-flex align-items-center'>
                 <div className='col-10 m-auto'>
-                    <h1>Are you interested in joining the high school concert bands, jazz band,
+                    <h2 className='home-section-heading'>Are you interested in joining the high school concert bands, jazz band,
                         and marching band?
-                    </h1>
+                    </h2>
                     <h3>Click <a className='join-link' href='https://www.joinfranklinbands.info/' target='_blank'>HERE</a> to visit the <strong>Join Franklin Band</strong> website
                         for more information about the bands and how to sign up for classes!</h3>
                 </div>
             </div>
             <div id='sponsors' className='sponsors m-auto text-center'>
-                <h1 className='sponsor-heading pt-3'>Thank You to Our 2023-2024 Sponsors!</h1>
+                <h2 className='home-section-heading pt-3 my-0'>Thank You to Our 2023-2024 Sponsors!</h2>
                 <div className='sponsors-1 d-flex align-items-center'>
                     <div className='m-auto col-10'>
-                        <h2 className='sponsor-category'>Maestro - $1500+</h2>
+                        <h3 className='sponsor-category'>Maestro - $1500+</h3>
                         <div className='all-sponsors'>
                             <div className='sponsor-div'><img className='sponsor-img' src={Anytime} /></div>
                             <div className='sponsor-div'><img className='sponsor-img' src={Pax} /></div>
@@ -126,7 +137,7 @@ export default function Home() {
                 </div>
                 <div className='sponsors-2 d-flex align-items-center'>
                     <div className='m-auto col-10'>
-                        <h2 className='sponsor-category'>Drum Major - $500+</h2>
+                        <h3 className='sponsor-category'>Drum Major - $500+</h3>
                         <div className='all-sponsors'>
                             <div className='sponsor-div'><img className='sponsor-img' src={Cunningham} /></div>
                         </div>

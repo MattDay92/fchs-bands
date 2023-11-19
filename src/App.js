@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {getDatabase, ref, set, onValue} from 'firebase/database'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Home from './view/Home'
@@ -17,29 +18,46 @@ import GetInvolved from './view/GetInvolved'
 import Links from './view/Links'
 import Admin from './view/Admin'
 import Store from './view/Store'
+import PageNotFound from './view/PageNotFound'
 
-export default function App({storage}) {
+export default function App({ storage, database }) {
+  const [signUpLink, setSignUpLink] = useState(null)
+
+  const getSignUpLink = () => {
+    const db = getDatabase()
+    const link = ref(db, '/signuplink/linkURL')
+
+    onValue(link, (snapshot) => {
+      const data = snapshot.val();
+      setSignUpLink(data)
+    })
+  }
+
+  useEffect(() => {
+    getSignUpLink()
+  }, [])
 
   return (
     <>
       <BrowserRouter>
         <Nav storage={storage} />
         <Routes>
-          <Route path={'/'} element={<Home />} />
-          <Route path={'/marchingband'} element={<MarchingBand />} />
-          <Route path={'/staff'} element={<Staff />} />
-          <Route path={'/fees'} element={<Fees />} />
-          <Route path={'/colorguard'} element={<ColorGuard />} />
-          <Route path={'/concertband'} element={<ConcertBand />} />
-          <Route path={'/windensemble'} element={<WindEnsemble />} />
-          <Route path={'/symphonicband'} element={<SymphonicBand />} />
-          <Route path={'/jazzensemble'} element={<JazzEnsemble />} />
-          <Route path={'/indoorpercussion'} element={<IndoorPercussion />} />
-          <Route path={'/calendar'} element={<Calendar />} />
-          <Route path={'/getinvolved'} element={<GetInvolved />} />
-          <Route path={'/links'} element={<Links />} />
-          <Route path={'/admin12345'} element={<Admin storage={storage} />} />
-          <Route path={'/equipmentsales'} element={<Store />} />
+          <Route exact path={'/'} element={<Home getSignUpLink={getSignUpLink} signUpLink={signUpLink} />} />
+          <Route exact path={'/marchingband'} element={<MarchingBand />} />
+          <Route exact path={'/staff'} element={<Staff />} />
+          <Route exact path={'/fees'} element={<Fees />} />
+          <Route exact path={'/colorguard'} element={<ColorGuard />} />
+          <Route exact path={'/concertband'} element={<ConcertBand />} />
+          <Route exact path={'/windensemble'} element={<WindEnsemble />} />
+          <Route exact path={'/symphonicband'} element={<SymphonicBand />} />
+          <Route exact path={'/jazzensemble'} element={<JazzEnsemble />} />
+          <Route exact path={'/indoorpercussion'} element={<IndoorPercussion />} />
+          <Route exact path={'/calendar'} element={<Calendar />} />
+          <Route exact path={'/getinvolved'} element={<GetInvolved />} />
+          <Route exact path={'/links'} element={<Links />} />
+          <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} />} />
+          <Route exact path={'/equipmentsales'} element={<Store />} />
+          <Route path={'*'} element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

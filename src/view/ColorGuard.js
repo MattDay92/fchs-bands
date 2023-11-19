@@ -56,7 +56,7 @@ export default function ColorGuard() {
             <div className='ensemble-awards d-flex align-items-center justify-content-center py-5'>
                 <div className='col-10 m-auto'>
                     <div className='text-center'>
-                        <h1>WGI World Championship Semi-Finalist</h1>
+                        <h2>WGI World Championship Semi-Finalist</h2>
                         <h3>2019</h3>
                     </div>
                     <div className='text-center'>

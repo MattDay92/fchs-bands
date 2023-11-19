@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div className='footer d-flex align-items-center justify-content-around'>
             <div id='social' className='footer-col-1 text-center'>
-                <h1>Follow Franklin Bands!</h1>
+                <h2>Follow Franklin Bands!</h2>
                 <div className='d-flex justify-content-around'>
                     <a href='https://www.facebook.com/FranklinCommunityHighSchoolBand' target='_blank'><i class="fa-brands fa-facebook"></i></a>
                     <a href='https://www.instagram.com/fcs_bands/' target='_blank'><i class="fa-brands fa-instagram"></i></a>

@@ -22,7 +22,7 @@ export default function Staff() {
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Tim Kosch</h2>
-                    <h4>Director of Bands</h4>
+                    <h3>Director of Bands</h3>
                     <p>Email: koscht@franklinschools.org</p>
                     <p>Phone:  (317) 346-8107  -  Office</p>
                     <TimBio />
@@ -34,7 +34,7 @@ export default function Staff() {
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Jason Hammond-Wood</h2>
-                    <h4>Band Director</h4>
+                    <h3>Band Director</h3>
                     <p>Email: hammondwoodj@franklinschools.org</p>
                     <p>Phone:  (317) 346-8144  -  Office</p>
                     <JasonBio />
@@ -46,7 +46,7 @@ export default function Staff() {
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Hannah Para</h2>
-                    <h4>Color Guard Director</h4>
+                    <h3>Color Guard Director</h3>
                     <p>Email: parah@franklinschools.org</p>
                     <ColorGuardBio />
                 </div>

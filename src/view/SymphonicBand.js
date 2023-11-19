@@ -59,7 +59,7 @@ export default function SymphonicBand() {
                         <h3>ISSMA Organizational Festival - <span className='gold-rating'>Gold Rating</span></h3>
                         <p>2023, 2022, 2021<span className='gold-rating'>*</span>, 2019, 2018, 2017, 2016, 
                         2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007</p>
-                        <h5 className='mt-5'><span className='gold-rating'>*Gold Rating with Distinction</span></h5>
+                        <h4 className='mt-5'><span className='gold-rating'>*Gold Rating with Distinction</span></h4>
                     </div>
                     
                 </div>

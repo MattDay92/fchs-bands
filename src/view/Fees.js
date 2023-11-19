@@ -16,8 +16,8 @@ export default function Fees() {
                         fee payments. If you have any questions,
                         please contact our booster treasurer at treasurer@franklinbands.info.</h5>
                     <div className='mb-5 buttons'>
-                        <a className='btn' href='http://localhost:3000/2022-2023-General-Fee-Letter.pdf' download>General Fee Information</a>
-                        <a className='btn' href='http://localhost:3000/\2023-Marching-Fee-Letter.pdf' download>Marching Fee Information</a>
+                        <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FGeneralFeeLetter?alt=media&token=d61c49b5-6a63-419a-b37f-2b7140a3c346&_gl=1*12crmpu*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjQ1MzYzNy4xMC4xLjE2OTY0NTM2NDEuNTYuMC4w' download>General Fee Information</a>
+                        <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGMemberFee?alt=media&token=b0b8f079-a84c-47bc-98c6-112679827957' download>Marching Fee Information</a>
                     </div>
                     <form action="https://ezauth.transactiongateway.com/cart/cart.php" method="POST">
                         <input type="hidden" name="key_id" value="14044617" />

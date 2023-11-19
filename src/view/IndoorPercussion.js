@@ -30,7 +30,7 @@ export default function IndoorPercussion() {
                     </p>
 
                 </div>
-                <div className='ensemble-column-2 mb-5'>
+                <div className='ensemble-column-2'>
                     <div className='carousel carousel-ensemble d-flex justify-content-center'>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
@@ -59,6 +59,16 @@ export default function IndoorPercussion() {
                     </div>
                 </div>
             </div>
+            <div className='ensemble-itinerary-btn-div m-auto text-center'>
+                <div className='ensemble-itinerary-btn'>
+                    <h2>Download Upcoming Itinerary</h2>
+                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
+                </div>
+                <div>
+                    <h2>Download Paperwork</h2>
+                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionPaperwork?alt=media&token=6d24055d-6a93-4c00-b6f1-1ce7431bbb39'>Download</a>
+                </div>
+            </div>
             <div className='ensemble-sponsors'>
                 <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist1} /></div>
                 <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist2} /></div>
@@ -75,7 +85,7 @@ export default function IndoorPercussion() {
             <div className='ensemble-awards d-flex align-items-center justify-content-center py-5'>
                 <div className='col-10 m-auto'>
                     <div className='text-center'>
-                        <h1>WGI World Championship Finalist</h1>
+                        <h2>WGI World Championship Finalist</h2>
                         <h3>2023, 2022</h3>
                     </div>
                     <div className='text-center'>

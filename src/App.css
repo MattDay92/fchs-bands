@@ -72,6 +72,10 @@ nav a{
 
 /* --------------------HOMEPAGE---------------------------- */
 
+.home-section-heading{
+  font-size: 200%;
+}
+
 .hero-container {
   position: relative;
   height: 60vh;
@@ -164,6 +168,40 @@ nav a{
   border: 2px solid white;
 }
 
+#students-of-the-month{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+  background: rgb(21,61,167);
+  color: white;
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+}
+
+.student-imgs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.featured-student{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.featured-student-img{
+  width: 100%;
+}
+
 .carousel-home{
   height: 75vh;
   background: black;
@@ -229,6 +267,7 @@ nav a{
 }
 
 .sponsor-category{
+  font-size: 175%;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
@@ -390,6 +429,10 @@ nav a{
     margin-bottom: 5vh;
   }
 
+  .featured-student{
+    margin-bottom: 5vh;
+  }
+
   .carousel-home{
     height: 100vh;
   }
@@ -534,7 +577,15 @@ nav a{
 }
 
 .carousel-ensemble {
-  height: 70vh;
+  min-height: 50vh;
+  height: fit-content;
+  margin-bottom: 10vh;
+}
+
+.ensemble-itinerary-btn-div{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10vh !important;
 }
 
 .ensemble-awards{
@@ -568,6 +619,14 @@ nav a{
 
   .ensemble-column-2{
     width: 100%;
+  }
+
+  .ensemble-itinerary-btn-div{
+    display: block;
+  }
+
+  .ensemble-itinerary-btn{
+    margin-bottom: 5vh;
   }
 
   .ensemble-btns{
@@ -951,6 +1010,8 @@ iframe {
   background: rgba(0, 0, 0, 0);
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100vw;
   height: 100%;
   margin: auto;
@@ -966,6 +1027,7 @@ iframe {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: auto;
+  margin-bottom: 5vh;
 }
 
 .admin-col{
@@ -973,6 +1035,30 @@ iframe {
   flex-direction: column;
   width: 30vw;
   margin-top: 5vh;
+}
+
+.admin-img{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 425px) {
+  .admin-col{
+    display: block;
+    width: 80vw !important;
+  }
+
+  .admin-hero-title{
+    font-size: 15vw;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-col{
+    display: block;
+    width: 40vw;
+  }
 }
 
 

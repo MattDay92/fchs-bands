@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Background from '../components/images/FCHS-Band-Banner.webp'
 import { getStorage, ref, uploadBytes, uploadBytesResumable, uploadString, getDownloadURL } from 'firebase/storage'
+import { getDatabase, ref as refDB, set } from 'firebase/database'
 
-
-export default function Admin({ storage }) {
+export default function Admin({ storage, signUpLink }) {
     const [fileUpload, setFileUpload] = useState('')
     const [fileUploadName, setFileUploadName] = useState('')
     const [fileDownload, setFileDownload] = useState('')
@@ -37,7 +37,7 @@ export default function Admin({ storage }) {
             })
         }
 
-        if (fileUploadName){
+        if (fileUploadName) {
             downloadFile(fileUploadName)
         }
     }
@@ -66,6 +66,17 @@ export default function Admin({ storage }) {
             })
     }
 
+    const updateFormData = (event) => {
+        event.preventDefault()
+        const db = getDatabase();
+
+        const linkURL = event.target.signupform.value
+
+        set(refDB(db, 'signuplink'), {
+            linkURL
+        });
+    }
+
     return (
         <div className='main admin'>
             <div id='hero' className='row home-hero hero-container'>
@@ -76,12 +87,30 @@ export default function Admin({ storage }) {
             </div>
 
             <h2 className='my-5 col-10 m-auto'>Note:  When uploading files, they will update automatically upon selection.  There is no "upload" button.  To see the updated preview, refresh the page.  </h2>
-            
+
+            <div className='upload my-5 row'>
+                <form className='admin-col' >
+                    <h3>Percussion Itinerary</h3>
+                    <embed id='PercussionItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'></embed>
+                    <input type='file' name='PercussionItinerary' onChange={handleFileChange} />
+                </form>
+                <form className='admin-col'>
+                    <h3>Percussion Forms/Paperwork</h3>
+                    <embed id='PercussionPaperwork' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionPaperwork?alt=media&token=6d24055d-6a93-4c00-b6f1-1ce7431bbb39'></embed>
+                    <input type='file' name='PercussionPaperwork' onChange={handleFileChange} />
+                </form>
+            </div>
+
             <div className='upload'>
                 <form className='admin-col'>
                     <h3>Marching Season Info</h3>
                     <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8'></embed>
                     <input type='file' name='MarchingSeasonInfo' onChange={handleFileChange} />
+                </form>
+                <form className='admin-col'>
+                    <h3>General Fee Letter</h3>
+                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FGeneralFeeLetter?alt=media&token=d61c49b5-6a63-419a-b37f-2b7140a3c346&_gl=1*12crmpu*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjQ1MzYzNy4xMC4xLjE2OTY0NTM2NDEuNTYuMC4w'></embed>
+                    <input type='file' name='GeneralFeeLetter' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>MB/CG Important Dates</h3>
@@ -104,7 +133,7 @@ export default function Admin({ storage }) {
                     <input type='file' name='MBCGMemberFee' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
-                    <h3>MB/CG Acknoledgment Form</h3>
+                    <h3>MB/CG Acknowledgment Form</h3>
                     <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGAcknoledgment?alt=media&token=01d494e0-4ca2-4881-8e4b-54d2b8d1b4ab'></embed>
                     <input type='file' name='MBCGAcknoledgment' onChange={handleFileChange} />
                 </form>
@@ -113,6 +142,34 @@ export default function Admin({ storage }) {
                     <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGHealthAndPermission?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e'></embed>
                     <input type='file' name='MBCGHealthAndPermission' onChange={handleFileChange} />
                 </form>
+                <form className='admin-col'>
+                    <h3>Sponsorship Form</h3>
+                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FSponsorship?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
+                    <input type='file' name='Sponsorship' onChange={handleFileChange} />
+                </form>
+                <div className='admin-img my-5 row' >
+                    <h2 className='text-center'>Square Images are Preferred for Image Uploads</h2>
+                    <form className='admin-col'>
+                        <h3>Student of the Month #1</h3>
+                        <div className='w-50 m-auto'><img className='w-100' id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FStudentOfTheMonth1?alt=media&token=28d8003d-c0b8-4433-9533-6671006c119d&_gl=1*o6p08p*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjE3OTAzNC45LjEuMTY5NjE3OTgxOS41NS4wLjA.' /></div>
+                        <input type='file' name='StudentOfTheMonth1' onChange={handleFileChange} />
+                    </form><form className='admin-col'>
+                        <h3>Student of the Month #2</h3>
+                        <div className='w-50 m-auto'><img className='w-100' id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FStudentOfTheMonth2?alt=media&token=68e8a44e-5310-42af-88be-44f43fee4198&_gl=1*aoykim*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjE3OTAzNC45LjEuMTY5NjE3OTgzMy40MS4wLjA.' /></div>
+                        <input type='file' name='StudentOfTheMonth2' onChange={handleFileChange} />
+                    </form><form className='admin-col'>
+                        <h3>Student of the Month #3</h3>
+                        <div className='w-50 m-auto'><img className='w-100' id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FStudentOfTheMonth3?alt=media&token=08a71b0d-2a60-4882-8dc5-f1e8fbdaa6c3&_gl=1*1nupt4b*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjE3OTAzNC45LjEuMTY5NjE3OTg0NC4zMC4wLjA.' /></div>
+                        <input type='file' name='StudentOfTheMonth3' onChange={handleFileChange} />
+                    </form>
+                </div>
+                <div className='admin-col my-5 row'>
+                    <h2>Homepage Sign-Up Form Link</h2>
+                    <form onSubmit={updateFormData}>
+                        <input className='form-control' name='signupform' value={signUpLink} />
+                        <button type='submit'>Submit Link</button>
+                    </form>
+                </div>
             </div>
         </div>
     )
