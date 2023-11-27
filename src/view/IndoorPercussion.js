@@ -62,7 +62,7 @@ export default function IndoorPercussion() {
             <div className='ensemble-itinerary-btn-div m-auto text-center'>
                 <div className='ensemble-itinerary-btn'>
                     <h2>Download Upcoming Itinerary</h2>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
+                    <a className='btn disabled' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
                 </div>
                 <div>
                     <h2>Download Paperwork</h2>

@@ -41,7 +41,6 @@ import Serpentine3 from '../components/images/store/Serpentine3.jpeg'
 import Serpentine4 from '../components/images/store/Serpentine4.JPG'
 import NightIsLong1 from '../components/images/store/NightisLong1.JPG'
 import NightIsLong2 from '../components/images/store/NightisLong2.JPG'
-import WoodMetal1 from '../components/images/store/WoodMetal.JPG'
 import SeatAtTheTableInfo from '../components/SeatAtTheTableInfo'
 import NewsiesInfo from '../components/NewsiesInfo'
 import MulticoloredUniformInfo from '../components/MultiColoredUniformInfo'
@@ -186,12 +185,6 @@ export default function Store() {
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-39' src={NightIsLong1} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-40' src={NightIsLong2} /></div>
-                </div>
-            </div>
-            <div className='store-1'>
-                <h2>Wood & Metal</h2>
-                <div className='store-img-container'>
-                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-41' src={WoodMetal1} /></div>
                 </div>
             </div>
         </div>
