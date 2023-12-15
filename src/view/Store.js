@@ -41,9 +41,15 @@ import Serpentine3 from '../components/images/store/Serpentine3.jpeg'
 import Serpentine4 from '../components/images/store/Serpentine4.JPG'
 import NightIsLong1 from '../components/images/store/NightisLong1.JPG'
 import NightIsLong2 from '../components/images/store/NightisLong2.JPG'
+import NightIsLong3 from '../components/images/store/NightisLong3.webp'
+import NightIsLong4 from '../components/images/store/NightisLong4.webp'
+import NightIsLong5 from '../components/images/store/NightisLong5.webp'
+import NightIsLong6 from '../components/images/store/NightisLong6.webp'
+import NightIsLong7 from '../components/images/store/NightisLong7.webp'
 import SeatAtTheTableInfo from '../components/SeatAtTheTableInfo'
 import NewsiesInfo from '../components/NewsiesInfo'
 import MulticoloredUniformInfo from '../components/MultiColoredUniformInfo'
+import NightisLongInfo from '../components/NightisLongInfo'
 
 
 
@@ -185,7 +191,13 @@ export default function Store() {
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-39' src={NightIsLong1} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-40' src={NightIsLong2} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-41' src={NightIsLong3} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-42' src={NightIsLong4} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-43' src={NightIsLong5} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-44' src={NightIsLong6} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-45' src={NightIsLong7} /></div>
                 </div>
+                <NightisLongInfo />
             </div>
         </div>
     )

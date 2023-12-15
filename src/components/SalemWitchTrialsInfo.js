@@ -22,7 +22,7 @@ export default function SalemWitchTrialsInfo() {
 
 
                         <p className='offcanvas-last'>1. Bundled Items of: Tarp, Podium, Props, and uniforms. - $6,000<br />
-                            2. Tarp is 50x80 with 6ft grid marked in image purchased through Field and Floor FX. - $1,500 <br />
+                            <s>2. Tarp is 50x80 with 6ft grid marked in image purchased through Field and Floor FX. - $1,500 </s> <br />
                             3. All props were custom made and fire torched to match show aesthetic. The fire prop was custom built to be light, durable, and complete the concept of the show. Props can be purchased separately or together. Fan Prop - $500. Desk and Podium - $100/each. <br />
                             4. Uniforms were custom designed by Dance Sophisticates They are a unitard with jacket that goes over the top (Witch dress not included). Each uniform comes with an arm buckle. 38 pieces total - $4,000 <br />
                         </p>

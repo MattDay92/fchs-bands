@@ -28,7 +28,7 @@ export default function HeartShapedBoxInfo() {
 
                         <p className='offcanvas-last'>1. Bundled Items of: Tarp, Heart prop, and uniforms. - $6,000 <br />
                             2. Tarp is 50x80 with 6ft grid marked in image purchased through Field and Floor FX. - $1,500 <br />
-                            3. Heart prop designed to break apart and be restaged across the floor. Breaks apart into 6 cubes. Each cube measures: 14in wide, 36in long, and 43in tall. Materials are made of wood for the frame and wood dowel rods for the geometric heart. - $500 <br />
+                            <s>3. Heart prop designed to break apart and be restaged across the floor. Breaks apart into 6 cubes. Each cube measures: 14in wide, 36in long, and 43in tall. Materials are made of wood for the frame and wood dowel rods for the geometric heart. - $500</s> <br />
                             4. Uniforms were custom designed by Dance Sophisticates and featured in their catalog. Comes with blue fabric to wrap around arms as well as gauntlets. 34 pieces total - $4,000 <br />
                             5. Light cubes are not for sale.
                         </p>

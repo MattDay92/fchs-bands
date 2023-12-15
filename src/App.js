@@ -31,6 +31,7 @@ export default function App({ storage, database }) {
       const data = snapshot.val();
       setSignUpLink(data)
     })
+
   }
 
   useEffect(() => {

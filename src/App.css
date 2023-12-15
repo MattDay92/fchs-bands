@@ -227,7 +227,7 @@ nav a{
 }
 
 .featured-col-left{
-  width: 20vw;
+  width: 35vw;
 }
 
 .featured-col-right{
@@ -362,14 +362,20 @@ nav a{
     font-size: 150% !important;
   }
 
+  .featured-content{
+    display: block;
+  }
+
   .featured-col-left{
-    width: 30vw;
-    margin-right: 5vw;
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
   }
 
   .featured-col-right{
-    width: 50vw;
-    margin-left: 5vw;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5vh;
   }
 
   p {
@@ -418,7 +424,7 @@ nav a{
   }
 
   .featured-col-left{
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 5vh;
   }
