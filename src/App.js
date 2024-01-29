@@ -18,6 +18,7 @@ import GetInvolved from './view/GetInvolved'
 import Links from './view/Links'
 import Admin from './view/Admin'
 import Store from './view/Store'
+import PrivateTeachers from './view/PrivateTeachers'
 import PageNotFound from './view/PageNotFound'
 
 export default function App({ storage, database }) {
@@ -58,6 +59,7 @@ export default function App({ storage, database }) {
           <Route exact path={'/links'} element={<Links />} />
           <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} />} />
           <Route exact path={'/equipmentsales'} element={<Store />} />
+          <Route exact path={'/privateinstructors'} element={<PrivateTeachers />} />
           <Route path={'*'} element={<PageNotFound />} />
         </Routes>
         <Footer />

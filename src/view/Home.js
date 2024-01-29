@@ -67,7 +67,7 @@ export default function Home({ signUpLink, getSignUpLink }) {
                 <div className='featured-content'>
                     <div className='featured-col-left'>
                         <img className='w-100' src={FeaturedIMG} />
-                        <a className='btn my-3' href='https://forms.gle/weSPdWLwiqxag9gp9' target='_blank'>Donate Now!</a>
+                        <a className='btn my-3' href='https://quickclick.com/r/pqkxz' target='_blank'>Make Online Donation</a>
                     </div>
                     <div className='featured-col-right'>
                         <h4>This season’s Drum-A-Thon is the kickoff to our 2024 indoor percussion season and will hopefully be one of our largest fundraising opportunities of the year! </h4>

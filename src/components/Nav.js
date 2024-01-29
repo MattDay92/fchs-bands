@@ -57,6 +57,7 @@ export default function Nav({storage}) {
                                 <a className="dropdown-item disabled">Middle School</a>
                             </div>
                         </a>
+                        <a className='nav-item'><Link to={'/privateinstructors'} className="nav-link">Private Instructors</Link></a>
                         <a className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Info/Forms
