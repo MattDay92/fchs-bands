@@ -23,6 +23,7 @@ import PageNotFound from './view/PageNotFound'
 
 export default function App({ storage, database }) {
   const [signUpLink, setSignUpLink] = useState(null)
+  const [itineraryName, setItineraryName] = useState(null)
 
   const getSignUpLink = () => {
     const db = getDatabase()
@@ -32,11 +33,21 @@ export default function App({ storage, database }) {
       const data = snapshot.val();
       setSignUpLink(data)
     })
+  }
 
+  const getItineraryName = () => {
+    const db = getDatabase()
+    const link = ref(db, '/itineraryName/linkURL')
+
+    onValue(link, (snapshot) => {
+      const data = snapshot.val();
+      setItineraryName(data)
+    })
   }
 
   useEffect(() => {
     getSignUpLink()
+    getItineraryName()
   }, [])
 
   return (
@@ -53,11 +64,11 @@ export default function App({ storage, database }) {
           <Route exact path={'/windensemble'} element={<WindEnsemble />} />
           <Route exact path={'/symphonicband'} element={<SymphonicBand />} />
           <Route exact path={'/jazzensemble'} element={<JazzEnsemble />} />
-          <Route exact path={'/indoorpercussion'} element={<IndoorPercussion />} />
+          <Route exact path={'/indoorpercussion'} element={<IndoorPercussion itineraryName={itineraryName} />} />
           <Route exact path={'/calendar'} element={<Calendar />} />
           <Route exact path={'/getinvolved'} element={<GetInvolved />} />
           <Route exact path={'/links'} element={<Links />} />
-          <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} />} />
+          <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} itineraryName={itineraryName} />} />
           <Route exact path={'/equipmentsales'} element={<Store />} />
           <Route exact path={'/privateinstructors'} element={<PrivateTeachers />} />
           <Route path={'*'} element={<PageNotFound />} />

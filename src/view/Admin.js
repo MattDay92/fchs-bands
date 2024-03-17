@@ -3,7 +3,7 @@ import Background from '../components/images/FCHS-Band-Banner.webp'
 import { getStorage, ref, uploadBytes, uploadBytesResumable, uploadString, getDownloadURL } from 'firebase/storage'
 import { getDatabase, ref as refDB, set } from 'firebase/database'
 
-export default function Admin({ storage, signUpLink }) {
+export default function Admin({ storage, signUpLink, itineraryName }) {
     const [fileUpload, setFileUpload] = useState('')
     const [fileUploadName, setFileUploadName] = useState('')
     const [fileDownload, setFileDownload] = useState('')
@@ -77,6 +77,17 @@ export default function Admin({ storage, signUpLink }) {
         });
     }
 
+    const updateItineraryName = (event) => {
+        event.preventDefault()
+        const db = getDatabase();
+
+        const linkURL = event.target.itineraryName.value
+
+        set(refDB(db, 'itineraryName'), {
+            linkURL
+        });
+    }
+
     return (
         <div className='main admin'>
             <div id='hero' className='row home-hero hero-container'>
@@ -89,6 +100,13 @@ export default function Admin({ storage, signUpLink }) {
             <h2 className='my-5 col-10 m-auto'>Note:  When uploading files, they will update automatically upon selection.  There is no "upload" button.  To see the updated preview, refresh the page.  </h2>
 
             <div className='upload my-5 row'>
+                <div className='admin-col my-5 row'>
+                    <h2>Percussion Itinerary Name</h2>
+                    <form onSubmit={updateItineraryName}>
+                        <input className='form-control' name='itineraryName' defaultValue={itineraryName} />
+                        <button type='submit'>Submit Link</button>
+                    </form>
+                </div>
                 <form className='admin-col' >
                     <h3>Percussion Itinerary</h3>
                     <embed id='PercussionItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'></embed>
@@ -166,7 +184,7 @@ export default function Admin({ storage, signUpLink }) {
                 <div className='admin-col my-5 row'>
                     <h2>Homepage Sign-Up Form Link</h2>
                     <form onSubmit={updateFormData}>
-                        <input className='form-control' name='signupform' value={signUpLink} />
+                        <input className='form-control' name='signupform' defaultValue={signUpLink} />
                         <button type='submit'>Submit Link</button>
                     </form>
                 </div>

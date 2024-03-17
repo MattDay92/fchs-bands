@@ -3,6 +3,7 @@ import Banner from '../components/images/FCHS-Band-Banner.webp'
 import Tony from '../components/images/TonyLemondsHeadshot.webp'
 import Jason from '../components/images/JasonHeadshot.webp'
 import Hannah from '../components/images/Hannah.webp'
+import Mike from '../components/images/Mike.jpg'
 import JasonBio from '../components/JasonBio'
 import TonyBio from '../components/TonyBio'
 import ColorGuardBio from '../components/ColorGuardBio'
@@ -31,7 +32,7 @@ export default function Staff() {
             </div>
             <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>
                 <div className='headshot-div'>
-                    <img className='headshot-staff' alt='Mike Swigert - Private Woodwind Instructor'  />
+                    <img className='headshot-staff' alt='Mike Swigert - Private Woodwind Instructor' src={Mike}  />
                 </div>
                 <div className='staff-info text-center'>
                     <h2>Mike Swigert</h2>
