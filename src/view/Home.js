@@ -11,7 +11,7 @@ import Pax from '../components/images/PAX.webp'
 import Carousel1 from '../components/images/Marching-Home-Carousel.webp'
 import Carousel2 from '../components/images/FCHS-Marching-Full-2-Home-Carousel.webp'
 import Carousel3 from '../components/images/FCIP-WGI-Home-Carousel.webp'
-import FeaturedIMG from '../components/images/Drum-A-Thon.png'
+import FeaturedIMG from '../components/images/DonationGraphic.png'
 import { getDatabase, onValue, ref } from 'firebase/database'
 
 export default function Home({ signUpLink, getSignUpLink }) {
@@ -66,15 +66,14 @@ export default function Home({ signUpLink, getSignUpLink }) {
             <div id='featured' className='featured text-center d-flex align-items-center'>
                 <div className='featured-content'>
                     <div className='featured-col-left'>
-                        <img className='w-100' src={FeaturedIMG} />
-                        <a className='btn my-3' href='https://quickclick.com/r/pqkxz' target='_blank'>Make Online Donation</a>
+                        <img className='w-100' alt='Franklin Bands Program Donation' src={FeaturedIMG} />
+                        <a className='btn my-3' href='https://quickclick.com/r/7g6mt' target='_blank'>Make Online Donation</a>
                     </div>
                     <div className='featured-col-right'>
-                        <h4>This season’s Drum-A-Thon is the kickoff to our 2024 indoor percussion season and will hopefully be one of our largest fundraising opportunities of the year! </h4>
-                        <p>Did you know? It takes over $100,000 in operating expenses to keep the instrumental music department going each year? The funds raised by the FCS Band Boosters are 
-                            used for competition entry fees, meals, hydration, uniform upkeep, transportation, guest instructors, scholarships, and so much more that goes on behind the scenes 
-                            to keep our program drumming throughout the competition season.  Donate now or attend the 2024 FCHS Percussion Drum-A-Thon to support! </p>
-                        <h4>Friday/Saturday, January 19-20, 2024 - 3:30 PM – 3:30 PM at FCHS</h4>
+                        <h4>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </h4>
+                        <p>The funds raised by the Franklin Community Schools Band Boosters are used for competition entry fees, meals, uniform upkeep, 
+                            transportation, guest instructors, scholarships, and so much more that goes on behind the scenes to keep our program operating. 
+                            Donate now to help out all the Franklin bands! </p>
                     </div>
                 </div>
             </div>

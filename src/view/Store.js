@@ -45,7 +45,6 @@ import NightIsLong3 from '../components/images/store/NightisLong3.webp'
 import NightIsLong4 from '../components/images/store/NightisLong4.webp'
 import NightIsLong5 from '../components/images/store/NightisLong5.webp'
 import NightIsLong6 from '../components/images/store/NightisLong6.webp'
-import NightIsLong7 from '../components/images/store/NightisLong7.webp'
 import SeatAtTheTableInfo from '../components/SeatAtTheTableInfo'
 import NewsiesInfo from '../components/NewsiesInfo'
 import MulticoloredUniformInfo from '../components/MultiColoredUniformInfo'
@@ -195,7 +194,6 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-42' src={NightIsLong4} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-43' src={NightIsLong5} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-44' src={NightIsLong6} /></div>
-                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-45' src={NightIsLong7} /></div>
                 </div>
                 <NightisLongInfo />
             </div>
