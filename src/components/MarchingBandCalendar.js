@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function MBPercussionCalendar() {
+export default function MarchingBandCalendar() {
     return (
         <div className='container'>
             <div className='row calendar d-flex justify-content-center'>

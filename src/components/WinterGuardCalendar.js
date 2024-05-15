@@ -4,7 +4,7 @@ export default function WinterGuardCalendar() {
     return (
         <div className='container'>
             <div className='row calendar d-flex justify-content-center'>
-                <iframe src="https://calendar.google.com/calendar/embed?src=franklinschools.org_16h1mchvi24rd9fudaisl91nog%40group.calendar.google.com&ctz=America%2FNew_York"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=franklinschools.org_16h1mchvi24rd9fudaisl91nog%40group.calendar.google.com&ctz=America%2FNew_York"></iframe>            
             </div>
 
             <div class="dropdown subscribe-btn">
