@@ -24,6 +24,7 @@ export default function Home({ signUpLink, getSignUpLink }) {
                 <div className='hero-box'>
                     <img className='hero-logo' src={Logo} />
                     <h1 className='hero-title'>Franklin Community High School Bands</h1>
+                    <h2 className='hero-subtitle'>13-Time ISSMA All-Music Award Recipient</h2>
                 </div>
                 <div className='hero-image-div'>
                     <img className='hero-image' src={DrumMajor} />
@@ -116,7 +117,7 @@ export default function Home({ signUpLink, getSignUpLink }) {
                 </div>
             </div>
             <div id='sponsors' className='sponsors m-auto text-center'>
-                <h2 className='home-section-heading pt-3 my-0'>Thank You to Our 2023-2024 Sponsors!</h2>
+                <h2 className='home-section-heading pt-3 my-0'>Thank You to Our 2024-2025 Sponsors!</h2>
                 <div className='sponsors-1 d-flex align-items-center'>
                     <div className='m-auto col-10'>
                         <h3 className='sponsor-category'>Maestro - $1500+</h3>

@@ -57,7 +57,7 @@ export default function ConcertBand() {
                 <div className='col-10 m-auto'>
                     <div className='text-center'>
                         <h3>ISSMA Organizational Festival - <span className='gold-rating'>Gold Rating</span></h3>
-                        <p>2023, 2022, 2021<span className='gold-rating'>*</span>, 2019, 2018, 2017</p>
+                        <p>2024, 2023, 2022, 2021<span className='gold-rating'>*</span>, 2019, 2018, 2017</p>
                         <h4 className='mt-5'><span className='gold-rating'>*Gold Rating with Distinction</span></h4>
                     </div>
 

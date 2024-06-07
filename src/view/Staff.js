@@ -53,7 +53,7 @@ export default function Staff() {
             </div>
             <div className='boosters py-5 d-flex justify-content-around align-items-center'>
                 <div className='text-center'>
-                    <h1 className='mb-5'>2023-2024 Band Boosters Executive Committee</h1>
+                    <h1 className='mb-5'>2024-2025 Band Boosters Executive Committee</h1>
                     <div className='d-flex flex-wrap justify-content-between'>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>President</h3>

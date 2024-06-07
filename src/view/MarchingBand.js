@@ -14,8 +14,8 @@ export default function MarchingBand() {
             </div>
             <div className='row ensemble-info col-10'>
                 <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The Franklin Community High School BLUE REGIMENT Marching Band is a seven-time 
-                    ISSMA Scholastic Class A Finalist - placing 6th in 2022 - their highest placement yet. </h4>
+                    <h4 className='mb-5 text-center'>The Franklin Community High School BLUE REGIMENT Marching Band is an eight-time ISSMA 
+                    Scholastic Class A Finalist - placing 6th in 2022 and 2023 - their highest placement yet. </h4>
                     <p>The Blue Regiment has seen improved competitive success over the past few years with its well-developed show designs. 
                         The Blue Regiment competes in both the Indiana State School Music Association (ISSMA) and Bands of America (BOA) 
                         competitions during the fall season as well as performing for all home Grizzly Cubs' football games and the annual 
