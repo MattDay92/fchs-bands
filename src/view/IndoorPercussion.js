@@ -12,7 +12,7 @@ import Finalist1 from '../components/images/WGI-Finalist-Banner1.webp'
 import Finalist2 from '../components/images/WGI-Finalist-Banner2.webp'
 
 
-export default function IndoorPercussion({itineraryName}) {
+export default function IndoorPercussion({PercussionItineraryName}) {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
@@ -61,7 +61,7 @@ export default function IndoorPercussion({itineraryName}) {
             </div>
             <div className='ensemble-itinerary-btn-div m-auto text-center'>
                 <div className='ensemble-itinerary-btn'>
-                    <h2>{itineraryName}</h2>
+                    <h2>{PercussionItineraryName}</h2>
                     <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
                 </div>
                 <div>

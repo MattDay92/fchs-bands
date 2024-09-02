@@ -3,7 +3,7 @@ import MarchingBandBanner from '../components/images/FCHS-Marching-Full.webp'
 import Marching1 from '../components/images/Trumpets.webp'
 import Marching2 from '../components/images/FCHS-Marching-Full-2.webp'
 
-export default function MarchingBand() {
+export default function MarchingBand({MBItineraryName}) {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
@@ -14,11 +14,11 @@ export default function MarchingBand() {
             </div>
             <div className='row ensemble-info col-10'>
                 <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The Franklin Community High School BLUE REGIMENT Marching Band is an eight-time ISSMA 
-                    Scholastic Class A Finalist - placing 6th in 2022 and 2023 - their highest placement yet. </h4>
-                    <p>The Blue Regiment has seen improved competitive success over the past few years with its well-developed show designs. 
-                        The Blue Regiment competes in both the Indiana State School Music Association (ISSMA) and Bands of America (BOA) 
-                        competitions during the fall season as well as performing for all home Grizzly Cubs' football games and the annual 
+                    <h4 className='mb-5 text-center'>The Franklin Community High School BLUE REGIMENT Marching Band is an eight-time ISSMA
+                        Scholastic Class A Finalist - placing 6th in 2022 and 2023 - their highest placement yet. </h4>
+                    <p>The Blue Regiment has seen improved competitive success over the past few years with its well-developed show designs.
+                        The Blue Regiment competes in both the Indiana State School Music Association (ISSMA) and Bands of America (BOA)
+                        competitions during the fall season as well as performing for all home Grizzly Cubs' football games and the annual
                         Franklin Fall Festival and Holiday Lighting parades.
                     </p>
                 </div>
@@ -32,7 +32,7 @@ export default function MarchingBand() {
                                 <div className="carousel-item">
                                     <img src={Marching2} className="d-block w-100" alt="FCHS Marching Band" />
                                 </div>
-                                
+
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -45,12 +45,22 @@ export default function MarchingBand() {
                         </div>
                     </div>
                 </div>
+                <div className='ensemble-itinerary-btn-div m-auto text-center'>
+                    <div className='ensemble-itinerary-btn'>
+                        <h2>{MBItineraryName}</h2>
+                        <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBFootballItinerary?alt=media&token=cc6d46ea-734e-4a75-b00e-729ac2a65b2d'>Download</a>
+                    </div>
+                    <div>
+                        <h2>MB WGI Itinerary</h2>
+                        <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBWGIItinerary?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1'>Download</a>
+                    </div>
+                </div>
                 <div className='ensemble-btns'>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8' download>2023 Season Information</a>
+                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8' download>2024 Season Information</a>
                     <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f' download>Important Dates</a>
                     <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862' download>Budget Information</a>
                 </div>
-                
+
 
             </div>
             <div className='ensemble-awards d-flex align-items-center justify-content-center'>

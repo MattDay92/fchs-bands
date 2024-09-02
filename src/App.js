@@ -23,7 +23,8 @@ import PageNotFound from './view/PageNotFound'
 
 export default function App({ storage, database }) {
   const [signUpLink, setSignUpLink] = useState(null)
-  const [itineraryName, setItineraryName] = useState(null)
+  const [PercussionItineraryName, setPercussionItineraryName] = useState(null)
+  const [MBItineraryName, setMBItineraryName] = useState(null)
 
   const getSignUpLink = () => {
     const db = getDatabase()
@@ -37,13 +38,21 @@ export default function App({ storage, database }) {
 
   const getItineraryName = () => {
     const db = getDatabase()
-    const link = ref(db, '/itineraryName/linkURL')
+    const linkPerc = ref(db, '/percussion')
+    const linkMB = ref(db, '/MB')
 
-    onValue(link, (snapshot) => {
+    onValue(linkPerc, (snapshot) => {
       const data = snapshot.val();
-      setItineraryName(data)
+      setPercussionItineraryName(data.percussion)
+    })
+
+    onValue(linkMB, (snapshot) => {
+      const data = snapshot.val();
+      setMBItineraryName(data.MB)
     })
   }
+
+  
 
   useEffect(() => {
     getSignUpLink()
@@ -56,7 +65,7 @@ export default function App({ storage, database }) {
         <Nav storage={storage} />
         <Routes>
           <Route exact path={'/'} element={<Home getSignUpLink={getSignUpLink} signUpLink={signUpLink} />} />
-          <Route exact path={'/marchingband'} element={<MarchingBand />} />
+          <Route exact path={'/marchingband'} element={<MarchingBand MBItineraryName={MBItineraryName} />} />
           <Route exact path={'/staff'} element={<Staff />} />
           <Route exact path={'/fees'} element={<Fees />} />
           <Route exact path={'/colorguard'} element={<ColorGuard />} />
@@ -64,11 +73,11 @@ export default function App({ storage, database }) {
           <Route exact path={'/windensemble'} element={<WindEnsemble />} />
           <Route exact path={'/symphonicband'} element={<SymphonicBand />} />
           <Route exact path={'/jazzensemble'} element={<JazzEnsemble />} />
-          <Route exact path={'/indoorpercussion'} element={<IndoorPercussion itineraryName={itineraryName} />} />
+          <Route exact path={'/indoorpercussion'} element={<IndoorPercussion PercussionItineraryName={PercussionItineraryName} />} />
           <Route exact path={'/calendar'} element={<Calendar />} />
           <Route exact path={'/getinvolved'} element={<GetInvolved />} />
           <Route exact path={'/links'} element={<Links />} />
-          <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} itineraryName={itineraryName} />} />
+          <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} PercussionItineraryName={PercussionItineraryName} MBItineraryName={MBItineraryName} />} />
           <Route exact path={'/equipmentsales'} element={<Store />} />
           <Route exact path={'/privateinstructors'} element={<PrivateTeachers />} />
           <Route path={'*'} element={<PageNotFound />} />

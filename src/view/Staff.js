@@ -81,7 +81,7 @@ export default function Staff() {
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>Treasurer</h3>
                             <p>Mrs. Kerri Hoffman</p>
-                            <p>treasurer@franklinbands.org</p>
+                            <p>treasurer@franklinbands.info</p>
 
                         </div>
 

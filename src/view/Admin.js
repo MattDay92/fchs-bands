@@ -3,7 +3,7 @@ import Background from '../components/images/FCHS-Band-Banner.webp'
 import { getStorage, ref, uploadBytes, uploadBytesResumable, uploadString, getDownloadURL } from 'firebase/storage'
 import { getDatabase, ref as refDB, set } from 'firebase/database'
 
-export default function Admin({ storage, signUpLink, itineraryName }) {
+export default function Admin({ storage, signUpLink, PercussionItineraryName, MBItineraryName }) {
     const [fileUpload, setFileUpload] = useState('')
     const [fileUploadName, setFileUploadName] = useState('')
     const [fileDownload, setFileDownload] = useState('')
@@ -77,14 +77,25 @@ export default function Admin({ storage, signUpLink, itineraryName }) {
         });
     }
 
-    const updateItineraryName = (event) => {
+    const updatePercussionItineraryName = (event) => {
         event.preventDefault()
         const db = getDatabase();
 
-        const linkURL = event.target.itineraryName.value
+        const percussion = event.target.PercussionItineraryName.value
 
-        set(refDB(db, 'itineraryName'), {
-            linkURL
+        set(refDB(db, 'percussion'), {
+            percussion
+        });
+    }
+
+    const updateMBItineraryName = (event) => {
+        event.preventDefault()
+        const db = getDatabase();
+
+        const MB = event.target.MBItineraryName.value
+
+        set(refDB(db, 'MB'), {
+            MB
         });
     }
 
@@ -102,11 +113,28 @@ export default function Admin({ storage, signUpLink, itineraryName }) {
             <div className='upload my-5 row'>
                 <div className='admin-col my-5 row'>
                     <h2>Percussion Itinerary Name</h2>
-                    <form onSubmit={updateItineraryName}>
-                        <input className='form-control' name='itineraryName' defaultValue={itineraryName} />
+                    <form onSubmit={updatePercussionItineraryName}>
+                        <input className='form-control' name='PercussionItineraryName' defaultValue={PercussionItineraryName} />
                         <button type='submit'>Submit Link</button>
                     </form>
                 </div>
+                <div className='admin-col my-5 row'>
+                    <h2>MB Itinerary Name</h2>
+                    <form onSubmit={updateMBItineraryName}>
+                        <input className='form-control' name='MBItineraryName' defaultValue={MBItineraryName} />
+                        <button type='submit'>Submit Link</button>
+                    </form>
+                </div>
+                <form className='admin-col' >
+                    <h3>MB Football Itinerary</h3>
+                    <embed id='MBFootballItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBFootballItinerary?alt=media&token=cc6d46ea-734e-4a75-b00e-729ac2a65b2d'></embed>
+                    <input type='file' name='MBFootballItinerary' onChange={handleFileChange} />
+                </form>
+                <form className='admin-col' >
+                    <h3>MB WGI Itinerary</h3>
+                    <embed id='MBWGIItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBWGIItinerary?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1'></embed>
+                    <input type='file' name='MBWGIItinerary' onChange={handleFileChange} />
+                </form>
                 <form className='admin-col' >
                     <h3>Percussion Itinerary</h3>
                     <embed id='PercussionItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'></embed>
