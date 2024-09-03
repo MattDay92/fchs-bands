@@ -3,7 +3,7 @@ import MarchingBandBanner from '../components/images/FCHS-Marching-Full.webp'
 import Marching1 from '../components/images/Trumpets.webp'
 import Marching2 from '../components/images/FCHS-Marching-Full-2.webp'
 
-export default function MarchingBand({MBItineraryName}) {
+export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
@@ -51,7 +51,7 @@ export default function MarchingBand({MBItineraryName}) {
                         <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBFootballItinerary?alt=media&token=cc6d46ea-734e-4a75-b00e-729ac2a65b2d'>Download</a>
                     </div>
                     <div>
-                        <h2>MB WGI Itinerary</h2>
+                        <h2>{MBWGIItineraryName}</h2>
                         <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBWGIItinerary?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1'>Download</a>
                     </div>
                 </div>

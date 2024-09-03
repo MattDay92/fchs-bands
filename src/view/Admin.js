@@ -3,7 +3,7 @@ import Background from '../components/images/FCHS-Band-Banner.webp'
 import { getStorage, ref, uploadBytes, uploadBytesResumable, uploadString, getDownloadURL } from 'firebase/storage'
 import { getDatabase, ref as refDB, set } from 'firebase/database'
 
-export default function Admin({ storage, signUpLink, PercussionItineraryName, MBItineraryName }) {
+export default function Admin({ storage, signUpLink, PercussionItineraryName, MBItineraryName, MBWGIItineraryName }) {
     const [fileUpload, setFileUpload] = useState('')
     const [fileUploadName, setFileUploadName] = useState('')
     const [fileDownload, setFileDownload] = useState('')
@@ -99,6 +99,17 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
         });
     }
 
+    const updateMBWGIItineraryName = (event) => {
+        event.preventDefault()
+        const db = getDatabase();
+
+        const MBWGI = event.target.MBWGIItineraryName.value
+
+        set(refDB(db, 'MBWGI'), {
+            MBWGI
+        });
+    }
+
     return (
         <div className='main admin'>
             <div id='hero' className='row home-hero hero-container'>
@@ -119,9 +130,16 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
                     </form>
                 </div>
                 <div className='admin-col my-5 row'>
-                    <h2>MB Itinerary Name</h2>
+                    <h2>MB Football Itinerary Name</h2>
                     <form onSubmit={updateMBItineraryName}>
                         <input className='form-control' name='MBItineraryName' defaultValue={MBItineraryName} />
+                        <button type='submit'>Submit Link</button>
+                    </form>
+                </div>
+                <div className='admin-col my-5 row'>
+                    <h2>MB WGI Itinerary Name</h2>
+                    <form onSubmit={updateMBWGIItineraryName}>
+                        <input className='form-control' name='MBWGIItineraryName' defaultValue={MBWGIItineraryName} />
                         <button type='submit'>Submit Link</button>
                     </form>
                 </div>

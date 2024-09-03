@@ -25,6 +25,8 @@ export default function App({ storage, database }) {
   const [signUpLink, setSignUpLink] = useState(null)
   const [PercussionItineraryName, setPercussionItineraryName] = useState(null)
   const [MBItineraryName, setMBItineraryName] = useState(null)
+  const [MBWGIItineraryName, setMBWGIItineraryName] = useState(null)
+
 
   const getSignUpLink = () => {
     const db = getDatabase()
@@ -40,6 +42,7 @@ export default function App({ storage, database }) {
     const db = getDatabase()
     const linkPerc = ref(db, '/percussion')
     const linkMB = ref(db, '/MB')
+    const linkMBWGI = ref(db, '/MBWGI')
 
     onValue(linkPerc, (snapshot) => {
       const data = snapshot.val();
@@ -49,6 +52,11 @@ export default function App({ storage, database }) {
     onValue(linkMB, (snapshot) => {
       const data = snapshot.val();
       setMBItineraryName(data.MB)
+    })
+
+    onValue(linkMBWGI, (snapshot) => {
+      const data = snapshot.val();
+      setMBWGIItineraryName(data.MBWGI)
     })
   }
 
@@ -65,7 +73,7 @@ export default function App({ storage, database }) {
         <Nav storage={storage} />
         <Routes>
           <Route exact path={'/'} element={<Home getSignUpLink={getSignUpLink} signUpLink={signUpLink} />} />
-          <Route exact path={'/marchingband'} element={<MarchingBand MBItineraryName={MBItineraryName} />} />
+          <Route exact path={'/marchingband'} element={<MarchingBand MBItineraryName={MBItineraryName} MBWGIItineraryName={MBWGIItineraryName} />} />
           <Route exact path={'/staff'} element={<Staff />} />
           <Route exact path={'/fees'} element={<Fees />} />
           <Route exact path={'/colorguard'} element={<ColorGuard />} />
@@ -77,7 +85,7 @@ export default function App({ storage, database }) {
           <Route exact path={'/calendar'} element={<Calendar />} />
           <Route exact path={'/getinvolved'} element={<GetInvolved />} />
           <Route exact path={'/links'} element={<Links />} />
-          <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} PercussionItineraryName={PercussionItineraryName} MBItineraryName={MBItineraryName} />} />
+          <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} PercussionItineraryName={PercussionItineraryName} MBItineraryName={MBItineraryName} MBWGIItineraryName={MBWGIItineraryName} />} />
           <Route exact path={'/equipmentsales'} element={<Store />} />
           <Route exact path={'/privateinstructors'} element={<PrivateTeachers />} />
           <Route path={'*'} element={<PageNotFound />} />
