@@ -137,7 +137,7 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
                     </form>
                 </div>
                 <div className='admin-col my-5 row'>
-                    <h2>MB WGI Itinerary Name</h2>
+                    <h2>MB Itinerary Name</h2>
                     <form onSubmit={updateMBWGIItineraryName}>
                         <input className='form-control' name='MBWGIItineraryName' defaultValue={MBWGIItineraryName} />
                         <button type='submit'>Submit Link</button>
@@ -149,7 +149,7 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
                     <input type='file' name='MBFootballItinerary' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col' >
-                    <h3>MB WGI Itinerary</h3>
+                    <h3>MB Itinerary</h3>
                     <embed id='MBWGIItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBWGIItinerary?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1'></embed>
                     <input type='file' name='MBWGIItinerary' onChange={handleFileChange} />
                 </form>
