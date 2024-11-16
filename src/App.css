@@ -583,7 +583,7 @@ nav a{
   width: 20vw;
 }
 
-.ensemble-sponsors{
+.ensemble-sponsors, .WGI-Banners{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -591,7 +591,7 @@ nav a{
 }
 
 .ensemble-WGI-banner-div{
-  width: 40vw;
+  width: 25vw;
 }
 
 .carousel-ensemble {
@@ -650,6 +650,21 @@ nav a{
   .ensemble-btns{
     display: block;
     text-align: center;
+  }
+
+  .WGI-Banners, .ensemble-sponsors{
+    display: flex;
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .ensemble-WGI-banner-div{
+    width: 80vw;
+    margin-top: 2vh;
+  }
+
+  .ensemble-sponsor-div{
+    width: 40vw;
   }
 }
 

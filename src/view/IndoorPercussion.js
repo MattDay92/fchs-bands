@@ -4,15 +4,19 @@ import Percussion1 from '../components/images/FCIP-WGI.webp'
 import Percussion2 from '../components/images/Snare.webp'
 import Percussion3 from '../components/images/Snares.webp'
 import Percussion4 from '../components/images/BassDrum.webp'
+import Percussion5 from '../components/images/BassDrum2.webp'
+import Percussion6 from '../components/images/DSFinals.webp'
+import Percussion7 from '../components/images/Cymbol.webp'
 import Sponsor1 from '../components/images/2000px-Zildjian_Logo.svg.webp'
 import Sponsor2 from '../components/images/IP.webp'
 import Sponsor3 from '../components/images/remo-logo.webp'
 import Sponsor4 from '../components/images/pearladamslogowht copy.webp'
 import Finalist1 from '../components/images/WGI-Finalist-Banner1.webp'
 import Finalist2 from '../components/images/WGI-Finalist-Banner2.webp'
+import Finalist3 from '../components/images/HSWCBanner.webp'
 
 
-export default function IndoorPercussion({PercussionItineraryName}) {
+export default function IndoorPercussion({ PercussionItineraryName }) {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
@@ -25,8 +29,8 @@ export default function IndoorPercussion({PercussionItineraryName}) {
                 <div className='ensemble-column-1'>
                     <h4 className='ensemble-info-paragraph'>Franklin Community Percussion is a perennial IPA State Finalist competitor. The indoor percussion program began in 2013 and has been in state finals 8 times. </h4>
                     <p className='mb-5'>In 2021 they were the State Runner-up in Class A. The program also competes at WGI World Championships.
-                        In 2022 the group was received 4th place in PSA and in 2023 the group received 15th in PSO. Both placements marked the first
-                        time that FCS Percussion was a WGI World Championship Finalist!
+                        In 2022 the group was received 4th place in PSA and in 2023 and 2024 the group made finals PSO! They are a 9-time State
+                        Finalist and a 3-time WGI World Championship Finalist!
                     </p>
 
                 </div>
@@ -38,13 +42,22 @@ export default function IndoorPercussion({PercussionItineraryName}) {
                                     <img src={Percussion1} alt='FCHS Percussion' className="d-block w-100" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Percussion2} alt='FCHS Percussion Snare Drummer' className="d-block w-100" alt="..." />
+                                    <img src={Percussion2} alt='FCHS Percussion Snare Drummer' className="d-block w-100" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Percussion3} alt='FCHS Percussion Snare Drums' className="d-block w-100" alt="..." />
+                                    <img src={Percussion3} alt='FCHS Percussion Snare Drums' className="d-block w-100" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Percussion4} alt='FCHS Percussion Bass Drums' className="d-block w-100" alt="..." />
+                                    <img src={Percussion4} alt='FCHS Percussion Bass Drums' className="d-block w-100" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Percussion5} alt='FCHS Percussion Bass Drums' className="d-block w-100" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Percussion6} alt='FCHS Percussion Kids' className="d-block w-100" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Percussion7} alt='FCHS Percussion Cymbal Player' className="d-block w-100" />
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -69,9 +82,11 @@ export default function IndoorPercussion({PercussionItineraryName}) {
                     <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionPaperwork?alt=media&token=6d24055d-6a93-4c00-b6f1-1ce7431bbb39'>Download</a>
                 </div>
             </div>
-            <div className='ensemble-sponsors'>
-                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist1} /></div>
+            <div className='WGI-Banners col-10'>
                 <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist2} /></div>
+                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist1} /></div>
+                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist3} /></div>
+
             </div>
             <div className='ensemble-sponsors col-10 text-center'>
                 <h4 className='my-5'>Franklin Community Percussion proudly uses Innovative Percussion sticks and mallets, Pearl Drums, Adams Percussion, Remo Drumheads, and Ziljdian Cymbal products.</h4>

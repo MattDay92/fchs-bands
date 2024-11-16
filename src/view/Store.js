@@ -1,7 +1,12 @@
 import React, { useDebugValue, useEffect, useState } from 'react'
 import Banner from '../components/images/FCHS-Band-Banner.webp'
-import Bloom1 from '../components/images/store/2019 _Bloom_ Flower & Backdrops.webp'
-import Bloom2 from '../components/images/store/2019 _Bloom_ Tarp.webp'
+import Crude1 from '../components/images/store/Crude1.webp'
+import Crude2 from '../components/images/store/Crude2.webp'
+import Crude3 from '../components/images/store/Crude3.webp'
+import Crude4 from '../components/images/store/Crude4.webp'
+import Crude5 from '../components/images/store/Crude5.webp'
+import Crude6 from '../components/images/store/Crude6.webp'
+import CrudeInfo from '../components/CrudeInfo'
 import DejaVu1 from '../components/images/store/DejaVuFront.webp'
 import DejaVu2 from '../components/images/store/DejaVuBack.webp'
 import HSB1 from '../components/images/store/HSB1.webp'
@@ -16,6 +21,7 @@ import Bond2 from '../components/images/store/Bond2.webp'
 import Bond3 from '../components/images/store/Bond3.webp'
 import Bond4 from '../components/images/store/Bond4.webp'
 import Bond5 from '../components/images/store/Bond5.webp'
+import BondInfo from '../components/BondInfo'
 import Mind1 from '../components/images/store/Mind1.webp'
 import Mind2 from '../components/images/store/Mind2.webp'
 import Mind3 from '../components/images/store/Mind3.webp'
@@ -33,6 +39,7 @@ import NYNY1 from '../components/images/store/NYNY1.jpg'
 import NYNY2 from '../components/images/store/NYNY2.jpg'
 import NYNY3 from '../components/images/store/NYNY3.png'
 import NYNY4 from '../components/images/store/NYNY4.png'
+import NYNYInfo from '../components/NYNYInfo'
 import Newsies1 from '../components/images/store/Newsies1.JPG'
 import Newsies2 from '../components/images/store/Newsies2.JPG'
 import Salem1 from '../components/images/store/Salem1.png'
@@ -45,6 +52,10 @@ import Serpentine1 from '../components/images/store/Serpentine1.JPG'
 import Serpentine2 from '../components/images/store/Serpentine2.jpeg'
 import Serpentine3 from '../components/images/store/Serpentine3.jpeg'
 import Serpentine4 from '../components/images/store/Serpentine4.JPG'
+import Serpentine5 from '../components/images/store/Serpentine5.webp'
+import Serpentine6 from '../components/images/store/Serpentine6.webp'
+import Serpentine7 from '../components/images/store/Serpentine7.webp'
+import SerpentineInfo from '../components/SerpentineInfo'
 import NightIsLong1 from '../components/images/store/NightisLong1.JPG'
 import NightIsLong2 from '../components/images/store/NightisLong2.JPG'
 import NightIsLong3 from '../components/images/store/NightisLong3.webp'
@@ -124,7 +135,7 @@ export default function Store() {
                 <HeartShapedBoxInfo />
             </div>
             <div className='store-1'>
-                <h2>James Bond</h2>
+                <h2>The Name is Bond</h2>
                 <div className='store-img-container'>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-11' src={Bond2} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-12' src={Bond3} /></div>
@@ -132,6 +143,7 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-14' src={Bond5} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-15' src={Bond1} /></div>
                 </div>
+                <BondInfo />
             </div>
             <div className='store-2'>
                 <h2>Multi-Colored Uniforms</h2>
@@ -150,6 +162,7 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-21' src={NYNY3} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-22' src={NYNY4} /></div>
                 </div>
+                <NYNYInfo />
             </div>
             <div className='store-2'>
                 <h2>Newsies Style Uniforms</h2>
@@ -177,7 +190,11 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-36' src={Serpentine2} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-37' src={Serpentine3} /></div>
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-38' src={Serpentine4} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-52' src={Serpentine5} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-53' src={Serpentine6} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-54' src={Serpentine7} /></div>
                 </div>
+                <SerpentineInfo />
             </div>
             <div className='store-1'>
                 <h2>My Mind Holds the Key</h2>
@@ -206,6 +223,18 @@ export default function Store() {
                     <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-44' src={NightIsLong6} /></div>
                 </div>
                 <NightisLongInfo />
+            </div>
+            <div className='store-1'>
+                <h2>Crude</h2>
+                <div className='store-img-container'>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-55' src={Crude1} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-56' src={Crude2} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-57' src={Crude3} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-58' src={Crude4} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-59' src={Crude5} /></div>
+                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-60' src={Crude6} /></div>
+                </div>
+                <CrudeInfo />
             </div>
             
         </div>
