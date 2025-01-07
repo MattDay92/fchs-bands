@@ -27,10 +27,12 @@ export default function IndoorPercussion({ PercussionItineraryName }) {
             </div>
             <div className='row ensemble-info col-10'>
                 <div className='ensemble-column-1'>
-                    <h4 className='ensemble-info-paragraph'>Franklin Community Percussion is a perennial IPA State Finalist competitor. The indoor percussion program began in 2013 and has been in state finals 8 times. </h4>
-                    <p className='mb-5'>In 2021 they were the State Runner-up in Class A. The program also competes at WGI World Championships.
-                        In 2022 the group was received 4th place in PSA and in 2023 and 2024 the group made finals PSO! They are a 9-time State
-                        Finalist and a 3-time WGI World Championship Finalist!
+                    <h4 className='ensemble-info-paragraph'><strong>Franklin Community Percussion is a perennial IPA State Finalist competitor. 
+                        The indoor percussion program began in 2013 and has been in state finals 8 times.</strong> </h4>
+                    <p className='mb-5'>n 2021 they were the State Runner-up in Class A. The program also competes at WGI 
+                        World Championships. In 2022 the group received 4th place in PSA . In the 2023 and 2024 seasons the group 
+                        made finals PSO placing 15th and 10th, respectively! They are a 9-time State Finalist and a 3-time WGI 
+                        World Championship Finalist!
                     </p>
 
                 </div>
@@ -101,11 +103,11 @@ export default function IndoorPercussion({ PercussionItineraryName }) {
                 <div className='col-10 m-auto'>
                     <div className='text-center'>
                         <h2>WGI World Championship Finalist</h2>
-                        <h3>2023, 2022</h3>
+                        <h3>2024, 2023, 2022</h3>
                     </div>
                     <div className='text-center'>
                         <h3>WGI Regional Finalist</h3>
-                        <p>2023, 2022, 2015</p>
+                        <p>2024, 2023, 2022, 2015</p>
                     </div>
                     <div className='text-center'>
                         <h3>IPA Class A State Runner-Up</h3>
@@ -116,7 +118,7 @@ export default function IndoorPercussion({ PercussionItineraryName }) {
                         </div>
                         <div className='text-center'>
                             <h3>IPA Open Class State Finalist</h3>
-                            <p>2023, 2016, 2015</p>
+                            <p>2024, 2023, 2016, 2015</p>
                         </div>
 
                     </div>

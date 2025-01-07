@@ -11,7 +11,7 @@ import Pax from '../components/images/PAX.webp'
 import Carousel1 from '../components/images/Marching-Home-Carousel.webp'
 import Carousel2 from '../components/images/FCHS-Marching-Full-2-Home-Carousel.webp'
 import Carousel3 from '../components/images/FCIP-WGI-Home-Carousel.webp'
-import FeaturedIMG from '../components/images/DonationGraphic.png'
+import FeaturedIMG from '../components/images/Drum-A-Thon.png'
 import { getDatabase, onValue, ref } from 'firebase/database'
 
 export default function Home({ signUpLink, getSignUpLink }) {
@@ -71,10 +71,14 @@ export default function Home({ signUpLink, getSignUpLink }) {
                         <a className='btn my-3' href='https://quickclick.com/r/7g6mt' target='_blank'>Make Online Donation</a>
                     </div>
                     <div className='featured-col-right'>
-                        <h4>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </h4>
-                        <p>The funds raised by the Franklin Community Schools Band Boosters are used for competition entry fees, meals, uniform upkeep, 
+                        <h4>Friday/Saturday, January 17-18, 2025</h4>
+                        <h4>3:30 PM - 3:30 PM at FCHS</h4>
+                        <p>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </p>
+                        <p>This season’s Drum-A-Thon is the kickoff to our 2025 indoor percussion season and will hopefully be one of our largest fundraising 
+                            opportunities of the year!</p>
+                        {/* <p>The funds raised by the Franklin Community Schools Band Boosters are used for competition entry fees, meals, uniform upkeep, 
                             transportation, guest instructors, scholarships, and so much more that goes on behind the scenes to keep our program operating. 
-                            Donate now to help out all the Franklin bands! </p>
+                            Donate now to help out all the Franklin bands! </p> */}
                     </div>
                 </div>
             </div>
