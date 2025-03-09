@@ -211,6 +211,11 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
                     <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FSponsorship?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
                     <input type='file' name='Sponsorship' onChange={handleFileChange} />
                 </form>
+                <form className='admin-col' >
+                    <h3>Miles to Dayton Image</h3>
+                    <img id='MilesToDaytonIMG' className='w-50 m-auto' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMilesToDaytonIMG?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1' />
+                    <input type='file' name='MilesToDaytonIMG' onChange={handleFileChange} />
+                </form>
                 <div className='admin-img my-5 row' >
                     <h2 className='text-center'>Square Images are Preferred for Image Uploads</h2>
                     <form className='admin-col'>
