@@ -76,7 +76,7 @@ export default function Home({ signUpLink, getSignUpLink }) {
                     <p>To purchase a mile, click the donation button below!  Keep an eye out here and on social media
                         to keep track of our progress!
                     </p>
-                    <a className='btn my-3' href='https://collectcheckout.com/r/uk3zpi231w18dox75gb3pyolzmiqkq' target='_blank'>Make Online Donation</a>
+                    <a className='btn my-3' href='https://quickclick.com/r/sraxht75w01aihl1iu1rw2hof1yewt' target='_blank'>Make Online Donation</a>
                         {/* <h4>Friday/Saturday, January 17-18, 2025</h4>
                         <h4>3:30 PM - 3:30 PM at FCHS</h4>
                         <p>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </p>
