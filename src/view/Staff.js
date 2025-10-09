@@ -53,37 +53,33 @@ export default function Staff() {
             </div>
             <div className='boosters py-5 d-flex justify-content-around align-items-center'>
                 <div className='text-center'>
-                    <h1 className='mb-5'>2024-2025 Band Boosters Executive Committee</h1>
+                    <h1 className='mb-5'>2025-2026 Band Boosters Executive Committee</h1>
                     <div className='d-flex flex-wrap justify-content-between'>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>President</h3>
-                            <p>Mr.s Brandy Koeppe</p>
-                            <p>president@franklinbands.org</p>
+                            <p>Scott Stillabower</p>
+                            <p>president.franklinbands@gmail.com</p>
                         </div>
+                        
                         <div className='col m-3 d-flex flex-column justify-content-between'>
-                            <h3>President-Elect</h3>
-                            <p>Mr. Scott Stillabower</p>
-                            <p>presidentelect@franklinbands.org</p>
+                            <h3>Treasurer/Past President</h3>
+                            <p>Brandy Koeppe</p>
+                            <p>treasurer.franklinbands@gmail.com</p>
 
                         </div>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
-                            <h3>Past President</h3>
-                            <p>Ms. Pam Dillow</p>
-                            <p>pastpresident@franklinbands.org</p>
+                            <h3>President-Elect</h3>
+                            <p>Danielle Spears</p>
+                            <p>presidentelect.franklinbands@gmail.com</p>
 
                         </div>
                         <div className='col m-3 d-flex flex-column justify-content-between'>
                             <h3>Secretary</h3>
-                            <p>Mrs. Danielle Spears</p>
-                            <p>secretary@franklinbands.org</p>
+                            <p>Dyan McQuinn</p>
+                            <p>secretary.franklinbands@gmail.com</p>
 
                         </div>
-                        <div className='col m-3 d-flex flex-column justify-content-between'>
-                            <h3>Treasurer</h3>
-                            <p>Mrs. Kerri Hoffman</p>
-                            <p>treasurer@franklinbands.info</p>
-
-                        </div>
+                        
 
                     </div>
                 </div>

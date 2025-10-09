@@ -37,9 +37,9 @@ export default function Nav({storage}) {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="fas fa-bars"></i>
                     </button>
-                    <div className="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+                    <div className="collapse navbar-collapse justify-content-around text-center" id="navbarNavDropdown">
                         {/* <a className='nav-item'><Link to={'/joinus'} className="nav-link active" aria-current="page" >Join Us!</Link></a> */}
-                        <a className='nav-item'><Link to={'/fees'} className="nav-link active">Fees/Payments</Link></a>
+                        <a className='nav-item'><Link to={'/fees'} className="nav-link active">Pay Fees</Link></a>
                         <a className='nav-item'><Link to={'/calendar'} className="nav-link">Calendar</Link></a>
                         {/* <a className='nav-item'><Link className="nav-link">Itineraries</Link></a> */}
                         <a className="nav-item dropdown">
@@ -78,6 +78,7 @@ export default function Nav({storage}) {
                         <a className='nav-item'><Link to={'/links'} className="nav-link">Links</Link></a>
                         <a className='nav-item'><Link to={'/equipmentsales'} className="nav-link">Equipment Sales</Link></a>
                         <a className='nav-item'><Link to={'/staff'} className="nav-link">Contact</Link></a>
+                        <a className='nav-item'><Link target='_blank' to={'/tickets'} className='nav-link'>Tickets</Link></a>
                     </div>
                 </div>
             </nav>

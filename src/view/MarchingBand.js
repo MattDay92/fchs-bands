@@ -1,7 +1,8 @@
 import React from 'react'
 import MarchingBandBanner from '../components/images/FCHS-Marching-Full.webp'
-import Marching1 from '../components/images/Trumpets.webp'
-import Marching2 from '../components/images/FCHS-Marching-Full-2.webp'
+import Marching1 from '../components/images/MB1.jpeg'
+import Marching2 from '../components/images/MB2.jpeg'
+import Marching3 from '../components/images/MB3.jpeg'
 
 export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
     return (
@@ -31,6 +32,9 @@ export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
                                 </div>
                                 <div className="carousel-item">
                                     <img src={Marching2} className="d-block w-100" alt="FCHS Marching Band" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Marching3} className="d-block w-100" alt="FCHS Marching Band" />
                                 </div>
 
                             </div>

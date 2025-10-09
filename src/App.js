@@ -20,6 +20,7 @@ import Admin from './view/Admin'
 import Store from './view/Store'
 import PrivateTeachers from './view/PrivateTeachers'
 import PageNotFound from './view/PageNotFound'
+import Tickets from './view/Tickets'
 
 export default function App({ storage, database }) {
   const [signUpLink, setSignUpLink] = useState(null)
@@ -88,6 +89,7 @@ export default function App({ storage, database }) {
           <Route exact path={'/admin12345'} element={<Admin storage={storage} signUpLink={signUpLink} PercussionItineraryName={PercussionItineraryName} MBItineraryName={MBItineraryName} MBWGIItineraryName={MBWGIItineraryName} />} />
           <Route exact path={'/equipmentsales'} element={<Store />} />
           <Route exact path={'/privateinstructors'} element={<PrivateTeachers />} />
+          <Route exact path={'/tickets'} element={<Tickets />} />
           <Route path={'*'} element={<PageNotFound />} />
         </Routes>
         <Footer />

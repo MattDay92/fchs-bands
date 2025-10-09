@@ -8,9 +8,11 @@ import Anytime from '../components/images/Anytime-Fitness-logo.webp'
 import Cunningham from '../components/images/Cunningham-Restaurant-Group.webp'
 import Locke from '../components/images/Locke-Business-Ad.webp'
 import Pax from '../components/images/PAX.webp'
-import Carousel1 from '../components/images/Marching-Home-Carousel.webp'
-import Carousel2 from '../components/images/FCHS-Marching-Full-2-Home-Carousel.webp'
-import Carousel3 from '../components/images/FCIP-WGI-Home-Carousel.webp'
+import Carousel1 from '../components/images/HomeBand1.jpeg'
+import Carousel2 from '../components/images/HomeBand2.jpeg'
+import Carousel3 from '../components/images/HomeBand3.jpeg'
+import Carousel4 from '../components/images/HomeBand4.jpeg'
+
 import FeaturedIMG from '../components/images/MilesToDayton.png'
 import { getDatabase, onValue, ref } from 'firebase/database'
 
@@ -66,17 +68,17 @@ export default function Home({ signUpLink, getSignUpLink }) {
             </div>
             <div id='featured' className='featured text-center d-flex align-items-center'>
                 <div className='featured-content'>
-                    <div className='featured-col-left'>
+                    {/* <div className='featured-col-left'>
                         <img className='my-5' alt='Franklin Bands Program Donation' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMilesToDaytonIMG?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1' />
-                        {/* <a className='btn my-3' href='https://collectcheckout.com/r/uk3zpi231w18dox75gb3pyolzmiqkq' target='_blank'>Make Online Donation</a> */}
-                    </div>
+                        <a className='btn my-3' href='https://collectcheckout.com/r/uk3zpi231w18dox75gb3pyolzmiqkq' target='_blank'>Make Online Donation</a>
+                    </div> */}
                     <div className='featured-col-right'>
-                        <h1>Miles to Dayton Fundraiser</h1>
-                    <h2>Help FCIP get to the WGI World Championships!</h2>
-                    <p>To purchase a mile, click the donation button below!  Keep an eye out here and on social media
-                        to keep track of our progress!
-                    </p>
-                    <a className='btn my-3' href='https://quickclick.com/r/sraxht75w01aihl1iu1rw2hof1yewt' target='_blank'>Make Online Donation</a>
+                        <h1>Support Franklin Bands!</h1>
+                        <p>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </p>
+                        <p>The funds raised by the Franklin Community Schools Band Boosters are used for competition entry fees, meals, uniform upkeep,
+                            transportation, guest instructors, scholarships, and so much more that goes on behind the scenes to keep our program operating.
+                            Donate now to help out all the Franklin bands! </p>
+                        <a className='btn my-3' href='https://quickclick.com/r/sraxht75w01aihl1iu1rw2hof1yewt' target='_blank'>Make Online Donation</a>
                         {/* <h4>Friday/Saturday, January 17-18, 2025</h4>
                         <h4>3:30 PM - 3:30 PM at FCHS</h4>
                         <p>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </p>
@@ -95,6 +97,8 @@ export default function Home({ signUpLink, getSignUpLink }) {
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -105,6 +109,9 @@ export default function Home({ signUpLink, getSignUpLink }) {
                         </div>
                         <div class="carousel-item">
                             <img src={Carousel3} class="carousel-home-img d-block" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src={Carousel4} class="carousel-home-img d-block" alt="..." />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

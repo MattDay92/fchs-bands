@@ -1,8 +1,8 @@
 import React from 'react'
 import MarchingBandBanner from '../components/images/FCHS-Marching-Full.webp'
-import Guard1 from '../components/images/FCHS-Guard-1.webp'
-import Guard2 from '../components/images/2022FranklinCommunityHSWinterGuard.webp'
-import Guard3 from '../components/images/2023FranklinCommunityWinterGuard.webp'
+import Guard1 from '../components/images/CG1.jpeg'
+import Guard2 from '../components/images/CG2.jpeg'
+import Guard3 from '../components/images/CG3.jpeg'
 
 
 export default function ColorGuard() {

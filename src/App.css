@@ -50,9 +50,9 @@ nav a{
   background: rgb(21,61,167) !important;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1110px) {
   .dropdown:hover .nav-dropdown{
-    display: block;
+    display: block ;
     margin-top: 0;
   } 
 }
@@ -378,6 +378,8 @@ nav a{
 
   .featured-content{
     display: block;
+    padding-top: 5vh;
+
   }
 
   .featured-col-left{
@@ -464,11 +466,11 @@ nav a{
   }
 
   .carousel-home{
-    height: 100vh;
+    height: 70vh;
   }
 
   .carousel-home-img{
-    height: 100vh;
+    height: 70vh;
   }
 
   .all-sponsors{
@@ -548,7 +550,7 @@ nav a{
 }
 
 .ensemble-column-2{
-  width: 40%;
+  width: 25%;
   display: flex;
   align-items: center;
   margin: auto;
@@ -634,13 +636,15 @@ nav a{
   }
   
   .ensemble-column-2{
-    width: 80%;
+    width: 50%;
   }
 }
 
 @media (max-width: 425px) {
   .ensemble-hero-title{
     font-size: 12vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
   .ensemble-hero-title-black{
@@ -648,7 +652,8 @@ nav a{
   }
 
   .ensemble-column-2{
-    width: 100%;
+    margin-top: 5vh;
+    width: 80%;
   }
 
   .ensemble-itinerary-btn-div{
