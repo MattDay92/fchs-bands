@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import AllBandsCalendar from '../components/AllBandsCalendar';
 import ConcertJazzCalendar from '../components/ConcertJazzCalendar';
@@ -6,6 +6,7 @@ import GeneralInfoCalendar from '../components/GeneralInfoCalendar';
 import IndoorPercussionCalendar from '../components/IndoorPercussionCalendar';
 import MarchingBandCalendar from '../components/MarchingBandCalendar';
 import WinterGuardCalendar from '../components/WinterGuardCalendar';
+import BandBoostersCalendar from '../components/BandBoostersCalendar';
 
 
 
@@ -26,6 +27,7 @@ export default function Calendar() {
                         <a><Link className="dropdown-item" onClick={() => { setCalendar('IndoorPercussion') }}>Indoor Percussion</Link></a>
                         <a><Link className="dropdown-item" onClick={() => { setCalendar('MBPercussion') }}>Marching Band/Color Guard</Link></a>
                         <a><Link className="dropdown-item" onClick={() => { setCalendar('WinterGuard') }}>WG Winter Guard</Link></a>
+                        <a><Link className="dropdown-item" onClick={() => { setCalendar('BandBoosters') }}>Band Boosters</Link></a>
                     </ul>
                 </div>
                 <div className='mt-5 text-center'>
@@ -33,9 +35,10 @@ export default function Calendar() {
                         calendar === 'ConcertJazz' ? <><h2>Concert/Jazz Ensembles</h2><ConcertJazzCalendar /></> :
                             calendar === 'Info' ? <><h2>General Info</h2><GeneralInfoCalendar /></> :
                                 calendar === 'IndoorPercussion' ? <><h2>Indoor Percussion</h2><IndoorPercussionCalendar /></> :
-                                        calendar === 'MBPercussion' ? <><h2>Marching Band/Color Guard</h2><MarchingBandCalendar /></> :
-                                                <><h2>All Bands</h2><AllBandsCalendar /></>
-                                                }
+                                    calendar === 'MBPercussion' ? <><h2>Marching Band/Color Guard</h2><MarchingBandCalendar /></> :
+                                        calendar === 'BandBoosters' ? <><h2>Band Boosters</h2><BandBoostersCalendar /></> :
+                                            <><h2>All Bands</h2><AllBandsCalendar /></>
+                    }
                 </div>
             </div>
         </div>
