@@ -228,20 +228,20 @@ nav a{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80vw;
+  width: 85vw;
   margin: auto;
 }
 
 .featured-col-left{
-  width: 35vw;
+  width: 45vw;
 }
 
 .featured-col-left img {
-  width: 50%;
+  width: 100%;
 }
 
 .featured-col-right{
-  width: 50vw;
+  width: 45vw;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
@@ -383,7 +383,7 @@ nav a{
   }
 
   .featured-col-left{
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 5vh;
   }
@@ -446,13 +446,13 @@ nav a{
   }
 
   .featured-col-left{
-    width: 100%;
+    width: 90%;
     margin: auto;
     margin-top: 5vh;
   }
 
   .featured-col-left img {
-    width: 75% !important;
+    width: 100% !important;
   }
 
   .featured-col-right{

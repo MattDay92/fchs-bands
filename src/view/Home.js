@@ -13,7 +13,7 @@ import Carousel2 from '../components/images/HomeBand2.jpeg'
 import Carousel3 from '../components/images/HomeBand3.jpeg'
 import Carousel4 from '../components/images/HomeBand4.jpeg'
 
-import FeaturedIMG from '../components/images/MilesToDayton.png'
+import FeaturedIMG from '../components/images/Drum-A-Thon.png'
 import { getDatabase, onValue, ref } from 'firebase/database'
 
 export default function Home({ signUpLink, getSignUpLink }) {
@@ -68,16 +68,17 @@ export default function Home({ signUpLink, getSignUpLink }) {
             </div>
             <div id='featured' className='featured text-center d-flex align-items-center'>
                 <div className='featured-content'>
-                    {/* <div className='featured-col-left'>
-                        <img className='my-5' alt='Franklin Bands Program Donation' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMilesToDaytonIMG?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1' />
-                        <a className='btn my-3' href='https://collectcheckout.com/r/uk3zpi231w18dox75gb3pyolzmiqkq' target='_blank'>Make Online Donation</a>
-                    </div> */}
+                    <div className='featured-col-left'>
+                        <img className='my-5' alt='Franklin Bands Program Donation' src={FeaturedIMG} />
+                    </div>
                     <div className='featured-col-right'>
-                        <h1>Support Franklin Bands!</h1>
+                        {/* <h1>Support Franklin Bands!</h1> */}
+                        <h2>Friday/Saturday, January 30-31, 2026</h2>
+                        <h4>3:30 PM - 3:30 PM</h4>
                         <p>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </p>
-                        <p>The funds raised by the Franklin Community Schools Band Boosters are used for competition entry fees, meals, uniform upkeep,
-                            transportation, guest instructors, scholarships, and so much more that goes on behind the scenes to keep our program operating.
-                            Donate now to help out all the Franklin bands! </p>
+                        <p>This season’s Drum-A-Thon is the kickoff to our 2025 indoor percussion season and will hopefully be one of our largest fundraising
+                            opportunities of the year!</p>                        
+                        
                         <a className='btn my-3' href='https://quickclick.com/r/sraxht75w01aihl1iu1rw2hof1yewt' target='_blank'>Make Online Donation</a>
                         {/* <h4>Friday/Saturday, January 17-18, 2025</h4>
                         <h4>3:30 PM - 3:30 PM at FCHS</h4>
