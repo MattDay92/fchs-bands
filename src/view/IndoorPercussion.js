@@ -16,7 +16,7 @@ import Finalist2 from '../components/images/WGI-Finalist-Banner2.webp'
 import Finalist3 from '../components/images/HSWCBanner.webp'
 
 
-export default function IndoorPercussion({ PercussionItineraryName }) {
+export default function IndoorPercussion({ PercussionItineraryName, PercussionItineraryNameTwo }) {
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
@@ -36,7 +36,7 @@ export default function IndoorPercussion({ PercussionItineraryName }) {
                     </p>
 
                 </div>
-                <div className='ensemble-column-2'>
+                <div className='ensemble-column-2-perc'>
                     <div className='carousel carousel-ensemble d-flex justify-content-center'>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
@@ -74,12 +74,16 @@ export default function IndoorPercussion({ PercussionItineraryName }) {
                     </div>
                 </div>
             </div>
-            <div className='ensemble-itinerary-btn-div m-auto text-center'>
-                <div className='ensemble-itinerary-btn'>
+            <div className='ensemble-itinerary-btn-div m-auto text-center flex-wrap'>
+                <div className='ensemble-itinerary-btn mb-3'>
                     <h2>{PercussionItineraryName}</h2>
                     <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
                 </div>
-                <div>
+                <div className='ensemble-itinerary-btn mb-3'>
+                    <h2>{PercussionItineraryNameTwo}</h2>
+                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItineraryTwo?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
+                </div>
+                <div className=' mb-3'>
                     <h2>Download Paperwork</h2>
                     <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionPaperwork?alt=media&token=6d24055d-6a93-4c00-b6f1-1ce7431bbb39'>Download</a>
                 </div>

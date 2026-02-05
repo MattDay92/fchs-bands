@@ -549,11 +549,15 @@ nav a{
   width: 50%;
 }
 
-.ensemble-column-2{
+.ensemble-column-2, .ensemble-column-2-perc{
   width: 25%;
   display: flex;
   align-items: center;
   margin: auto;
+}
+
+.ensemble-column-2-perc {
+  width: 40% !important
 }
 
 .ensemble-hero-box {
@@ -637,6 +641,10 @@ nav a{
   
   .ensemble-column-2{
     width: 50%;
+  }
+
+  .ensemble-column-2-perc{
+    width: 75% !important;
   }
 }
 

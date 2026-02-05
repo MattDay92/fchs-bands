@@ -3,7 +3,7 @@ import Background from '../components/images/FCHS-Band-Banner.webp'
 import { getStorage, ref, uploadBytes, uploadBytesResumable, uploadString, getDownloadURL } from 'firebase/storage'
 import { getDatabase, ref as refDB, set } from 'firebase/database'
 
-export default function Admin({ storage, signUpLink, PercussionItineraryName, MBItineraryName, MBWGIItineraryName }) {
+export default function Admin({ storage, signUpLink, PercussionItineraryName, PercussionItineraryNameTwo, MBItineraryName, MBWGIItineraryName }) {
     const [fileUpload, setFileUpload] = useState('')
     const [fileUploadName, setFileUploadName] = useState('')
     const [fileDownload, setFileDownload] = useState('')
@@ -88,6 +88,17 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
         });
     }
 
+    const updatePercussionItineraryNameTwo = (event) => {
+        event.preventDefault()
+        const db = getDatabase();
+
+        const percussion = event.target.PercussionItineraryNameTwo.value
+
+        set(refDB(db, 'percussionTwo'), {
+            percussion
+        });
+    }
+
     const updateMBItineraryName = (event) => {
         event.preventDefault()
         const db = getDatabase();
@@ -130,6 +141,13 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
                     </form>
                 </div>
                 <div className='admin-col my-5 row'>
+                    <h2>2nd Percussion Itinerary Name</h2>
+                    <form onSubmit={updatePercussionItineraryNameTwo}>
+                        <input className='form-control' name='PercussionItineraryNameTwo' defaultValue={PercussionItineraryNameTwo} />
+                        <button type='submit'>Submit Link</button>
+                    </form>
+                </div>
+                <div className='admin-col my-5 row'>
                     <h2>MB Football Itinerary Name</h2>
                     <form onSubmit={updateMBItineraryName}>
                         <input className='form-control' name='MBItineraryName' defaultValue={MBItineraryName} />
@@ -157,6 +175,11 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, MB
                     <h3>Percussion Itinerary</h3>
                     <embed id='PercussionItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'></embed>
                     <input type='file' name='PercussionItinerary' onChange={handleFileChange} />
+                </form>
+                <form className='admin-col' >
+                    <h3>2nd Percussion Itinerary</h3>
+                    <embed id='PercussionItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItineraryTwo?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'></embed>
+                    <input type='file' name='PercussionItineraryTwo' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>Percussion Forms/Paperwork</h3>
