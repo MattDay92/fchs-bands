@@ -32,7 +32,9 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, Pe
         const filesRef = ref(storage, `files/${fileUploadName}`)
 
         if (fileUpload) {
-            uploadString(filesRef, fileUpload, 'data_url').then((snapshot) => {
+            uploadString(filesRef, fileUpload, 'data_url', {
+                cacheControl: 'public,max-age=0,must-revalidate'
+            }).then((snapshot) => {
                 console.log('Uploaded a file!');
             })
         }
@@ -178,7 +180,7 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, Pe
                 </form>
                 <form className='admin-col' >
                     <h3>2nd Percussion Itinerary</h3>
-                    <embed id='PercussionItinerary' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItineraryTwo?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'></embed>
+                    <embed id='PercussionItinerary2' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItineraryTwo?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'></embed>
                     <input type='file' name='PercussionItineraryTwo' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
@@ -196,53 +198,53 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, Pe
                 </form>
                 <form className='admin-col'>
                     <h3>General Fee Letter</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FGeneralFeeLetter?alt=media&token=d61c49b5-6a63-419a-b37f-2b7140a3c346&_gl=1*12crmpu*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjQ1MzYzNy4xMC4xLjE2OTY0NTM2NDEuNTYuMC4w'></embed>
+                    <embed id='GeneralFeeLetter' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FGeneralFeeLetter?alt=media&token=d61c49b5-6a63-419a-b37f-2b7140a3c346&_gl=1*12crmpu*_ga*MTMzMzg1NjExNy4xNjc2NDE3OTIw*_ga_CW55HF8NVT*MTY5NjQ1MzYzNy4xMC4xLjE2OTY0NTM2NDEuNTYuMC4w'></embed>
                     <input type='file' name='GeneralFeeLetter' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>MB/CG Important Dates</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f'></embed>
+                    <embed id='MBCGImportantDates' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f'></embed>
                     <input type='file' name='MBCGImportantDates' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>MB/CG Budget Information</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862'></embed>
+                    <embed id='MBCGBudgetInformation' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862'></embed>
                     <input type='file' name='MBCGBudgetInformation' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>MB/CG Financial Commitment Form</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGFinancialCommitment?alt=media&token=129b2880-d036-41bc-8f89-594809a11328'></embed>
+                    <embed id='MBCGFinancialCommitmentForm' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGFinancialCommitment?alt=media&token=129b2880-d036-41bc-8f89-594809a11328'></embed>
                     <input type='file' name='MBCGFinancialCommitment' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>MB/CG Member Fee Letter</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGMemberFee?alt=media&token=b0b8f079-a84c-47bc-98c6-112679827957'></embed>
+                    <embed id='MBCGMemberFeeLetter' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGMemberFee?alt=media&token=b0b8f079-a84c-47bc-98c6-112679827957'></embed>
                     <input type='file' name='MBCGMemberFee' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>MB/CG Acknowledgment Form</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGAcknoledgment?alt=media&token=01d494e0-4ca2-4881-8e4b-54d2b8d1b4ab'></embed>
+                    <embed id='MBCGAcknowledgmentForm' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGAcknoledgment?alt=media&token=01d494e0-4ca2-4881-8e4b-54d2b8d1b4ab'></embed>
                     <input type='file' name='MBCGAcknoledgment' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>MB/CG Health and Permission Form</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGHealthAndPermission?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e'></embed>
+                    <embed id='MBCGHealthandPermissionForm' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGHealthAndPermission?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e'></embed>
                     <input type='file' name='MBCGHealthAndPermission' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>Sponsorship Form</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FSponsorship?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
+                    <embed id='SponsorshipForm' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FSponsorship?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
                     <input type='file' name='Sponsorship' onChange={handleFileChange} />
                 </form>
 
                 <form className='admin-col'>
                     <h3>Financial Policy</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FFinancialPolicy?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
+                    <embed id='FinancialPolicy' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FFinancialPolicy?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
                     <input type='file' name='FinancialPolicy' onChange={handleFileChange} />
                 </form>
                 <form className='admin-col'>
                     <h3>Volunteer Discount</h3>
-                    <embed id='MarchingSeasonInfo' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FVolunteerDiscount?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
+                    <embed id='VolunteerDiscount' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FVolunteerDiscount?alt=media&token=7fb5081f-a9b3-45eb-ad53-fbb5ed6f4dda'></embed>
                     <input type='file' name='VolunteerDiscount' onChange={handleFileChange} />
                 </form>
 

@@ -5,6 +5,9 @@ import Marching2 from '../components/images/MB2.jpeg'
 import Marching3 from '../components/images/MB3.jpeg'
 
 export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
+
+        const fileVersion = Date.now();
+
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
@@ -52,17 +55,17 @@ export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
                 <div className='ensemble-itinerary-btn-div m-auto text-center'>
                     <div className='ensemble-itinerary-btn'>
                         <h2>{MBItineraryName}</h2>
-                        <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBFootballItinerary?alt=media&token=cc6d46ea-734e-4a75-b00e-729ac2a65b2d'>Download</a>
+                        <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBFootballItinerary?alt=media&token=cc6d46ea-734e-4a75-b00e-729ac2a65b2d&v=${fileVersion}`}>Download</a>
                     </div>
                     <div>
                         <h2>{MBWGIItineraryName}</h2>
-                        <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBWGIItinerary?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1'>Download</a>
+                        <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBWGIItinerary?alt=media&token=1d437222-6d73-4488-ab57-6dfcef3e5de1&v=${fileVersion}`}>Download</a>
                     </div>
                 </div>
                 <div className='ensemble-btns'>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8' download>2025 Season Information</a>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f' download>Important Dates</a>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862' download>Budget Information</a>
+                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8&v=${fileVersion}`} download>2025 Season Information</a>
+                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f&v=${fileVersion}`} download>Important Dates</a>
+                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862&v=${fileVersion}`} download>Budget Information</a>
                 </div>
 
 

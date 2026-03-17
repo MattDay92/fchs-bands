@@ -17,6 +17,8 @@ import Finalist3 from '../components/images/HSWCBanner.webp'
 
 
 export default function IndoorPercussion({ PercussionItineraryName, PercussionItineraryNameTwo }) {
+    const fileVersion = Date.now();
+
     return (
         <div className='main'>
             <div id='hero' className='row ensemble-hero-container'>
@@ -28,10 +30,10 @@ export default function IndoorPercussion({ PercussionItineraryName, PercussionIt
             <div className='row ensemble-info col-10'>
                 <div className='ensemble-column-1'>
                     <h4 className='ensemble-info-paragraph'><strong>Franklin Community Percussion is a perennial IPA State Finalist competitor. 
-                        The indoor percussion program began in 2013 and has been in state finals 8 times.</strong> </h4>
-                    <p className='mb-5'>n 2021 they were the State Runner-up in Class A. The program also competes at WGI 
+                        The indoor percussion program began in 2013 and has been in state finals 11 times.</strong> </h4>
+                    <p className='mb-5'>In 2021 they were the IPA State Runner-up in Class A. The program also competes at WGI 
                         World Championships. In 2022 the group received 4th place in PSA . In the 2023 and 2024 seasons the group 
-                        made finals PSO placing 15th and 10th, respectively! They are a 9-time State Finalist and a 3-time WGI 
+                        made finals in PSO placing 15th and 10th, respectively! They are an 11-time State Finalist and a 3-time WGI 
                         World Championship Finalist!
                     </p>
 
@@ -77,15 +79,15 @@ export default function IndoorPercussion({ PercussionItineraryName, PercussionIt
             <div className='ensemble-itinerary-btn-div m-auto text-center flex-wrap'>
                 <div className='ensemble-itinerary-btn mb-3'>
                     <h2>{PercussionItineraryName}</h2>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
+                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItinerary?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e&v=${fileVersion}`}>Download</a>
                 </div>
                 <div className='ensemble-itinerary-btn mb-3'>
                     <h2>{PercussionItineraryNameTwo}</h2>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItineraryTwo?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e'>Download</a>
+                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionItineraryTwo?alt=media&token=df5a865c-3388-4e66-bda0-27d39ae5630e&v=${fileVersion}`}>Download</a>
                 </div>
                 <div className=' mb-3'>
                     <h2>Download Paperwork</h2>
-                    <a className='btn' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionPaperwork?alt=media&token=6d24055d-6a93-4c00-b6f1-1ce7431bbb39'>Download</a>
+                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FPercussionPaperwork?alt=media&token=6d24055d-6a93-4c00-b6f1-1ce7431bbb39&v=${fileVersion}`}>Download</a>
                 </div>
             </div>
             <div className='WGI-Banners col-10'>

@@ -233,7 +233,7 @@ nav a{
 }
 
 .featured-col-left{
-  width: 45vw;
+  width: 30vw;
 }
 
 .featured-col-left img {
@@ -357,10 +357,6 @@ nav a{
   .hero-image {
       width: 40vw !important;
   }
-
-  .featured-col-left img {
-    width: 75%;
-  }
 }
 
 
@@ -383,7 +379,7 @@ nav a{
   }
 
   .featured-col-left{
-    width: 100%;
+    width: 75%;
     margin: auto;
     margin-top: 5vh;
   }
