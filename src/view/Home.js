@@ -117,7 +117,7 @@ export default function Home({ signUpLink, getSignUpLink }) {
                     </button>
                 </div>
             </div>
-            <div id='join' className='join text-center d-flex align-items-center'>
+            {/* <div id='join' className='join text-center d-flex align-items-center'>
                 <div className='col-10 m-auto'>
                     <h2 className='home-section-heading'>Are you interested in joining the high school concert bands, jazz band,
                         and marching band?
@@ -125,7 +125,7 @@ export default function Home({ signUpLink, getSignUpLink }) {
                     <h3>Click <a className='join-link' href='https://www.joinfranklinbands.info/' target='_blank'>HERE</a> to visit the <strong>Join Franklin Band</strong> website
                         for more information about the bands and how to sign up for classes!</h3>
                 </div>
-            </div>
+            </div> */}
             <div id='sponsors' className='sponsors m-auto text-center'>
                 <h2 className='home-section-heading pt-3 my-0'>Thank You to Our 2024-2025 Sponsors!</h2>
                 <div className='sponsors-1 d-flex align-items-center'>

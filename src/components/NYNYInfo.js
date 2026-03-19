@@ -31,7 +31,7 @@ export default function NYNYInfo() {
 
                             4. NYC Street Signs - There are 3 total. Each sign includes two street signs and connecting hardware. The poles and bases are not included. - $200<br />
 
-                            4. Band Uniform Tops are the eMotion Tops with zippers and shoulder pads.They were custom designed by Dance Sophisticates. 65 total, sizes available upon request. - $2,200<br />
+                            <s>4. Band Uniform Tops are the eMotion Tops with zippers and shoulder pads.They were custom designed by Dance Sophisticates. 65 total, sizes available upon request. - $2,200</s><br />
 
                             5. Guard Uniforms were custom designed by Dance Sophisticates. 13 total - $1,000.<br />
 
