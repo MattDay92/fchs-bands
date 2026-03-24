@@ -72,6 +72,53 @@ nav a{
 
 /* --------------------HOMEPAGE---------------------------- */
 
+#popup {
+    position: fixed;
+    z-index: 1000;
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(74, 74, 74, 0.59);
+    top: -10vh;
+}
+
+.popup-close-btn {
+    color: white;
+    width: fit-content;
+    background: rgb(204, 47, 47);
+    position: absolute;
+    right: 12vw;
+    top: 22vh;
+}
+
+.concert-ad {
+    width: 80vw;
+    height: 80vh;
+    margin-top: 10vh;
+    border: .25vw solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    box-shadow: rgb(208, 208, 208) 0px 20px 30px -10px;
+}
+
+.popup-logo {
+    border: 2px solid white;
+}
+
+.popup-btns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.popup-logo {
+    width: 100%;
+}
+
 .home-section-heading{
   font-size: 200%;
 }
@@ -403,6 +450,22 @@ nav a{
     width: 100%;
   }
 
+    .popup-img {
+        width: 80%;
+    }
+
+    .popup-info {
+        width: 80%;
+    }
+
+    .popup-info {
+        font-size: 1.5rem;
+    }
+
+    .popup-info h4 {
+        font-size: 2rem;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -496,6 +559,10 @@ nav a{
   h5 {
       font-size: .75em;
   }
+
+  .popup-img {
+        width: 90%;
+    }
 
 
 }

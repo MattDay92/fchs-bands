@@ -28,6 +28,8 @@ export default function App({ storage, database }) {
   const [PercussionItineraryNameTwo, setPercussionItineraryNameTwo] = useState(null)
   const [MBItineraryName, setMBItineraryName] = useState(null)
   const [MBWGIItineraryName, setMBWGIItineraryName] = useState(null)
+  const [showPopUp, setShowPopUp] = useState(true)
+
 
 
   const getSignUpLink = () => {
@@ -68,6 +70,13 @@ export default function App({ storage, database }) {
     })
   }
 
+  const closeAd = () => {
+    const homePopUp = document.getElementById('popup')
+    homePopUp.style.display = "none"
+
+    setShowPopUp(false)
+  }
+
   
 
   useEffect(() => {
@@ -80,7 +89,7 @@ export default function App({ storage, database }) {
       <BrowserRouter>
         <Nav storage={storage} />
         <Routes>
-          <Route exact path={'/'} element={<Home getSignUpLink={getSignUpLink} signUpLink={signUpLink} />} />
+          <Route exact path={'/'} element={<Home closeAd={closeAd} showPopUp={showPopUp} getSignUpLink={getSignUpLink} signUpLink={signUpLink} />} />
           <Route exact path={'/marchingband'} element={<MarchingBand MBItineraryName={MBItineraryName} MBWGIItineraryName={MBWGIItineraryName} />} />
           <Route exact path={'/staff'} element={<Staff />} />
           <Route exact path={'/fees'} element={<Fees />} />

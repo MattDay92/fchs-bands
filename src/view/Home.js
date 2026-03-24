@@ -12,15 +12,38 @@ import Carousel1 from '../components/images/HomeBand1.jpeg'
 import Carousel2 from '../components/images/HomeBand2.jpeg'
 import Carousel3 from '../components/images/HomeBand3.jpeg'
 import Carousel4 from '../components/images/HomeBand4.jpeg'
+import popupIMG from '../components/images/DirectorHiringPost.webp'
 
 import FeaturedIMG from '../components/images/MilesToDayton.png'
 import { getDatabase, onValue, ref } from 'firebase/database'
 
-export default function Home({ signUpLink, getSignUpLink }) {
+export default function Home({ signUpLink, getSignUpLink, showPopUp, closeAd }) {
 
 
     return (
         <>
+
+        {showPopUp === true ? <>
+        <div id='popup'>
+          <div className='row concert-ad'>
+            <button className='popup-close-btn' onClick={closeAd}><i class="fa-solid fa-x"></i></button>
+            <div className='col-6 popup-img'>
+              <img className='popup-logo' alt='Dine to Donate' src={popupIMG} />
+            </div>
+            <div className='col-4 popup-info text-center'>
+              {/* <h3 className='text-white'>Dine to Donate</h3>
+              <h4>Thursday, 2/26</h4>
+              <p>Eat at Noble Roman's in Franklin on Thursday, 2/26 from 11AM to 9:30 PM to support FCHS Choirs!</p> */}
+
+              <button className='btn my-2' href='https://docs.google.com/document/d/1--b9XaXt6B63cZLuB4LnMZoiJLOpj3oEweOQjCO5WJs/edit?tab=t.0' target='_blank'>More Information</button>
+
+            </div>
+          </div>
+        </div>
+      </>
+        :
+        <></>
+      }
             <div id='hero' className='row home-hero hero-container'>
                 <img className='banner' src={Background} />
                 <div className='hero-box'>
