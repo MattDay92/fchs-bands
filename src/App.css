@@ -64,10 +64,15 @@ nav a{
 .btn{
   background: gold;
   color: black;
+  text-decoration: none !important;
 }
 
 .btn:hover{
   background: rgb(196, 166, 0);
+}
+
+.dropdown-toggle {
+  color: black;
 }
 
 /* --------------------HOMEPAGE---------------------------- */
@@ -672,7 +677,7 @@ nav a{
 }
 
 .ensemble-WGI-banner-div{
-  width: 25vw;
+  width: 35vw;
 }
 
 .carousel-ensemble {

@@ -4,7 +4,7 @@ import { getStorage, ref, uploadBytes, uploadBytesResumable, uploadString, getDo
 
 
 
-export default function Nav({storage}) {
+export default function Nav({storage, signUpLink}) {
     const [fileDownload, setFileDownload] = useState('')
 
         const fileVersion = Date.now();
@@ -61,23 +61,7 @@ export default function Nav({storage}) {
                             </div>
                         </a>
                         <a className='nav-item'><Link to={'/privateinstructors'} className="nav-link">Private Instructors</Link></a>
-                        <a className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Info/Forms
-                            </a>
-                            <div className="dropdown-menu nav-dropdown py-0">
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8&v=${fileVersion}`} download>2025 Marching Season Information</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f&v=${fileVersion}`} download>MB/CG Important Dates</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862&v=${fileVersion}`} download>MB/CG Budget Information</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGFinancialCommitment?alt=media&token=129b2880-d036-41bc-8f89-594809a11328&v=${fileVersion}`} download>MB/CG Financial Commitment Form</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGMemberFee?alt=media&token=b0b8f079-a84c-47bc-98c6-112679827957&v=${fileVersion}`} download>MB/CG Member Fee Letter</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGAcknoledgment?alt=media&token=01d494e0-4ca2-4881-8e4b-54d2b8d1b4ab&v=${fileVersion}`} download>MB/CG Acknowledgement Form</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGHealthAndPermission?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e&v=${fileVersion}`} download>MB/CG Health and Permission Forms</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FFinancialPolicy?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e&v=${fileVersion}`} download>MB/CG Financial Policy</a>
-                                <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FVolunteerDiscount?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e&v=${fileVersion}`} download>MB/CG Volunteer Discount Information</a>
-
-                            </div>
-                        </a>
+                        <a className='nav-item' href={signUpLink} className="nav-link" target='_blank'>Volunteer</a>
                         <a className='nav-item'><Link to={'/links'} className="nav-link">Links</Link></a>
                         <a className='nav-item'><Link to={'/equipmentsales'} className="nav-link">Equipment Sales</Link></a>
                         <a className='nav-item'><Link to={'/staff'} className="nav-link">Contact</Link></a>

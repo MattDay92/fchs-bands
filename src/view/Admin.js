@@ -270,7 +270,7 @@ export default function Admin({ storage, signUpLink, PercussionItineraryName, Pe
                     </form>
                 </div>
                 <div className='admin-col my-5 row'>
-                    <h2>Homepage Sign-Up Form Link</h2>
+                    <h2>Homepage "Help Wanted" Sign-Up Form Link</h2>
                     <form onSubmit={updateFormData}>
                         <input className='form-control' name='signupform' defaultValue={signUpLink} />
                         <button type='submit'>Submit Link</button>

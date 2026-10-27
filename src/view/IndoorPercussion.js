@@ -1,11 +1,11 @@
 import React from 'react'
 import Percussion from '../components/images/Percussion.webp'
-import Percussion1 from '../components/images/FCIP-WGI.webp'
+import Percussion1 from '../components/images/Percussion5261.webp'
 import Percussion2 from '../components/images/Snare.webp'
 import Percussion3 from '../components/images/Snares.webp'
 import Percussion4 from '../components/images/BassDrum.webp'
 import Percussion5 from '../components/images/BassDrum2.webp'
-import Percussion6 from '../components/images/DSFinals.webp'
+import Percussion6 from '../components/images/Percussion5262.webp'
 import Percussion7 from '../components/images/Cymbol.webp'
 import Sponsor1 from '../components/images/2000px-Zildjian_Logo.svg.webp'
 import Sponsor2 from '../components/images/IP.webp'
@@ -14,6 +14,7 @@ import Sponsor4 from '../components/images/pearladamslogowht copy.webp'
 import Finalist1 from '../components/images/WGI-Finalist-Banner1.webp'
 import Finalist2 from '../components/images/WGI-Finalist-Banner2.webp'
 import Finalist3 from '../components/images/HSWCBanner.webp'
+import Finalist4 from '../components/images/PSO.webp'
 
 
 export default function IndoorPercussion({ PercussionItineraryName, PercussionItineraryNameTwo }) {
@@ -29,11 +30,12 @@ export default function IndoorPercussion({ PercussionItineraryName, PercussionIt
             </div>
             <div className='row ensemble-info col-10'>
                 <div className='ensemble-column-1'>
-                    <h4 className='ensemble-info-paragraph'><strong>Franklin Community Percussion is a perennial IPA State Finalist competitor. 
-                        The indoor percussion program began in 2013 and has been in state finals 11 times.</strong> </h4>
-                    <p className='mb-5'>In 2021 they were the IPA State Runner-up in Class A. The program also competes at WGI 
-                        World Championships. In 2022 the group received 4th place in PSA . In the 2023 and 2024 seasons the group 
-                        made finals in PSO placing 15th and 10th, respectively! They are an 11-time State Finalist and a 3-time WGI 
+                    <h4 className='ensemble-info-paragraph'><strong>Franklin Community Percussion is a perennial IPA State Finalist competitor.
+                        The indoor percussion program began in 2013 and has been in state finals 10 times.</strong> </h4>
+                    <p className='mb-5'>In 2021 they were the IPA State Runner-up in Class A. The program also competes at WGI
+                        World Championships. In 2022 the group received 4th place in PSA . In the 2023 and 2024 seasons the group
+                        made finals in PSO placing 15th and 10th, respectively! In 2026 FCIP made PSO finals for the third time and finished in 9th place!
+                        They are a 10-time State Finalist and a 4-time WGI
                         World Championship Finalist!
                     </p>
 
@@ -91,10 +93,14 @@ export default function IndoorPercussion({ PercussionItineraryName, PercussionIt
                 </div>
             </div>
             <div className='WGI-Banners col-10'>
-                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist2} /></div>
-                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist1} /></div>
-                <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist3} /></div>
-
+                <div>
+                    <div className='ensemble-WGI-banner-div mb-3'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist2} /></div>
+                    <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist1} /></div>
+                </div>
+                <div>
+                    <div className='ensemble-WGI-banner-div mb-3'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist3} /></div>
+                    <div className='ensemble-WGI-banner-div'><img className='sponsor-img' alt='WGI Finalist Banner' src={Finalist4} /></div>
+                </div>
             </div>
             <div className='ensemble-sponsors col-10 text-center'>
                 <h4 className='my-5'>Franklin Community Percussion proudly uses Innovative Percussion sticks and mallets, Pearl Drums, Adams Percussion, Remo Drumheads, and Ziljdian Cymbal products.</h4>
@@ -109,11 +115,11 @@ export default function IndoorPercussion({ PercussionItineraryName, PercussionIt
                 <div className='col-10 m-auto'>
                     <div className='text-center'>
                         <h2>WGI World Championship Finalist</h2>
-                        <h3>2024, 2023, 2022</h3>
+                        <h3>2026, 2024, 2023, 2022</h3>
                     </div>
                     <div className='text-center'>
                         <h3>WGI Regional Finalist</h3>
-                        <p>2024, 2023, 2022, 2015</p>
+                        <p>2026, 2024, 2023, 2022, 2015</p>
                     </div>
                     <div className='text-center'>
                         <h3>IPA Class A State Runner-Up</h3>
@@ -124,7 +130,7 @@ export default function IndoorPercussion({ PercussionItineraryName, PercussionIt
                         </div>
                         <div className='text-center'>
                             <h3>IPA Open Class State Finalist</h3>
-                            <p>2024, 2023, 2016, 2015</p>
+                            <p>2026, 2025, 2024, 2023, 2016, 2015</p>
                         </div>
 
                     </div>

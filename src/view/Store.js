@@ -159,17 +159,7 @@ export default function Store() {
                 </div>
                 <NightisLongInfo />
             </div>
-            <div className='store-2'>
-                <h2>Crude</h2>
-                <div className='store-img-container'>
-                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-55' src={Crude1} /></div>
-                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-56' src={Crude2} /></div>
-                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-57' src={Crude3} /></div>
-                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-58' src={Crude4} /></div>
-                    <div onClick={getID} className='store-img-div'><img className='store-img' id='store-img-59' src={Crude5} /></div>
-                </div>
-                <CrudeInfo />
-            </div>
+           
             
         </div>
     )

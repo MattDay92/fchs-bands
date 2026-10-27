@@ -23,7 +23,7 @@ export default function Home({ signUpLink, getSignUpLink, showPopUp, closeAd }) 
     return (
         <>
 
-        {showPopUp === true ? <>
+        {/* {showPopUp === true ? <>
         <div id='popup'>
           <div className='row concert-ad'>
             <button className='popup-close-btn' onClick={closeAd}><i class="fa-solid fa-x"></i></button>
@@ -31,11 +31,11 @@ export default function Home({ signUpLink, getSignUpLink, showPopUp, closeAd }) 
               <img className='popup-logo' alt='Dine to Donate' src={popupIMG} />
             </div>
             <div className='col-4 popup-info text-center'>
-              {/* <h3 className='text-white'>Dine to Donate</h3>
+              <h3 className='text-white'>Dine to Donate</h3>
               <h4>Thursday, 2/26</h4>
-              <p>Eat at Noble Roman's in Franklin on Thursday, 2/26 from 11AM to 9:30 PM to support FCHS Choirs!</p> */}
+              <p>Eat at Noble Roman's in Franklin on Thursday, 2/26 from 11AM to 9:30 PM to support FCHS Choirs!</p>
 
-              <button className='btn my-2' href='https://docs.google.com/document/d/1--b9XaXt6B63cZLuB4LnMZoiJLOpj3oEweOQjCO5WJs/edit?tab=t.0' target='_blank'>More Information</button>
+              <a className='btn my-2' href='https://docs.google.com/document/d/1--b9XaXt6B63cZLuB4LnMZoiJLOpj3oEweOQjCO5WJs/edit?tab=t.0' target='_blank'>More Information</a>
 
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function Home({ signUpLink, getSignUpLink, showPopUp, closeAd }) 
       </>
         :
         <></>
-      }
+      } */}
             <div id='hero' className='row home-hero hero-container'>
                 <img className='banner' src={Background} />
                 <div className='hero-box'>
@@ -72,10 +72,10 @@ export default function Home({ signUpLink, getSignUpLink, showPopUp, closeAd }) 
                     <Link to={'/staff'} className='nav-icon'><i class="fa-solid fa-people-group"></i></Link>
                     <h5 className='my-2'>Contact</h5>
                 </div>
-                <div className='nav-icon-div col'>
+                {/* <div className='nav-icon-div col'>
                     <a className='nav-icon'><i className="fa-solid fa-info"></i></a>
                     <h5 className='my-2'>Volunteer Background Check</h5>
-                </div>
+                </div> */}
                 <div className='nav-icon-div col'>
                     <a className='nav-icon' href={signUpLink} target='_blank'><i class="fa-solid fa-microphone"></i></a>
                     <h5 className='my-2'>Event Volunteer Sign-Up</h5>
@@ -89,23 +89,22 @@ export default function Home({ signUpLink, getSignUpLink, showPopUp, closeAd }) 
                     <h5 className='my-2'>Parents - Get Involved!</h5>
                 </div>
             </div>
-            <div id='featured' className='featured text-center d-flex align-items-center'>
+            {/* <div id='featured' className='featured text-center d-flex align-items-center'>
                 <div className='featured-content'>
                     <div className='featured-col-left'>
                         <img className='my-5' alt='Miles to Dayton Image' src='https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMilesToDaytonIMG?alt=media&token=719b9121-eed5-47c8-8864-ac1f3421474c' />
                     </div>
                     <div className='featured-col-right'>
                         <h1>Support Franklin Indoor Percussion!</h1>
-                        {/* <h2>Friday/Saturday, January 30-31, 2026</h2>
-                        <h4>3:30 PM - 3:30 PM</h4> */}
+                        
                         <p>Did you know? It takes over $150,000 in operating expenses to keep the instrumental music department going each year? </p>
-                        {/* <p>This season’s Drum-A-Thon is the kickoff to our 2025 indoor percussion season and will hopefully be one of our largest fundraising
-                            opportunities of the year!</p>                         */}
+                        <p>This season’s Drum-A-Thon is the kickoff to our 2025 indoor percussion season and will hopefully be one of our largest fundraising
+                            opportunities of the year!</p>                        
                         
                         <a className='btn my-3' href='https://quickclick.com/r/sraxht75w01aihl1iu1rw2hof1yewt' target='_blank'>Make Online Donation</a>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div id='home-photos' className='home-photos'>
                 <div id="carouselExampleIndicators" class="carousel carousel-home slide" data-bs-ride="true">

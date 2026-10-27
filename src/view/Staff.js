@@ -1,10 +1,10 @@
 import React from 'react'
 import Banner from '../components/images/FCHS-Band-Banner.webp'
-import Tim from '../components/images/TimHeadshot.webp'
+import Abby from '../components/images/Abby.webp'
 import Jason from '../components/images/JasonHeadshot.webp'
 import Hannah from '../components/images/Hannah.webp'
 import JasonBio from '../components/JasonBio'
-import TimBio from '../components/TimBio'
+import AbbyBio from '../components/AbbyBio'
 import ColorGuardBio from '../components/ColorGuardBio'
 
 export default function Staff() {
@@ -18,14 +18,14 @@ export default function Staff() {
             </div>
             <div className='staff2 m-auto py-5 d-flex justify-content-around align-items-center'>
                 <div className='headshot-div'>
-                    <img className='headshot-staff2' alt='Tim Kosch - Director of Bands' src={Tim} />
+                    <img className='headshot-staff2' alt='Abby Fleck - Director of Bands' src={Abby} />
                 </div>
                 <div className='staff-info text-center'>
-                    <h2>Tim Kosch</h2>
+                    <h2>Abby Fleck</h2>
                     <h3>Director of Bands</h3>
-                    <p>Email: koscht@franklinschools.org</p>
+                    <p>Email: flecka@franklinschools.org</p>
                     <p>Phone:  (317) 346-8107  -  Office</p>
-                    <TimBio />
+                    <AbbyBio />
                 </div>
             </div>
             <div className='staff1 m-auto py-5 d-flex justify-content-around align-items-center'>

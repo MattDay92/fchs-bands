@@ -87,7 +87,7 @@ export default function App({ storage, database }) {
   return (
     <>
       <BrowserRouter>
-        <Nav storage={storage} />
+        <Nav storage={storage} signUpLink={signUpLink} />
         <Routes>
           <Route exact path={'/'} element={<Home closeAd={closeAd} showPopUp={showPopUp} getSignUpLink={getSignUpLink} signUpLink={signUpLink} />} />
           <Route exact path={'/marchingband'} element={<MarchingBand MBItineraryName={MBItineraryName} MBWGIItineraryName={MBWGIItineraryName} />} />

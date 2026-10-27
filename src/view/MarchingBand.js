@@ -4,9 +4,9 @@ import Marching1 from '../components/images/MB1.jpeg'
 import Marching2 from '../components/images/MB2.jpeg'
 import Marching3 from '../components/images/MB3.jpeg'
 
-export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
+export default function MarchingBand({ MBItineraryName, MBWGIItineraryName }) {
 
-        const fileVersion = Date.now();
+    const fileVersion = Date.now();
 
     return (
         <div className='main'>
@@ -18,8 +18,8 @@ export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
             </div>
             <div className='row ensemble-info col-10'>
                 <div className='ensemble-column-1'>
-                    <h4 className='mb-5 text-center'>The Franklin Community High School BLUE REGIMENT Marching Band is an eight-time ISSMA
-                        Scholastic Class A Finalist - placing 6th in 2022 and 2023 - their highest placement yet. </h4>
+                    <h4 className='mb-5 text-center'>The Franklin Community High School BLUE REGIMENT Marching Band is a Nine-Time ISSMA
+                        Scholastic Class A Finalist - placing 2nd in 2025 - their highest placement yet. </h4>
                     <p>The Blue Regiment has seen improved competitive success over the past few years with its well-developed show designs.
                         The Blue Regiment competes in both the Indiana State School Music Association (ISSMA) and Bands of America (BOA)
                         competitions during the fall season as well as performing for all home Grizzly Cubs' football games and the annual
@@ -63,8 +63,22 @@ export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
                     </div>
                 </div>
                 <div className='ensemble-btns'>
-                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8&v=${fileVersion}`} download>2025 Season Information</a>
-                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f&v=${fileVersion}`} download>Important Dates</a>
+                    <a className="btn nav-item dropdown">
+                        <a className="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Info/Forms
+                        </a>
+                        <div className="dropdown-menu nav-dropdown py-0">
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMarchingSeasonInfo?alt=media&token=799b1080-3fd8-4ed5-a65e-879a887c11d8&v=${fileVersion}`} download>2026 Marching Season Information</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f&v=${fileVersion}`} download>MB/CG Important Dates</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862&v=${fileVersion}`} download>MB/CG Budget Information</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGFinancialCommitment?alt=media&token=129b2880-d036-41bc-8f89-594809a11328&v=${fileVersion}`} download>MB/CG Financial Commitment Form</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGMemberFee?alt=media&token=b0b8f079-a84c-47bc-98c6-112679827957&v=${fileVersion}`} download>MB/CG Member Fee Letter</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGAcknoledgment?alt=media&token=01d494e0-4ca2-4881-8e4b-54d2b8d1b4ab&v=${fileVersion}`} download>MB/CG Acknowledgement Form</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGHealthAndPermission?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e&v=${fileVersion}`} download>MB/CG Health and Permission Forms</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FFinancialPolicy?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e&v=${fileVersion}`} download>MB/CG Financial Policy</a>
+                            <a className='dropdown-item' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FVolunteerDiscount?alt=media&token=37e38df3-a3a6-4881-a376-cecbabba535e&v=${fileVersion}`} download>MB/CG Volunteer Discount Information</a>
+                        </div>
+                    </a>                    <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGImportantDates?alt=media&token=5f2fe224-fd3d-4aa7-821c-07fc3be5cb7f&v=${fileVersion}`} download>2026 Important Dates</a>
                     <a className='btn' target='_blank' href={`https://firebasestorage.googleapis.com/v0/b/fchs-bands.appspot.com/o/files%2FMBCGBudgetInformation?alt=media&token=6b1ea0b4-349c-4ff0-bb07-9ae1bf9ce862&v=${fileVersion}`} download>Budget Information</a>
                 </div>
 
@@ -74,7 +88,7 @@ export default function MarchingBand({MBItineraryName, MBWGIItineraryName}) {
                 <div className='col-10 m-auto'>
                     <div className='text-center'>
                         <h3>ISSMA Scholastic Class A Finalists - <span className='gold-rating'>Gold Rating</span></h3>
-                        <p>2022, 2021, 2017, 2016, 2015, 2014, 2013</p>
+                        <p>2025, 2024, 2023, 2022, 2021, 2017, 2016, 2015, 2014, 2013</p>
                     </div>
                     <div className='text-center'>
                         <h3>ISSMA Virtual Marching Band - <span className='gold-rating'>Gold Rating</span></h3>
