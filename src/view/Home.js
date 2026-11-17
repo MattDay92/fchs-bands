@@ -3,11 +3,28 @@ import { Link } from 'react-router-dom'
 import Logo from '../components/images/Logo.webp'
 import DrumMajor from '../components/images/DrumMajor.webp'
 import Background from '../components/images/FCHS-Band-Banner.webp'
-import Freddys from '../components/images/Freddys-Logo.webp'
-import Anytime from '../components/images/Anytime-Fitness-logo.webp'
-import Cunningham from '../components/images/Cunningham-Restaurant-Group.webp'
-import Locke from '../components/images/Locke-Business-Ad.webp'
-import Pax from '../components/images/PAX.webp'
+import Beck from '../components/images/sponsors/Beck.png'
+import ChickFilA from '../components/images/sponsors/ChickFilA.png'
+import CraneCredit from '../components/images/sponsors/CraneCredit.jpg'
+import DT from '../components/images/sponsors/DT.png'
+import HFI from '../components/images/sponsors/HFI.jpg'
+import Hometown from '../components/images/sponsors/HometownNutrition.JPG'
+import InnovativePercussion from '../components/images/sponsors/InnovativePercussion.png'
+import IUCredit from '../components/images/sponsors/IUCreditUnion.jpg'
+import JCF from '../components/images/sponsors/JCF.png'
+import JCREMC from '../components/images/sponsors/JCREMC.png'
+import Knauf from '../components/images/sponsors/Knauf.jpeg'
+import Locke from '../components/images/sponsors/Locke.png'
+import Lowes from '../components/images/sponsors/Lowes.png'
+import Mayfield from '../components/images/sponsors/Mayfield.png'
+import OptimalHealth from '../components/images/sponsors/OptimalHealth.png'
+import Pearl from '../components/images/sponsors/PearlAdams.png'
+import Radius from '../components/images/sponsors/Radius.jpg'
+import Remo from '../components/images/sponsors/Remo.png'
+import TeamRehab from '../components/images/sponsors/TeamRehab.jpg'
+import TitleAlliance from '../components/images/sponsors/TitleAlliance.png'
+import Zarrinnegar from '../components/images/sponsors/Zarrinnegar.png'
+import Zildjian from '../components/images/sponsors/Zildjian.png'
 import Carousel1 from '../components/images/HomeBand1.jpeg'
 import Carousel2 from '../components/images/HomeBand2.jpeg'
 import Carousel3 from '../components/images/HomeBand3.jpeg'
@@ -149,26 +166,50 @@ export default function Home({ signUpLink, getSignUpLink, showPopUp, closeAd }) 
                 </div>
             </div> */}
             <div id='sponsors' className='sponsors m-auto text-center'>
-                <h2 className='home-section-heading pt-3 my-0'>Thank You to Our 2024-2025 Sponsors!</h2>
+                <h2 className='home-section-heading pt-3 my-0'>Thank You to Our 2026-2027 Sponsors!</h2>
                 <div className='sponsors-1 d-flex align-items-center'>
                     <div className='m-auto col-10'>
-                        <h3 className='sponsor-category'>Maestro - $1500+</h3>
+                        <h3 className='sponsor-category'>Gold - $1,500+</h3>
                         <div className='all-sponsors'>
-                            <div className='sponsor-div'><img className='sponsor-img' src={Anytime} /></div>
-                            <div className='sponsor-div'><img className='sponsor-img' src={Pax} /></div>
                             <div className='sponsor-div'><img className='sponsor-img' src={Locke} /></div>
-                            <div className='sponsor-div'><img className='sponsor-img' src={Freddys} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Beck} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Knauf} /></div>
                         </div>
                     </div>
                 </div>
                 <div className='sponsors-2 d-flex align-items-center'>
                     <div className='m-auto col-10'>
-                        <h3 className='sponsor-category'>Drum Major - $500+</h3>
+                        <h3 className='sponsor-category'>Silver - $1,000+</h3>
                         <div className='all-sponsors'>
-                            <div className='sponsor-div'><img className='sponsor-img' src={Cunningham} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Zarrinnegar} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Radius} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={ChickFilA} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Hometown} /></div>
+                            
                         </div>
                     </div>
                 </div>
+                <div className='sponsors-3 d-flex align-items-center'>
+                    <div className='m-auto col-10'>
+                        <h3 className='sponsor-category'>Bronze - $500+</h3>
+                        <div className='all-sponsors'>
+                            <div className='sponsor-div'><img className='sponsor-img' src={TeamRehab} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={Lowes} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={OptimalHealth} /></div>
+                        </div>
+                    </div>
+                </div>
+                <div className='sponsors-4 d-flex align-items-center'>
+                    <div className='m-auto col-10'>
+                        <h3 className='sponsor-category'>Supporter - $250+</h3>
+                        <div className='all-sponsors'>
+                            <div className='sponsor-div'><img className='sponsor-img' src={CraneCredit} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={HFI} /></div>
+                            <div className='sponsor-div'><img className='sponsor-img' src={DT} /></div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
         </>
